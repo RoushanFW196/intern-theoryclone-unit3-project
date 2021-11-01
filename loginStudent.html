@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/loginform.css">
+    <style>
+        #studentbutton{
+            border-bottom: 2px solid rgb(9, 124, 226);
+        }
+    </style>
+</head>
+<body>
+    <div id="loginformstr">
+
+    </div>
+</body>
+</html>
+<script type="module">
+    import loginForm from './components/login.js'
+
+    document.getElementById('loginformstr').innerHTML=loginForm("company",'interns',"loginCompany.html","registerStudent.html")
+  
+   let login_btn=document.getElementById('login_btn')
+ login_btn.addEventListener('click',()=>{
+     let Eemail=document.getElementById('email').value;
+     let Epassword=document.getElementById('password').value;
+
+     let local=JSON.parse(localStorage.getItem('studentDetail'))
+     local.forEach(({email,password})=>{
+         if(email==Eemail && password==Epassword){
+             alert('login successfully')
+         }
+         
+     })
+    console.log('yo')
+})
+
+    </script>
