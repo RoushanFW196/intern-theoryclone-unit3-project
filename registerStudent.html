@@ -77,7 +77,7 @@
                 <h5>OR</h5>
             </div>
             <div>
-                <form class="form">
+                <form onsubmit="registerStudent(event)" class="form">
                     <div>
                         <input id="first" type="text" placeholder="first Name">
                         <input id="last" type="text" placeholder="last Name">
@@ -94,9 +94,9 @@
                         <input id="lookingfor" type="text" placeholder="What are you looking for? *" required>
                         <input id="affilate" type="text" placeholder="Affilate Code (if any)">
                     </div>
+                    <button id="registerStudbtn" class="login_btn">Register</button>
                 </form>
             </div>
-            <button id="registerStudbtn" class="login_btn" onclick="registerStudent()">Register</button>
         </div>
     </div>
 </body>
@@ -109,7 +109,8 @@
    function restForm(){
     hideform.style.display='block'
 }
-   function registerStudent(){
+   function registerStudent(e){
+       e.preventDefault()
        let first=document.getElementById('first').value;
        let last=document.getElementById('last').value;
        let email=document.getElementById('email').value;
@@ -141,7 +142,7 @@
        local.push(studentDetail)
 
        localStorage.setItem('studentDetail',JSON.stringify(local))
-
+       window.location.href='loginStudent.html'
     //    console.log(studentDetail)
 
     } 
