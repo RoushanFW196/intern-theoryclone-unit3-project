@@ -21,8 +21,10 @@
 </html>
 <script type="module">
     import loginForm from './components/login.js'
+    import validation from './script/loginUser.js'
     document.getElementById('loginformstr').innerHTML=loginForm("student","internships","loginStudent.html","registerCompany.html")
     document.getElementById('gooleicon').style.display='none'
     document.getElementById('iconImg').src='https://www.interntheory.com/assets/iconsLogos/linkedin.svg'
     document.getElementById('span').textContent='SIGNIN WITH LINKDIN'
+    validation("companyDetail")
     </script>
