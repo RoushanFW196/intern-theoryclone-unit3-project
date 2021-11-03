@@ -45,16 +45,17 @@ function loginForm(x,y,z,a){
                 <input aria-invalid="false" type="text" placeholder="Email/Number*" id="email" required />
                 <!-- <label for="password">Password</label> -->
                 <input type="password" placeholder="Password*" id="password" required />
+                <div class="not_account">
+                <p>
+                    Don't have an account?
+                    <span><a href=${a}>Create your account</a></span>
+                    <!-- <span class="color_blue" onclick="create_account()">Create your account</span> -->
+                </p>
+            </div>
+            <button id="login_btn" class="login_btn">LOGIN</button>
             </form>
         </div>
-        <div class="not_account">
-            <p>
-                Don't have an account?
-                <span><a href=${a}>Create your account</a></span>
-                <!-- <span class="color_blue" onclick="create_account()">Create your account</span> -->
-            </p>
-        </div>
-        <button id="login_btn" class="login_btn">LOGIN</button>
+      
     </div>
 </div>`
 }
