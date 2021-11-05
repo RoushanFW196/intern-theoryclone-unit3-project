@@ -1,0 +1,76 @@
+
+
+*{
+    margin:0;
+    padding: 0;
+}
+.container{
+    width:90%;
+    height: 1000px;
+    background-color:aquamarine;
+    display: flex;
+    margin: 20;
+    margin: auto;
+/* }
+.image{
+    width: 300px;height: 300px;
+     margin: 20px 50px 0px 100px;
+}
+.image img{
+    width: 300px;
+    height: 300px;
+    padding:8px;
+    margin:0 0 20px;
+    box-sizing: border-box;
+}
+
+.text{
+    padding:10px;
+    font-size:24px;
+    color:#000000;
+    font-family: Roboto ,Helvetica,arial,Sans-serif;
+    line-height: 31.92px;
+    font-weight:400;
+    text-align:start;
+    display: block;
+}
+.internships{
+    width:80%;
+   background-color:antiquewhite;
+   margin: 20px 50px 0px 0px;
+}
+
+.internships div{
+    height: 200px;
+    width:80%;
+   
+  
+}
+
+.internship_detail{
+    display: flex;
+    width:95%;
+    height:95%;
+   border:1px solid red;
+   background-color: burlywood;
+   margin-left: 0;
+}
+.intern_logo{
+    width:90px;
+    height: 90px;
+    padding:15px;
+    margin: 0 10px 10px;
+    padding: 2px;
+}
+.detail{
+   width: 70%;
+   height:90%;
+   display:block;
+   border:2px solid black;
+}
+
+.viewmore{
+    width:15%;
+    height:auto;
+    padding:8px;
+} */
