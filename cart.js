@@ -30,6 +30,7 @@ function showproduct() {
         product_price.textContent = "₹ " + products.price;
 
         var lines = document.createElement("hr");
+        lines.setAttribute('class', 'H')
 
         div.append(delBtn, img, product_name, product_price1, product_price)
 
