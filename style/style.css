@@ -38,8 +38,8 @@ nav{
     border-radius: 50%;
 }
 #logo {
-    height: 55px;
-    margin-left: 15px;
+    height: 45px;
+    margin-left: 5px;
 }
 
 #cart_logo {
@@ -105,7 +105,7 @@ button:hover {
     color: white;
 }
 #inner_div{
-    background: rgba(255, 255, 255, 0.77);
+    background-color: #E0E2E3;
     padding: 30px 20px;
     position: sticky;
     top: 0px;
@@ -139,27 +139,50 @@ button:hover {
      margin-right: 10px;
     font-size: 18px;
      border: none;
-    border-bottom: 1px solid black; 
+     background: none;
+    border-bottom: 2px solid #818384; 
+}
+#cities:hover{
+    border-bottom: 2px solid black; 
+}
+#cities:focus{
+  outline: none;
+  border-bottom: 2px solid blue; 
 }
 #type{
     width: 240px;
      padding: 8px;
       margin-right: 10px;
        font-size: 18px;
+       background: none;
        border: none; 
-       border-bottom: 1px solid black;
+       border-bottom: 2px solid #818384;
 }
+#type:hover{
+    border-bottom: 2px solid black; 
+}
+#type:focus{
+    outline: none;
+    border-bottom: 2px solid blue; 
+  }
 #Preference{
     width: 250px;
      padding: 8px;
       font-size: 18px;
        border: none;
-        border-bottom: 1px solid black;
+       background: none;
+        border-bottom: 2px solid #818384;
 }
-
+#Preference:hover{
+    border-bottom: 2px solid black; 
+}
+#Preference:focus{
+    outline: none;
+    border-bottom: 2px solid blue; 
+  }
 #divider_2{
     flex-grow: 0;
-    max-width: 30%;
+    max-width: 40%;
     margin: 0;
     box-sizing: border-box;
     display: flex;
@@ -171,19 +194,42 @@ button:hover {
     padding-right: 10px;
 }
 #search{
-    width: 210px;
-     padding: 8px 10px 8px 8px; 
+    width: 200px;
+     padding: 8px 10px 8px 15px; 
      font-size: 18px; 
+     background: none;
      border: none; 
-     border-bottom: 1px solid black;
+     border-bottom: 2px solid #818384;
+}
+#search:hover{
+    border-bottom: 2px solid black; 
+}
+#search:focus{
+    outline: none;
+    border-bottom: 2px solid blue; 
+  }
+#sec2{
+    display: flex;
+    background-color: #ffffff;
 }
 #sec3{
     padding-right: 5px;
 }
 #srhbtn{
-    margin: 0px;
+    background-color: red;
+    padding: 8px 10px;
+    margin-top: 4px;
+    margin-bottom: 0px;
+    width: 100px;
+    border-radius: 5px;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
+#srhbtn:hover{
+    background-color: rgb(94, 2, 2);
+}
 
 /* 2nd div */
 
