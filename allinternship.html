@@ -9,87 +9,166 @@
     <script src="https://kit.fontawesome.com/6716631a00.js" crossorigin="anonymous"></script>
    <style>
 
- .container{
-     width:95%;
-     height:1000px;
-     background-color:rgb(135, 202, 202);
-     margin:auto;
-     display: flex;
-
- }
-  .image{
-      width:300px;
-      height:300px;
-      box-sizing: border-box;
-  }
- .image img{
-     padding:20px;
-     width:100%;
-     height:100%;
- }
-  .internships{
+  .container {
+      width:95%;
      
-      width:1000px;
-      height:1000px;
-      margin-left: 100px;
-      border:2px solid black;
+      margin:  auto;
+      display: flex;
+      height: 1000px;
+      gap:20px;
+      padding:20px;
+     
   }
+    .image{
+        width:300px;
+        height:300px;
+     
+    }
+     .image img {
 
-  .text{
-    
-    padding:10px;
-    font-size:24px;
-    color:#000000;
-    font-family: Roboto ,Helvetica,arial,Sans-serif;
-    line-height: 31.92px;
-    font-weight:400;
-    text-align:start;
-    display: block;
-}
-  
-.internship_detail{
-    display: flex;
-    width:95%;
-    height:200px;
-    margin: auto;
-    gap:10px;
-    background-color:aqua;
-    padding:20px;
-   border-bottom: line;
-}
-.im{
-    width:15%;
-    height:15%;
-    border:2px solid red;
-}
-.intern_logo{
-    height:100%;
-    width:100%;
-    box-sizing: border-box;
-    margin: auto;
-}
-.detail{
-    width:65%;
-    height:100%;
-    padding-left: 10px;
-    border:2px solid red;
-    margin-top: 0;
-    padding: 8px;
-    font-size:16px;
-    font-weight: 400;
-    text-align: start;
-    color:rgb(0,0,0);
-    word-spacing: 0px;
-    vertical-align: baseline;
-    font-family: 'Times New Roman', Times, serif;
-}
-.view{
-    width:15%;
-    height:100%;
-    text-align: end;
-    border:2px solid red;
-    padding-bottom: 15px;
-}
+        width:100%;
+        height:100%;
+       
+     }
+
+      .internships{
+          width: 950px;
+          background-color:#FFFFFF;
+          
+         box-shadow: 0px 2px 2px 0px;
+         height: 3200px;
+      }
+
+      .int{
+          width:95%;
+          
+        padding:25px;
+        
+      }
+
+      .text{
+
+        font-size:24px;
+        font-weight: 400;
+        font-family: roboto, arial,Helvetica,sans-serif;
+        line-height: 32px;
+        font-style: normal;
+      }
+      .internship_detail{
+          display: flex;
+          width:100%;
+          height:200px;
+       
+
+          border-bottom: dotted;
+          
+      }
+
+      .im{
+          width:126px;
+          height:152px;
+          padding:8px;
+          margin:0px;
+          font-size:16px;
+          font-weight: 400;
+          text-align: start;
+      }
+      .intern_logo{
+
+        width:90px;
+        height:90px;
+        margin:0 10px 10px ;
+        padding:2px;
+font-size: 16px;
+   font-weight: 400;
+   text-align: start;
+
+     
+      }
+      .detail{
+          width:65%;
+          height:100%;
+         
+          color: rgb(0,0,0);
+          background-color:rgba(0,0,0,0);
+          font-size: 16px;
+          margin: 0;
+          padding:8px;
+          font-weight: 400;
+          font-style: normal;
+      }
+      .detail h6{
+          color: rgb(60 ,72,88);
+          font-size:20px;
+          line-height:32px;
+          margin: 0;
+          padding:0;
+          text-align:start;
+          font-weight: 400;
+      }
+
+      .detail p{
+          color:rgb(60,72,88);
+          font-size:14px;
+          line-height:21px;
+          vertical-align: baseline;
+          word-spacing: 0;
+          margin:0;
+          padding:0;
+          font-weight: 400;
+          text-align: start;
+
+      }
+
+      .view{
+          width:15%;
+          text-align: end;
+          display: flex;
+          flex-direction: column;
+         gap:50px;
+      }
+
+      .view div{
+        background-color:none;
+        color:rgba(0 ,0 ,0 ,0.54);
+        font-size:24px;
+        line-height:36px;
+        margin-left: 100px;
+        font-weight: 400;
+      }
+      .view div:hover{
+          border-radius: 50%;
+        padding:15px;
+          background-color:gray;
+       
+      }
+      .view p{
+          color:rgb(60 ,72,88);
+         
+          font-size:14px;
+          line-height:21px;
+          font-weight: 400;
+          margin: 0;
+          padding:0;
+          text-align: right;
+          text-decoration: none;
+          line-height:21px;
+
+         
+      }
+    .view a{
+        color:rgb(8,124,221);
+        background-color:rgba(8,124,221,0.08);
+        font-size: 14px;
+        line-height:24.5px;
+        padding:6px 8px;
+        font-weight: 500;
+        font-style: normal;
+        text-transform:uppercase;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
 
 
    </style>
@@ -97,21 +176,25 @@
 <body>
     
     <div class="container">
+
   <div class="image">
       <img src="https://assets.interntheory.com/creative/Internship_left_course_add_02.png" alt="">
   </div>
 
 
   <div class="internships">
+
+    <div class="int">
       <h4 class="text">All Internships</h4>
 
      <div class="internship_detail">
+
          <div class="im" >
              <img class="intern_logo" src="https://assets.interntheory.com/creative/logo.png" alt="">
         </div>
 
          <div class="detail">
-             <h3>Develop Your Skillset</h3>
+             <h6>Develop Your Skillset</h6>
              <p>Online skill Development Programs</p>
              <p>Taught by industry experts Internship</p>
              <p>Certified Courses</p>
@@ -121,70 +204,75 @@
 
          <div class="view">
              <p>4-6 weeks</p>
-             <i class="fas fa-share-alt"></i>
-             <p>UPGRADE SKILLS</p>
+             <i class="fas fa-share-alt "></i>
+          <a href="#">UPGRADE SKILLS</a>
          </div>
 
-     </div>
+         </div>
+         
+    
+
+
+   
 
 
 
-
-
-<!--
-     <div>
-         <div>
-             <img src="https://assets.interntheory.com/uploads/company/logos/195a271ba860ce6e2b1bd4a22ba94ba1dd17ca6d.jpg" alt="">
+     <div class="internship_detail">
+         <div class="im">
+             <img  class ="intern_logo" src="https://assets.interntheory.com/uploads/company/logos/195a271ba860ce6e2b1bd4a22ba94ba1dd17ca6d.jpg" alt="">
 
          </div>
-         <div>
-             <h4>Recruitment trainee/Recruitment Intern</h4>
+         <div class="detail">
+             <h6>Recruitment trainee/Recruitment Intern</h6>
              <p>Apollo Hospitals Enterprise Ltd</p>
              <p>Full Time Internship</p>
              <p>Human Resources</p>
              <p>Chennai</p>
              <p>stipend:<b>5000 per month</b></p>
          </div>
-         <div>
+         <div class="view">
              <p>4 weeks left</p> 
-             <i class="fas fa-share-alt"></i>
-             <p>view and apply</p>
+             <i class="fas fa-share-alt share"></i>
+            <a href="#">View and Apply</a>
          </div>
      </div>
 
+     
 
 
-     <div>
-         <div>
-             <img src="https://assets.interntheory.com/uploads/company/companylogos/3fb6d23aeb6fa476c2be721eb7ce4b9b41fb03fa/cc32f1ab4462bc548783997345bb81efc9349447com.jpg" alt="">
+     <div class="internship_detail">
+         <div class="im">
+             <img  class="intern_logo"src="https://assets.interntheory.com/uploads/company/companylogos/3fb6d23aeb6fa476c2be721eb7ce4b9b41fb03fa/cc32f1ab4462bc548783997345bb81efc9349447com.jpg" alt="">
          </div>
-         <div>
-             <h4>Content writer</h4>
+         <div class="detail">
+             <h6>Content writer</h6>
              <p>Leadstart Publishing</p>
              <p>Marketing</p>
              <p>Mumbai</p>
              <p>stipend:<b>5000 per month</b></p>
          </div>
         
-         <div>
+         <div class="view">
             <p>4 weeks left</p> 
             <i class="fas fa-share-alt"></i>
-            <p>view and apply</p>
+            <a href="#">View and Apply</a>
+
         </div>
      </div>
 
 
 
 
+     
 
 
-
-     <div>
-         <div>
-             <img src="https://assets.interntheory.com/uploads/company/logos/6f6aff1243c31aacc1c9c4006f6d958fd3b4b8ca.jpg" alt="">
+     <div class="internship_detail">
+         <div class="im">
+             <img class="intern_logo" src="https://assets.interntheory.com/uploads/company/logos/6f6aff1243c31aacc1c9c4006f6d958fd3b4b8ca.jpg" alt="">
          </div>
-         <div>
-             <h4>Finance & MIS</h4>
+
+         <div class="detail">
+             <h6>Finance & MIS</h6>
              <p>chiprex</p>
              <p>work From Home Internship</p>
              <p>finance</p>
@@ -192,22 +280,24 @@
              <p>stipend:<b>5000 per month</b></p>
          </div>
        
-         <div>
+         <div class="view">
             <p>4 weeks left</p> 
             <i class="fas fa-share-alt"></i>
-            <p>view and apply</p>
+            <a href="#">View and Apply</a>
         </div>
 
      </div>
 
 
+     
 
-     <div>
-     <div>
-         <img src="https://assets.interntheory.com/uploads/company/logos/85dd60d57b1fdf1614731cda46031ab5a041723a.jpg" alt="">
+     <div class="internship_detail">
+     <div class="im">
+         <img class="intern_logo" src="https://assets.interntheory.com/uploads/company/logos/85dd60d57b1fdf1614731cda46031ab5a041723a.jpg" alt="">
      </div>
-     <div>
-         <h4>Graphics Designer Intern</h4>
+
+     <div class="detail">
+         <h6>Graphics Designer Intern</h6>
          <p>Mtrench Enterprise</p>
          <p>Part Time,Work From Home Internship</p>
          <p>social Media</p>
@@ -215,10 +305,10 @@
          <p>stipend:<b>5000 per month</b></p>
      </div>
      
-     <div>
+     <div class="view">
         <p>4 weeks left</p> 
         <i class="fas fa-share-alt"></i>
-        <p>view and apply</p>
+        <a href="#">View and Apply</a>
     </div>
 
      </div>
@@ -226,12 +316,14 @@
 
 
 
-     <div>
-         <div>
-             <img src="https://assets.interntheory.com/uploads/company/companylogos/e6f02aae75ce2823b93a14df6ade2963f209da5a/53daf37baba0622db0a8981e4236e4d5c7d9963ecom.png" alt="">
+     <div class="internship_detail">
+
+         <div class="im">
+             <img  class="intern_logo"src="https://assets.interntheory.com/uploads/company/companylogos/e6f02aae75ce2823b93a14df6ade2963f209da5a/53daf37baba0622db0a8981e4236e4d5c7d9963ecom.png" alt="">
          </div>
-         <div>
-             <h4>Influencer Marketing Interns</h4>
+
+         <div class="detail">
+             <h6>Influencer Marketing Interns</h6>
              <p>Big Mouth Digital & Media</p>
              <p>Full Time Internship</p>
              <p>Digital Marketing</p>
@@ -239,21 +331,23 @@
              <p>stipend:<b>5000 per month</b></p>
          </div>
         
-         <div>
+         <div class="view">
             <p>4 weeks left</p> 
             <i class="fas fa-share-alt"></i>
-            <p>view and apply</p>
+            <a href="#">View and Apply</a>
         </div>
      </div>
 
 
+     
 
-     <div>
-         <div>
-             <img src="https://assets.interntheory.com/uploads/company/logos/9e2eb6502e408c69c24ca07a1e8aed2002089f9b.jpg" alt="">
+     <div class="internship_detail">
+         <div class="im">
+             <img  class="intern_logo"src="https://assets.interntheory.com/uploads/company/logos/9e2eb6502e408c69c24ca07a1e8aed2002089f9b.jpg" alt="">
          </div>
-         <div>
-             <h4>Marketing</h4>
+
+         <div class="detail">
+             <h6>Marketing</h6>
              <p>BEES SOFTWARE SOLUTIONS PRIVATE LIMITED</p>
              <P>Full Time ,Part Time Internship</P>
              <p>Business Development</p>
@@ -261,85 +355,92 @@
              <p>stipend:<b>5000 per month</b></p>
          </div>
         
-         <div>
+         <div class="view">
             <p>4 weeks left</p> 
             <i class="fas fa-share-alt"></i>
-            <p>view and apply</p>
+            <a href="#">View and Apply</a>
         </div>
      </div>
 
+     
 
 
-     <div>
-         <div>
-             <img src="https://assets.interntheory.com/uploads/company/companylogos/e3d2573e27043da1d5a4b383a94b9052da9ed8d7/99fb9a8e62de5f77951a7a3143eea0ca2730eed4com.jpg" alt="">
+     <div class="internship_detail">
+
+         <div class="im">
+             <img  class="intern_logo"src="https://assets.interntheory.com/uploads/company/companylogos/e3d2573e27043da1d5a4b383a94b9052da9ed8d7/99fb9a8e62de5f77951a7a3143eea0ca2730eed4com.jpg" alt="">
          </div>
-         <div>
-             <h4>Operations Internship In Real Estate</h4>
+
+         <div class="detail">
+             <h6>Operations Internship In Real Estate</h6>
              <p>The Property Exchange</p>
              <p>Full Time Internship</p>
              <p>Real Estate</p>
              <p>Mumbai</p>
              <p>stipend:<b>5000-15000 per month</b></p>
          </div>
-        <div>
+
+        <div class="view">
             <p>3 weeks left</p> 
             <i class="fas fa-share-alt"></i>
-            <p>view and apply</p>
+            <a href="#">View and Apply</a>
         </div>
      </div>
 
 
 
-     <div>
-         <div>
-             <img src="https://assets.interntheory.com/uploads/company/logos/2c0429b09f41022c79059b867acd96f845c2630d.jpg" alt="">
+     <div class="internship_detail">
+         <div class="im">
+             <img  class="intern_logo"src="https://assets.interntheory.com/uploads/company/logos/2c0429b09f41022c79059b867acd96f845c2630d.jpg" alt="">
          </div>
-         <div>
-             <h4>Content Writing</h4>
+
+         <div class="detail">
+             <h6>Content Writing</h6>
              <p>Creative Khichdi</p>
              <p>Full Time,Work From Home Internship</p>
              <p>content writing</p>
              <p>Mumbai</p>
              <p>stipend:<b>12000 per month</b></p>
          </div>
-        <div>
+
+        <div class="view">
             <p>3 weeks left</p> 
             <i class="fas fa-share-alt"></i>
-            <p>view and apply</p>
+            <a href="#">View and Apply</a>
         </div>
      </div>
 
+  
 
-
-     <div>
-         <div>
-             <img src="https://assets.interntheory.com/uploads/company/logos/7eb18458b78fecdbb421b213580d8680c8988904.jpg" alt="">
+     <div class="internship_detail">
+         <div class="im">
+             <img  class="intern_logo"src="https://assets.interntheory.com/uploads/company/logos/7eb18458b78fecdbb421b213580d8680c8988904.jpg" alt="">
          </div>
-         <div>
-             <h4>Social Media Intern 1</h4>
+         <div class="detail">
+             <h6>Social Media Intern 1</h4>
              <p>Cloud Clothing</p>
              <p>Work From Home Internship</p>
              <p>Social Media</p>
              <p>Chennai ,Bangalore,Delhi,...More</p>
              <p>stipend:<b>None</b></p>
          </div>
-        <div>
+        <div class="view">
             <p>3 weeks left</p> 
             <i class="fas fa-share-alt"></i>
-            <p>view and apply</p>
+            <a href="#">View and Apply</a>
         </div>
      </div>
 
 
+     
 
 
-     <div>
-         <div>
-             <img src="https://assets.interntheory.com/uploads/company/logos/065688aa89c54bd1bc90880a40968cfe33bf9729.jpg" alt="">
+     <div class="internship_detail">
+         <div class="im">
+             <img class="intern_logo" src="https://assets.interntheory.com/uploads/company/logos/065688aa89c54bd1bc90880a40968cfe33bf9729.jpg" alt="">
          </div>
-         <div>
-             <h4>Graphic Design</h4>
+         <div class="detail">
+             <h6>Graphic Design</h6>
              <p>75 Cheezay</p>
              <p>Full Time Internship</p>
              <p>Graphic Designing</p>
@@ -347,115 +448,127 @@
              <p>stipend:<b>12000 per month</b></p>
 
          </div>
-        <div>
+
+        <div class="view">
             <p>4 weeks left</p> 
             <i class="fas fa-share-alt"></i>
-            <p>view and apply</p>
+            <a href="#">View and Apply</a>
         </div>
      </div>
 
 
 
+     
 
 
-     <div>
-         <div>
-             <img src="https://assets.interntheory.com/uploads/company/logos/d6970dd61a98dead8d29988fd704894cc4cd79df.jpg" alt="">
+     <div class="internship_detail">
+         <div class="im">
+             <img  class="intern_logo"src="https://assets.interntheory.com/uploads/company/logos/d6970dd61a98dead8d29988fd704894cc4cd79df.jpg" alt="">
          </div>
-         <div>
-             <h4>Operations Intern</h4>
+         <div class="detail">
+             <h6>Operations Intern</h6>
              <p>Mentoria</p>
              <p>Full Time Internship</p>
              <p>Operations</p>
              <p>Mumbai</p>
              <p>stipend:<b>5000 per month</b></p>
          </div>
-        <div>
+        <div class="view">
             <p>3 weeks left</p> 
             <i class="fas fa-share-alt"></i>
-            <p>view and apply</p>
+            <a href="#">View and Apply</a>
         </div>
      </div>
 
 
+     
 
 
 
 
-     <div>
-         <div>
-             <img src="https://assets.interntheory.com/uploads/company/companylogos/62362fbf882221470f099d8d0a119df93ce19831/7e34b7356b30b3696d14fcab94c6e8989a42fd69com.jpg" alt="">
+     <div class="internship_detail">
+         <div class="im">
+             <img  class="intern_logo"src="https://assets.interntheory.com/uploads/company/companylogos/62362fbf882221470f099d8d0a119df93ce19831/7e34b7356b30b3696d14fcab94c6e8989a42fd69com.jpg" alt="">
          </div>
-         <div>
-             <h4>Human Resource associate</h4>
+
+         <div class="detail">
+             <h6>Human Resource associate</h6>
              <p>Laugh Out Loud Ventures</p>
              <p>woek From Home Internship</p>
              <p>Human Resources</p>
              <p>Mumbai ,Delhi, Bangalore, ...MORE</p>
              <p>stipend:<b>1000-5000 per month</b></p>
          </div>
-        <div>
+
+        <div class="view">
             <p>3 weeks left</p> 
             <i class="fas fa-share-alt"></i>
-            <p>view and apply</p>
+            <a href="#">View and Apply</a>
         </div>
      </div>
 
 
 
+     
 
-     <div>
 
-        <div>
-            <img src="https://assets.interntheory.com/uploads/company/logos/50b1b47d56df794e871fa64ec7a749067564bbc1.jpg" alt="">
+     <div class="internship_detail">
+
+        <div class="im">
+            <img  class="intern_logo"src="https://assets.interntheory.com/uploads/company/logos/50b1b47d56df794e871fa64ec7a749067564bbc1.jpg" alt="">
         </div>
-        <div>
-            <h4>Graphic Designer</h4>
+
+        <div class="detail">
+            <h6>Graphic Designer</h6>
             <p>fashionista</p>
             <p>Full Time Internship</p>
             <p>Branding</p>
             <p>Delhi</p>
             <p>stipend:<b>15000 per month</b></p>
         </div>
-        <div>
+
+        <div class="view">
             <p>3 weeks left</p> 
             <i class="fas fa-share-alt"></i>
-            <p>view and apply</p>
+            <a href="#">View and Apply</a>
         </div>
      </div>
 
 
 
 
+     
 
 
 
-     <div>
-         <div>
-             <img src="https://assets.interntheory.com/uploads/company/logos/5e04229a0c53e197e04cea60d23024df7c1f16b0.jpg" alt="">
+     <div class="internship_detail">
+         <div class="im">
+             <img class="intern_logo" src="https://assets.interntheory.com/uploads/company/logos/5e04229a0c53e197e04cea60d23024df7c1f16b0.jpg" alt="">
          </div>
-         <div>
-             <h4>Marketing</h4>
+
+         <div class="detail">
+             <h6>Marketing</h6>
              <p>Mohsin M</p>
              <p>Work From Home,Full Time Internship</p>
              <p>Business Development</p>
              <p>Bangalore,Kolkata,Delhi, ...MORE</p>
              <p>stipend:<b> 3000-15000 per month</b></p>
          </div>
-        <div>
+
+        <div class="view">
             <p>3 weeks left</p> 
             <i class="fas fa-share-alt"></i>
-            <p>view and apply</p>
+            <a href="#">View and Apply</a>
         </div>
      </div>
 
     
 
- --->
+ 
   </div>
 
   
-
+  </div>
 
 
 
