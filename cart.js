@@ -13,6 +13,7 @@ function showproduct() {
 
         let delBtn = document.createElement("button");
         delBtn.textContent = "X";
+        delBtn.setAttribute("id","cutitem");
         delBtn.onclick = function () {
             deleteFromCart(products);
         }
@@ -108,9 +109,30 @@ function applycode() {
         if (promoInput === "masai30") {
             var totalpay = document.getElementById("total")
             totalpay.textContent = afterpromo;
+            localStorage.setItem("total", JSON.stringify(afterpromo));
         } else {
             var totalpay = document.getElementById("total")
             totalpay.textContent = total_amount;
+            localStorage.setItem("total", JSON.stringify(afterpromo));
         }
     }
 }
+
+// modal js
+
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function () {
+    modal.style.display = "block";
+}
+span.onclick = function () {
+    modal.style.display = "none";
+}
+function validate() {
+    console.log("Yes")
+}
+
+var payable_money=document.getElementById("money");
+ 
+payable_money.innerHTML="₹"+JSON.parse(localStorage.getItem("total"));

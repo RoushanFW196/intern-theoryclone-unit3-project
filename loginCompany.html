@@ -13,10 +13,14 @@
     </style>
 </head>
 <body>
+
+    <nav id="navbar"></nav>
     <div id="loginformstr">
-
-
+    <!-- code injected by javascript -->
     </div>
+   
+    <div id="footer"></div>
+
 </body>
 </html>
 <script type="module">
@@ -28,3 +32,21 @@
     document.getElementById('span').textContent='SIGNIN WITH LINKDIN'
     validation("companyDetail")
     </script>
+
+
+<script type="module">
+
+    import navbar from './component/navbar.js'
+  let nav_div = document.getElementById('navbar');
+  nav_div.innerHTML = navbar();
+
+  </script>
+
+<script type="module">
+    import footer from './component/footer.js'
+ let footer_div=document.getElementById('footer');
+    footer_div.innerHTML = footer();
+ 
+ 
+ 
+ </script>
