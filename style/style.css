@@ -77,6 +77,13 @@ img{
    display: none;
 }  */
 /* 1st div container */
+
+   #hamburgerdiv {
+     background-color:blue;
+     width: 400px;
+     height:900px;
+     visibility: hidden;
+   }
 #first-container{
   margin: 0px;
   margin-top:0px;
