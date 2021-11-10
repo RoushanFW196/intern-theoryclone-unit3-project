@@ -297,18 +297,20 @@ border-bottom: 2px solid blue;
 }
 /* 3rd div - internship */
 #workExp_container{
-  padding: 0px 10%;
   width: 100%;
+  margin:auto;
+  justify-content: center;
+  text-align: center;
   background-color:#F7FCFE;
+  padding-bottom: 80px;
 }
-#workExp_container h2{
-
+#workExp_container h5{
     font-size: 30px;
     text-align: center;
     font-weight: 700;
     text-transform: uppercase;
-    padding-top: 80px;
-    padding-bottom: 20px;
+    padding-top: 70px;
+    padding-bottom: 40px;
     color: rgba(0, 0, 0, 0.87);
     line-height: 1.33;
     letter-spacing: 0em;
@@ -317,62 +319,60 @@ border-bottom: 2px solid blue;
     overflow-wrap: break-word;
 }
 #workExp_container b{
-    color: red;
-  font-size: 30px;
-  text-align: center;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding-top: 80px;
-  padding-bottom: 20px;
-  color: rgba(0, 0, 0, 0.87);
-  line-height: 1.33;
-  letter-spacing: 0em;
-  margin-top: 40px;
-  display: block;
-  overflow-wrap: break-word;
-}
-#workExp_container b{
   color: red;
 
 }
 #internship{
+  margin: auto 150px;
+  padding:0;
   display: grid;
-  grid-template-columns: repeat(4, 25%);
-  gap: 0px;
-  padding-bottom: 60px;
+  grid-template-columns: repeat(4, 24.5%);
+  grid-gap: 10px;
 }
 #internship img {
-  height: 180px;
+  width: 100%;
+  height: 160px;
   border: 1px solid rgb(238, 238, 238);
   border-radius: 4px;
 }
 /* 4th div - course */
 #course_container{
-  padding: 0px 11%;
   width: 100%;
-  height: 400px;
+  margin:auto;
+  justify-content: center;
+  text-align: center;
+  height: 450px;
   background-color:#EEEEEE;
 }
-#course_container h2{
-  font-size: 30px;
+#course{
+  margin:auto 120px;
+  justify-content: center;
   text-align: center;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding-top: 80px;
-  padding-bottom: 20px;
-  color: rgba(0, 0, 0, 0.87);
-  line-height: 1.33;
-  letter-spacing: 0em;
-  display: block;
-  overflow-wrap: break-word;
+  height: 50%;
+  display:grid;
+  grid-gap: 20px;
+  grid-template-columns: 30% 30% 30%;
 }
+#course_container h5{
+  font-size: 35px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    color: rgba(0, 0, 0, 0.87);
+    line-height: 1.33;
+    letter-spacing: 0em;
+    display: block;
+    overflow-wrap: break-word;
+  }
 #course_container span{
   color: red;
 }
 #course div{
-  width: 330px;
-  height: 170px;
-  margin: 5px 10px;
+  width: 100%;
+  height: 80%;
 }
 #coursebox1{
   float: left;
@@ -457,13 +457,6 @@ border-bottom: 2px solid blue;
     font-style: italic;
     color: #6B6666;
   }
-
-  background-color:#EEEEEE;
-  height: 280px;
-  width: 100%;
-  position: relative;
-  padding: 50px;
-}
 #testimonial_innerdiv{
   display: flex;
   width: 70%;
