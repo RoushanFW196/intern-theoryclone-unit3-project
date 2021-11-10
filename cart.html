@@ -36,12 +36,66 @@
                 <input type="text" placeholder="coupon" id="text"><button id="promo">Go</button>
                 <br>
 
-                <button id="checkout">CHECKOUT</button>
+                <button id="myBtn" class="checkout">CHECKOUT</button>
+                <!-- <button id="myBtn">Open Modal</button> -->
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <!-- <p>Some text in the Modal..</p> -->
+                        <!-- start modal features -->
+                        <div id="main">
+                            <div id="content">
+                                <div id="head">
+                                    <div id="logo">
+                                        <img src="https://cdn.razorpay.com/logos/8BOCiNqJJB6Zfs_medium.jpg" />
+                                    </div>
+                                    <div id="heading">
+                                        <!-- <button onclick="location.href='cart.html'" id="cancel">X</button> -->
+                                        <h2>Intern Theory</h2>
+                                        <p>Purchase Description</p>
+                                        <div id="money">Rs. 10000</div>
+                                    </div>
+                                </div>
+                                <div id="language">
+                                    <h4>English</h4>
+                                </div>
+                                <div id="card_option">
+                                    <h5>Card Detail</h5>
+                                </div>
+                                <div id="new_card_box">
+                                    <div id="new_card_heading">
+                                        <h5>Add New Card</h5>
+                                    </div>
+                                    <div id="card_data">
+                                        <input type="number" id="cardNumber" placeholder="Card Number" />
+                                        <input type="text" id="exp" placeholder="MM/YY" />
+                                        <input type="text" id="cardName" placeholder="Card Holder's name" />
+                                        <input type="password" maxlength="3" id="cvv" placeholder="CVV" />
+                                    </div>
+                                </div>
+                                <div id="remember">
+                                    <input type="checkbox" />
+                                    <label>Remember Card</label>
+                                </div>
+                                <div id="pay_part">
+                                    <p id="payment" onclick="validate()">PAY</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
 
                 <P class="note">EMI Starting at ₹686/month</P>
             </div>
         </div>
     </div>
+
 
 </body>
 
