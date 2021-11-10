@@ -3,7 +3,7 @@ function afterLogin_navbar(){
     return  `
 
     <div id="left_div">
-        <a href=""><div id="humburger" ><img class="btn" src="https://static.thenounproject.com/png/703781-200.png"  /></div>
+        <a href="humblog.html"><div id="humburger" ><img class="btn" src="https://static.thenounproject.com/png/703781-200.png"  /></div>
         </a>
         <a href=""><div><img id="navbar_intern_logo"  src="https://assets.interntheory.com/creative/logo.png" /></div></a>
         
