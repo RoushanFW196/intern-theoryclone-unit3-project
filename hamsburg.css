@@ -5,6 +5,13 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+   #hamburgerdiv{
+       width: 300px;
+       height:900px;
+      
+   }
+ 
+
 .btn{
    
     top:15px;

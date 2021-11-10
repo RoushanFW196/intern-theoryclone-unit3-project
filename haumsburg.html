@@ -10,12 +10,20 @@
    </head>
    <body>
           
-       <div class="btn">
-         <span class="fa fa-bars"></span>
+     <nav id="navbar"></nav> 
+
+      
+         <!-- <div class="hbtn">
+         <span class="fa fa-bars "></span>
          <img src="https://assets.interntheory.com/creative/logo.png"/>
-       </div>
-       
+       </div>  -->
+
+        
          <nav class="sidebar">
+             <div class="btn">
+                <span class="fa fa-bars"></span>
+                <img src="https://assets.interntheory.com/creative/logo.png"/>
+              </div>  
          <ul>
              <li><a href="#"><i class="fas fa-home"></i><b>Home</b></a></li>
             <li><a href="#"><i class="fas fa-list"></i><b>Internship</b></a></li>
@@ -58,6 +66,7 @@
 
         </div>
 
+        
         <script>
             $('.btn').click(function(){
                 $(this).toggleClass("click");
@@ -74,5 +83,20 @@
                 $('nav ul .feat2-show').toggleClass("show2");
             });
         </script>
+
+<script type="module">
+
+    import navbar from './component/navbar.js'
+  let nav_div = document.getElementById('navbar');
+  nav_div.innerHTML = navbar();
+
+  </script>
+
+  
+
+
    </body>
 </html>
+
+
+ 

@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us|Intern Theory</title>
+      <link rel="stylesheet" href="contactus.css">
+
+</head>
+<body>
+    
+    <div id="navbar"></div>
+
+    <div id="contactus">
+
+        <div id="leftcontactdiv">
+            <h3>Contact</h3>
+            <p>Have something to say? Give us a Holler anyone of the ways below,and we'll get back within 24 hours. On a side note,like the rest around us, we have fallen victims to social Media. Feel free to get in touch on Facebook,linkedin or Instagram anytime! </p>
+               <div id="contact_info">
+                <input type="text" placeholder="Email Address" id="email">
+                <input type="number" placeholder="Mobile no" id="moble">
+              <input type="text" placeholder="Subject" id="subject">
+              <textarea placeholder=" Enter Message" id="message" cols="30" rows="5"></textarea>
+
+           </div>
+             <div>
+                <button id="submitmessage" >SUBMIT</button>
+
+             </div>
+
+              
+                    <div id="ftilwpicon">
+
+                        <a>
+                            <img src="https://coindoo.com/wp-content/uploads/2019/01/facebook-icon.png" alt="">
+                        </a>
+     <a>
+         <img src="https://th.bing.com/th/id/R.9a3a06f78cc0a8d79fce59e2de6da146?rik=nLAu3Z%2f0QUb%2fVw&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2fiynque%2fios7-style%2f1024%2fTwitter-icon.png&ehk=eD3Hc5yQAyP3AKPJoYHB8yeWKwKdaVAswR5kxmodex4%3d&risl=&pid=ImgRaw&r=0" alt="">
+     
+     </a>
+           <a href="#">
+               <img src="https://th.bing.com/th/id/OIP.JtmXSh_uyZBaTg1eXd-NtgHaHa?pid=ImgDet&rs=1" alt="">
+           </a>
+            
+           <a href="#">
+               <img src="https://th.bing.com/th/id/R.ef7c744be2f78c8dc1fd6c9ec2b22c33?rik=sa128jy3lFgTGA&riu=http%3a%2f%2fwww.northernlightspr.com%2fwp-content%2fuploads%2f2015%2f08%2fLinkedIn.png&ehk=WtYCQF7SDlWe7q876gDwMKqIoUoj%2b8g%2bMGm84pQDxUo%3d&risl=&pid=ImgRaw&r=0" alt="">
+           </a>
+           <a href="#">
+               <img src="https://d.ibtimes.co.uk/en/full/1434918/whatsapp-voice-call-iphone.jpg?w=400" alt="">
+           </a>
+           </div>
+
+                   <div class="ftilwp">
+          <p>OR</p>
+          <p>call:+91 81047 73673</p>
+        
+                </div>
+        </div>
+
+
+        <div id="rightcontactdiv">
+            <img src="https://lh3.googleusercontent.com/proxy/0-JV2BMXmqE2TGQXhTcUgKlCl8-M3bS9Zl5Tff3Ogjk8cb0XC1xM6GaJ6KrfNQd71fwnjZuUdW9zWgJCo6vaElmBCgx2q9uNcEBCNd41XIQCu35Uw1rEA_FjWsPmAzsec9Ht_XrblV4uMRiWeuxftriaW0W0bOXFTX3q" alt="">
+        </div>
+           
+    </div>
+
+
+     <div id="footer"></div>
+  
+
+     <script type="module">
+
+        import navbar from './component/navbar.js'
+      let nav_div = document.getElementById('navbar');
+      nav_div.innerHTML = navbar();
+    
+      </script>
+    
+      <script type="module">
+       import footer from './component/footer.js'
+    let footer_div=document.getElementById('footer');
+       footer_div.innerHTML = footer();
+   </script>    
+
+
+</body>
+</html>

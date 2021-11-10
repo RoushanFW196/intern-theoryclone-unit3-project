@@ -2,7 +2,7 @@ function navbar(){
 
     return  `
 
-    <div id="humburger" ><img class="btn" src="https://static.thenounproject.com/png/703781-200.png" /></div>
+    <img id="hamburger"  src="https://image.flaticon.com/icons/png/512/1828/1828859.png"  />
     <img id="navbar_intern_logo"  src="https://assets.interntheory.com/creative/logo.png" />
     <button id="signin"><a href="loginstudent.html">SIGN IN</a></button>
     <a id="cart_logo" href="cart.html">
