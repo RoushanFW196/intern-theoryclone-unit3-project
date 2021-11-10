@@ -148,10 +148,10 @@ function validate() {
         alert("payment Successful");
 
         setTimeout(function () {
-
             window.location.href = "courses.html";
         }, 2000);
-
+        // window.localStorage.clear();
+        localStorage.removeItem('coursecart')
     } else {
         alert("your card is details wrong")
     }
