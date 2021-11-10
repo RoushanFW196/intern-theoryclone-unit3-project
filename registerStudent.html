@@ -40,6 +40,7 @@
 </head>
 
 <body>
+    <nav id="navbar"></nav>
     <div class="login">
         <div class="inner-box">
             <div>
@@ -99,6 +100,8 @@
             </div>
         </div>
     </div>
+
+      <div id="footer"></div>
 </body>
 </html>
 <script>
@@ -146,4 +149,21 @@
     //    console.log(studentDetail)
 
     } 
+</script>
+
+<script type="module">
+
+    import navbar from './component/navbar.js'
+  let nav_div = document.getElementById('navbar');
+  nav_div.innerHTML = navbar();
+
+  </script>
+
+  <script type="module">
+   import footer from './component/footer.js'
+let footer_div=document.getElementById('footer');
+   footer_div.innerHTML = footer();
+
+
+
 </script>

@@ -6,12 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Internships and Online Courses for College Students | Intern Theory</title>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="hamburger.css">
+
 </head>
 <body>
     <!-- nav bar using import export fuctionality -->
 
    <nav id="navbar"></nav>
+
    <!-- 1st div -->
+
+
+     <!-- <div id="hamburgerdiv">
+        <div class="btn">
+            <span class="fa fa-bars"></span>
+            <img src="https://assets.interntheory.com/creative/logo.png"/>
+          </div> -->
+
+   <!-- <nav class="sidebar">
+    <ul>
+        <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+       <li><a href="#"><i class="fas fa-list"></i>Internship</a></li>
+       <li><a href="#"><i class="fas fa-business-time"></i>Jobs</a></li>
+       <li><a href="#"><i class="fas fa-align-justify"></i> Post Internship</a></li>
+       <li>
+           
+           <a href="#" class="feat-btn"><i class="fas fa-file"></i>Courses
+               <span class="fas fa-caret-down first"></span>
+           </a>
+           <ul class="feat-show">
+               <li><a href="#">Online Courses</a></li>
+               <li><a href="#">Class room Training</a></li>
+           </ul>
+       </li>
+       <li><a href="#"><i class="fas fa-phone-alt"></i>Contact us</a></li>
+       <div class="m"></div>
+       <li>
+           <a href="#" class="feat1-btn"> <i class="fas fa-grip-lines"></i>Register
+               <span class="fas fa-caret-down"></span>
+           </a>
+           <ul class="feat1-show">
+               <li><a href="#">Student</a></li>
+               <li><a href="#">Company</a></li>
+           </ul>
+       </li>
+       
+       <li>
+           <a href="#" class="feat2-btn"><i class="fas fa-user"></i>login
+               <span class="fas fa-caret-down"></span>
+           </a>
+           <ul class="feat2-show">
+               <li><a href="#">Student</a></li>
+               <li><a href="#">Company</a></li>
+           </ul>
+       </li>
+   </ul>  
+      
+   </nav>
+   </div>
+   -->
+
+ 
+
+ <!---- 1st div-->
+
 
         <div id="first-container">
             <div id="change-opacity">
@@ -245,7 +303,7 @@
                     </div>
                 </div>
         </div>
-    
+     
         
        </div>
        
@@ -259,5 +317,44 @@
       import navbar from './component/navbar.js'
     let nav_div = document.getElementById('navbar');
     nav_div.innerHTML = navbar();
+
+    </script>
+<!-- 
+    <script type="module">
+//      import footer from './component/footer.js'
+// let footer_div=document.getElementById('footer')
+//      footer_div.innerHTML = footer();
+
+
+
+     document.getElementById('hamburger').addEventListener('click',function(){
+      
+      document.getElementById('hamburgerdiv').style.visibility="visible";
+    //console.log("afshdsgd")
+     }) -->
+
+</script>
+
+<script>
+    $('.btn').click(function(){
+        $(this).toggleClass("click");
+        $('.sidebar').toggleClass("show");
+    });
+
+    $('.feat-btn').click(function(){
+        $('nav ul .feat-show').toggleClass("show");
+    });
+    $('.feat1-btn').click(function(){
+        $('nav ul .feat1-show').toggleClass("show1");
+    });
+    $('.feat2-btn').click(function(){
+        $('nav ul .feat2-show').toggleClass("show2");
+    });
+
+   
+
+
+
+
 
 </script>

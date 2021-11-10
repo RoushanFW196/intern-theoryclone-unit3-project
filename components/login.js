@@ -60,4 +60,4 @@ function loginForm(x,y,z,a){
 </div>`
 }
 
-export default loginForm
+export default loginForm;

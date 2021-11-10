@@ -150,6 +150,7 @@
 </head>
 
 <body>
+      <nav id="navbar"></nav>
     <div class="container">
         <div style="display: block; height: 124rem; width: 50%; ">
             <article class="article-1">
@@ -355,6 +356,10 @@
         </div>
 
     </div>
+    <div id="footer"></div>
+
+
+
 </body>
 
 </html>
@@ -391,3 +396,20 @@
     }
 
 </script>
+
+<script type="module">
+
+    import navbar from './component/navbar.js'
+  let nav_div = document.getElementById('navbar');
+  nav_div.innerHTML = navbar();
+
+  </script>
+
+<script type="module">
+    import footer from './component/footer.js'
+ let footer_div=document.getElementById('footer');
+    footer_div.innerHTML = footer();
+ 
+ 
+ 
+ </script>

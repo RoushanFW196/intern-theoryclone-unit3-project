@@ -17,4 +17,4 @@ function validation(x){
 });
 }
 
-export default validation
+export default validation;

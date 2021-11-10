@@ -15,13 +15,15 @@
 </head>
 
 <body>
+    <nav id="navbar"></nav>
+    
     <form action="" onsubmit=""> </form>
-    <div id="loginformstr">
-
-    </div>
+    <div id="loginformstr"></div>
+    <div id="footer"></div>
 </body>
 
 </html>
+
 <script type="module">
     import loginForm from './components/login.js'
     import validation from './script/loginUser.js'
@@ -29,4 +31,21 @@
     document.getElementById('loginformstr').innerHTML = loginForm("company", 'interns', "loginCompany.html", "registerStudent.html")
     
     validation("studentDetail")
+</script>
+
+<script type="module">
+
+    import navbar from './component/navbar.js'
+  let nav_div = document.getElementById('navbar');
+  nav_div.innerHTML = navbar();
+
+  </script>
+
+  <script type="module">
+   import footer from './component/footer.js'
+let footer_div=document.getElementById('footer');
+   footer_div.innerHTML = footer();
+
+
+
 </script>

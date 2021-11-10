@@ -1,85 +1,91 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  box-sizing: border-box;
 }
-
 a{
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 img{
-    cursor: pointer;
+  cursor: pointer;
 }
-
-
 /* nav bar */
-
-nav{
-    width: 100%;
-    height: 70px;
-    background-color: white;
-    position: fixed;
-    top: 0px;
-    margin: 0px;
-    z-index: 10;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+#navbar{
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  margin: 0px;
+  z-index: 10;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 #hamburger {
-    width: 35px;
-    height: 35px;
-    margin:15px;
-    padding: 9px;
+  width: 35px;
+  height: 35px;
+  margin:15px;
+  padding: 9px;
 }
 #hamburger:hover {
-    background-color: rgb(185, 181, 181);
-    border-radius: 50%;
+  background-color: rgb(185, 181, 181);
+  border-radius: 50%;
 }
-#logo {
-    height: 45px;
-    margin-left: 5px;
+#navbar_intern_logo {
+  height: 45px;
+  margin-left: 5px;
 }
-
-#cart_logo {
-    float: right;
-    width: 40px;
-    height: 40px;
-    margin-top: 13px;
-    margin-right: 10px;
-    padding: 8px;
+#cart_logo img{
+  float: right;
+  width: 40px;
+  height: 40px;
+  margin-top: 13px;
+  margin-right: 10px;
+  padding: 8px;
 }
 #cart_logo:hover {
-    background-color: rgb(185, 181, 181);
-    border-radius: 50%;
-    
+  background-color: rgb(185, 181, 181);
+  border-radius: 50%;
 }
-button {
-    background-color: red;
-    padding: 10px;
-    float: right;
-    width: 100px;
-    border-radius: 5px;
-    margin: 15px;
-    border: 0;
-    color: white;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+#signin {
+  background-color: red;
+  padding: 10px;
+  float: right;
+  width: 100px;
+  border-radius: 5px;
+  margin: 15px;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-button:hover {
-    background-color: rgb(94, 2, 2);
+  #signin:hover {
+  background-color: rgb(94, 2, 2);
 }
-
+/* nav next bar */
+/* #nav_next{
+  width: 100%;
+  height: 3%;
+  background-color:red;
+  position: fixed;
+  top: 60px;
+  margin: 0px;
+  z-index: 10;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   display: none;
+}  */
 /* 1st div container */
-
 #first-container{
-    margin: 0px;
-    height: 445px;
-    width: 100%;
-    background-image: url("https://assets.interntheory.com/creative/Homepage-Banner.png");
+  margin: 0px;
+  margin-top:0px;
+  height: 445px;
+  width: 100%;
+  background-image: url("https://assets.interntheory.com/creative/Homepage-Banner.png");
 }
 #change-opacity{
+
     height: 445px;
     width: 100%;
     background: rgb(68, 100, 120);
@@ -91,209 +97,212 @@ button:hover {
     padding: 0px 10px;
     background: #DF1E2E;
     font-weight: 800;
+
+  height: 445px;
+  width: 100%;
+  background: rgb(68, 100, 120);
+  opacity: 0.6;
+  position: static;
+}
+#change-opacity b {
+  color: #fff;
+  padding: 0px 10px;
+  background: #DF1E2E;
+  font-weight: 800;
+
 }
 #change-opacity h2{
-    line-height: 1.33;
-    text-align: center;
-    color: white;
-    padding-top: 150px;
-    z-index: 1;
+  line-height: 1.33;
+  text-align: center;
+  color: white;
+  padding-top: 150px;
+  z-index: 1;
 }
 #change-opacity p{
-    padding: 5px;
-    text-align: center;
-    color: white;
+  padding: 5px;
+  text-align: center;
+  color: white;
 }
 #inner_div{
-    background-color: #E0E2E3;
-    padding: 30px 20px;
-    position: sticky;
-    top: 0px;
-    z-index: 1;
-    border-radius: 9px;
-    margin-top: 27px;
-    margin-left: 60px;
-    margin-right: 60px;
+  background-color: #E0E2E3;
+  padding: 30px 20px;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  border-radius: 9px;
+  margin-top: 27px;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 #divider {
-    width: calc(100% + 8px);
-    margin: -4px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
+  width: calc(100% + 8px);
+  margin: -4px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 #divider_1{
-    flex-grow: 0;
-    max-width: 65%;
-    margin: 0;
-    box-sizing: border-box;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
+  flex-grow: 0;
+  max-width: 65%;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 #cities{
-    width: 250px;
-     padding:8px; 
-     margin-right: 10px;
+  width: 250px;
+   padding:8px;
+   margin-right: 10px;
+  font-size: 18px;
+   border: none;
+   background: none;
+  border-bottom: 2px solid #818384;
+}
+#cities:hover{
+  border-bottom: 2px solid black;
+}
+#cities:focus{
+outline: none;
+border-bottom: 2px solid blue;
+}
+#type{
+  width: 240px;
+   padding: 8px;
+    margin-right: 10px;
+     font-size: 18px;
+     background: none;
+     border: none;
+     border-bottom: 2px solid #818384;
+}
+#type:hover{
+  border-bottom: 2px solid black;
+}
+#type:focus{
+  outline: none;
+  border-bottom: 2px solid blue;
+}
+#Preference{
+  width: 250px;
+   padding: 8px;
     font-size: 18px;
      border: none;
      background: none;
-    border-bottom: 2px solid #818384; 
-}
-#cities:hover{
-    border-bottom: 2px solid black; 
-}
-#cities:focus{
-  outline: none;
-  border-bottom: 2px solid blue; 
-}
-#type{
-    width: 240px;
-     padding: 8px;
-      margin-right: 10px;
-       font-size: 18px;
-       background: none;
-       border: none; 
-       border-bottom: 2px solid #818384;
-}
-#type:hover{
-    border-bottom: 2px solid black; 
-}
-#type:focus{
-    outline: none;
-    border-bottom: 2px solid blue; 
-  }
-#Preference{
-    width: 250px;
-     padding: 8px;
-      font-size: 18px;
-       border: none;
-       background: none;
-        border-bottom: 2px solid #818384;
+      border-bottom: 2px solid #818384;
 }
 #Preference:hover{
-    border-bottom: 2px solid black; 
+  border-bottom: 2px solid black;
 }
 #Preference:focus{
-    outline: none;
-    border-bottom: 2px solid blue; 
-  }
+  outline: none;
+  border-bottom: 2px solid blue;
+}
 #divider_2{
-    flex-grow: 0;
-    max-width: 40%;
-    margin: 0;
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
+  flex-grow: 0;
+  max-width: 40%;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 #sec1{
-    padding-top:15px ;
-    padding-right: 10px;
+  padding-top:15px ;
+  padding-right: 10px;
 }
 #search{
-    width: 200px;
-     padding: 8px 10px 8px 15px; 
-     font-size: 18px; 
-     background: none;
-     border: none; 
-     border-bottom: 2px solid #818384;
+  width: 200px;
+   padding: 8px 10px 8px 15px;
+   font-size: 18px;
+   background: none;
+   border: none;
+   border-bottom: 2px solid #818384;
 }
 #search:hover{
-    border-bottom: 2px solid black; 
+  border-bottom: 2px solid black;
 }
 #search:focus{
-    outline: none;
-    border-bottom: 2px solid blue; 
-  }
+  outline: none;
+  border-bottom: 2px solid blue;
+}
 #sec2{
-    display: flex;
-    background-color: #ffffff;
+  display: flex;
+  background-color: #FFFFFF;
 }
 #sec3{
-    padding-right: 5px;
+  padding-right: 5px;
 }
 #srhbtn{
-    background-color: red;
-    padding: 8px 10px;
-    margin-top: 4px;
-    margin-bottom: 0px;
-    width: 100px;
-    border-radius: 5px;
-    border: 0;
-    color: white;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: red;
+  padding: 8px 10px;
+  margin-top: 4px;
+  margin-bottom: 0px;
+  width: 100px;
+  border-radius: 5px;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 #srhbtn:hover{
-    background-color: rgb(94, 2, 2);
+  background-color: rgb(94, 2, 2);
 }
-
 /* 2nd div */
-
 #sec_container {
-    background-color: #FFFFFF;
-    display: flex;
-    padding: 2.5% 3% 2.5% 3%;
+  background-color: #FFFFFF;
+  display: flex;
+  padding: 2.5% 3% 2.5% 3%;
 }
-
 #cont_left {
-    width: 50%;
-    height: 100px;
-    float: left;
-    text-align: center;
-    padding: 10% 80px 3% 2%;
+  width: 50%;
+  height: 100px;
+  float: left;
+  text-align: center;
+  padding: 10% 80px 3% 2%;
 }
 #cont_left span{
-    color: red;
+  color: red;
 }
 #cont_left hr{
-    margin: 10px 0px;
-    color:#DDDDDD;
-  
-
+  margin: 10px 0px;
+  color:#DDDDDD;
 }
 #cont_left h2 {
-    font-weight: 800;
-    font-size: 25px;
-    line-height: 37px;
-    color: rgba(0, 0, 0, 0.87);
-    margin: 0px;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 37px;
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0px;
 }
-
 #cont_left p {
-    font-weight: 400;
-    width: 90%;
-    font-size: 14px;
-    line-height: 21px;
-    color: #3c4858;
-    margin: 0px;
+  font-weight: 400;
+  width: 90%;
+  font-size: 14px;
+  line-height: 21px;
+  color: #3C4858;
+  margin: 0px;
 }
-
 .logobox {
-    width: 50%;
-    display: grid;
-    gap: 8px;
-    grid-template-columns: repeat(4, 130px);
-    height: 400px;
-    font-family: 'Times New Roman'-400;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
+  width: 50%;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(4, 130px);
+  height: 400px;
+  font-family: 'Times New Roman'-400;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
 }
-
-
 /* 3rd div - internship */
-
 #workExp_container{
-    
-    padding: 0px 10%;
-    width: 100%;
-    background-color:#F7FCFE;
+  padding: 0px 10%;
+  width: 100%;
+  background-color:#F7FCFE;
 }
 #workExp_container h2{
+
     font-size: 30px;
     text-align: center;
     font-weight: 700;
@@ -309,104 +318,105 @@ button:hover {
 }
 #workExp_container b{
     color: red;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 80px;
+  padding-bottom: 20px;
+  color: rgba(0, 0, 0, 0.87);
+  line-height: 1.33;
+  letter-spacing: 0em;
+  margin-top: 40px;
+  display: block;
+  overflow-wrap: break-word;
+}
+#workExp_container b{
+  color: red;
+
 }
 #internship{
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    gap: 0px;
-    padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  gap: 0px;
+  padding-bottom: 60px;
 }
 #internship img {
-    height: 180px;
-    border: 1px solid rgb(238, 238, 238);
-    border-radius: 4px;
+  height: 180px;
+  border: 1px solid rgb(238, 238, 238);
+  border-radius: 4px;
 }
-
 /* 4th div - course */
-
 #course_container{
-    padding: 0px 11%;
-    width: 100%;
-    height: 400px;
-    background-color:#EEEEEE;
+  padding: 0px 11%;
+  width: 100%;
+  height: 400px;
+  background-color:#EEEEEE;
 }
 #course_container h2{
-    font-size: 30px;
-    text-align: center;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding-top: 80px;
-    padding-bottom: 20px;
-    color: rgba(0, 0, 0, 0.87);
-    line-height: 1.33;
-    letter-spacing: 0em;
-    display: block;
-    overflow-wrap: break-word;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 80px;
+  padding-bottom: 20px;
+  color: rgba(0, 0, 0, 0.87);
+  line-height: 1.33;
+  letter-spacing: 0em;
+  display: block;
+  overflow-wrap: break-word;
 }
 #course_container span{
-    color: red;
+  color: red;
 }
 #course div{
-    width: 330px;
-    height: 170px;
-    margin: 5px 10px;
-  
+  width: 330px;
+  height: 170px;
+  margin: 5px 10px;
 }
-
 #coursebox1{
-
-    float: left;
-    background: url(https://assets.interntheory.com/creative/home-courses/Homepage-stock.jpg) center center / cover;
-
+  float: left;
+  background: url(https://assets.interntheory.com/creative/home-courses/Homepage-stock.jpg) center center / cover;
 }
-
 #coursebox2{
-    float: left;
-
-    background: url(https://assets.interntheory.com/creative/home-courses/Homepage-digital.jpg)center center / cover;
+  float: left;
+  background: url(https://assets.interntheory.com/creative/home-courses/Homepage-digital.jpg)center center / cover;
 }
-
 #coursebox3{
-    float: left;
-    background: url(https://assets.interntheory.com/creative/home-courses/Homepage-web.jpg)center center / cover;
+  float: left;
+  background: url(https://assets.interntheory.com/creative/home-courses/Homepage-web.jpg)center center / cover;
 }
-
 /* 5th div - growth*/
-
 #growth_container{
-    width: 100%;
-    height: 370px;
-    display: flex;
-    gap: 100px;
-    background-color: #FFFFFF;
-
+  width: 100%;
+  height: 370px;
+  display: flex;
+  gap: 100px;
+  background-color: #FFFFFF;
 }
-
 #imagetree {
-    background-color: rgba(0, 0, 0, 0);
-    width: 50%;
-    height: 100px;
-    padding-top: 30px;
-    padding-left: 250px;
-
+  background-color: rgba(0, 0, 0, 0);
+  width: 50%;
+  height: 100px;
+  padding-top: 30px;
+  padding-left: 250px;
 }
 #text_part span{
-    color: #E31E2E;
+  color: #E31E2E;
 }
 #text_part hr{
-    margin: 10px 0px;
-    color:#DDDDDD;
+  margin: 10px 0px;
+  color:#DDDDDD;
 }
 #text_part {
-    width: 50%;
-    height: 300px;
-    padding-top: 150px;
-    padding-right: 150px;
+  width: 50%;
+  height: 300px;
+  padding-top: 150px;
+  padding-right: 150px;
 }
-
-
 /* 6th div - testimonial */
 #testimonial{
+
     background-color:#EEEEEE;
     height: 280px;
     width: 100%;
@@ -447,62 +457,111 @@ button:hover {
     font-style: italic;
     color: #6B6666;
   }
-/* Last div -> footer */
 
-#footer{
-    width: 100%;
-    height: 30%;
-    background-color: #446478;
-    color: white;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 400;
+  background-color:#EEEEEE;
+  height: 280px;
+  width: 100%;
+  position: relative;
+  padding: 50px;
+}
+#testimonial_innerdiv{
+  display: flex;
+  width: 70%;
+  margin:auto;
+  padding: 30px;
+  background-color: #FFFFFF;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+#testimonial_innerdiv hr{
+  color: #DDDDDD;
+  width:0%;
+}
+#intern_img img{
+  border-radius: 50%;
+  padding: 10px 70px;
+}
+#intern_img h5 {
+  padding: 3px 60px;
+}
+#intern_img span{
+  padding: 3px 20px;
+}
+#intern_img{
+  width:30%;
+}
+#intern_text{
+width: 70%;
+padding-left: 20px;
+}
+#intern_text p{
+  font-style: italic;
+  color: #6B6666;
 }
 
+/* Last div -> footer */
+#footer{
+  width: 100%;
+  height: 30%;
+  background-color: #446478;
+  color: white;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
 #content {
-    padding: 1% 8%;
+  padding: 1% 8%;
 }
 #upper_part {
-    display: grid;
-    grid-template-columns: 10% 25% 25% 25%;
-    gap: 5%;
-    margin: auto;
+  display: grid;
+  grid-template-columns: 10% 25% 25% 25%;
+  gap: 5%;
+  margin: auto;
 }
 #detail {
-    display: grid;
-    grid-template-columns: repeat(8,10%);
-    gap: 2%;
-    padding-bottom: 5px;
-    border-bottom: 1px solid rgb(204, 200, 200);
+  display: grid;
+  grid-template-columns: repeat(8,10%);
+  gap: 2%;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgb(204, 200, 200);
 }
 #year {
-    text-align: center;
-    padding-top: 5px;
+  text-align: center;
+  padding-top: 5px;
 }
 #upper_part{
-    padding-top: 30px;
+  padding-top: 30px;
 }
-
 #lower_part{
-    padding-top: 40px;
+  padding-top: 40px;
 }
-
 #footer img {
-    width: 65%;
-    margin: 5px;
+  width: 65%;
+  margin: 5px;
 }
 #footer_image {
-    margin-top:30px;
-    padding-left:80px;
-    display: flex;
-    flex-direction: column;  
+  margin-top:30px;
+  padding-left:80px;
+  display: flex;
+  flex-direction: column;  
 }
 #detail{
-    display: flex;
-    padding-left: 50px;
-    text-align: center;
+  display: flex;
+  padding-left: 50px;
+  text-align: center;
 }
 .footer_text{
-    list-style: none;
-    padding: 3px 0px
+  list-style: none;
+  padding: 3px 0px
 }
+
+
+
+
+
+
+
+
+
+
+
