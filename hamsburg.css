@@ -48,7 +48,7 @@ i{
     width:300px;
     height: 100%;
     left:-350px;
-    background: blue;
+    background: white;
     transition: left 0.4s ease;
     padding: 30px;
     box-shadow: 0 3px 15px rgba(0,0,0,.4);
