@@ -6,90 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Internships and Online Courses for College Students | Intern Theory</title>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/afterLogin_navbar.css">
 
-    <link rel="stylesheet" href="./hamsburg.css">
       <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <style>
-        .navbar1{
-            display: flex;
-        }
-        .p{
-            margin-left: 65%;
-        }
 
-        
-    </style>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  
     </head>
 <body>
 
     <!-- nav bar using import export fuctionality -->
-
-
-
-    <div class="navbar1">
-
-         <div class="btn"> 
-            <span class="fa fa-bars"></span>
-            <img src="https://assets.interntheory.com/creative/logo.png"/>
-          </div>
-          <div class="p">
-          <button id="signin"><a href="loginstudent.html">SIGN IN</a></button>
-            <a id="cart_logo" href="cart.html">
-            <img src="https://image.flaticon.com/icons/png/512/4297/4297127.png"></a>
+    <nav id="afterLogin_navbar">
+        <div id="left_div" >
+            <div id="humburger" ><img class='btn' src="https://static.thenounproject.com/png/703781-200.png"  /></div>
+            <img id="navbar_intern_logo" src="https://assets.interntheory.com/creative/logo.png"/>
+        
+            
+                <div class="sidebar">
+                    
+                    <div id="left_div">
+                        <div id="humburger" ><img class='btn' src="https://static.thenounproject.com/png/703781-200.png"  /></div>
+                    
+                        <a href=""><div><img id="navbar_intern_logo"  src="https://assets.interntheory.com/creative/logo.png" /></div></a>
+                        
+                    </div>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-home"></i><b>Home</b></a></li>
+                       <li><a href="#"><i class="fas fa-list"></i><b>Internship</b></a></li>
+                       <li><a href="#"><i class="fas fa-business-time"></i><b>Jobs</b></a></li>
+                       <li><a href="#"><i class="fas fa-align-justify"></i> <b>Post Internship</b></a></li>
+                       <li>
+                           
+                        
+                           <a href="#" class="feat-btn"><i class="fas fa-file"></i><b>Courses</b>
+                               <span class="fas fa-caret-down first"></span>
+                           </a>
+                           <ul class="feat-show">
+                               <li><a href="#"><b>Online Courses</b></a></li>
+                               <li><a href="#"><b>Class room Training</b></a></li>
+                           </ul>
+                       </li>
+                       <li><a href="#"><i class="fas fa-phone-alt"></i><b>Contact us</b></a></li>
+                       <div class="m"></div>
+                       <li>
+                           <a href="#" class="feat1-btn"> <i class="fas fa-grip-lines"></i><b>Register</b>
+                               <span class="fas fa-caret-down"></span>
+                           </a>
+                           <ul class="feat1-show">
+                
+                            <li><a href="#"><b>Student</b></a></li>
+                               <li><a href="#"><b>Company</b></a></li>
+                           </ul>
+                       </li>
+                       
+                       <li>
+                           <a href="#" class="feat2-btn"><i class="fas fa-user"></i><b>login</b>
+                               <span class="fas fa-caret-down"></span>
+                           </a>
+                           <ul class="feat2-show">
+                               <li><a hre
+                                f="#"><b>Student</b></a></li>
+                               <li><a href="#"><b>Company</b></a></li>
+                           </ul>
+                       </li>
+                   </ul>  
+                      
         </div>
     </div>
-   <nav class="sidebar">
-    <ul>
-        <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
-       <li><a href="#"><i class="fas fa-list"></i>Internship</a></li>
-       <li><a href="#"><i class="fas fa-business-time"></i>Jobs</a></li>
-       <li><a href="#"><i class="fas fa-align-justify"></i> Post Internship</a></li>
-       <li>
-           
+    <div id="right_div">
         
-           <a href="#" class="feat-btn"><i class="fas fa-file"></i>Courses
-               <span class="fas fa-caret-down first"></span>
-           </a>
-           <ul class="feat-show">
-               <li><a href="#">Online Courses</a></li>
-               <li><a href="#">Class room Training</a></li>
-           </ul>
-       </li>
-       <li><a href="#"><i class="fas fa-phone-alt"></i>Contact us</a></li>
-       <div class="m"></div>
-       <li>
-           <a href="#" class="feat1-btn"> <i class="fas fa-grip-lines"></i>Register
-               <span class="fas fa-caret-down"></span>
-           </a>
-           <ul class="feat1-show">
+        <a href="cart.html"><div id="cart_logo" > <img src="https://iconape.com/wp-content/png_logo_vector/shopping-cart.png"  >
+        </div> </a>
 
-            <li><a href="#">Student</a></li>
-               <li><a href="#">Company</a></li>
-           </ul>
-       </li>
-       
-       <li>
-           <a href="#" class="feat2-btn"><i class="fas fa-user"></i>login
-               <span class="fas fa-caret-down"></span>
-           </a>
-           <ul class="feat2-show">
-               <li><a hre
-                f="#">Student</a></li>
-               <li><a href="#">Company</a></li>
-           </ul>
-       </li>
-   </ul>  
-      
-   </nav>
-   </div>
-
-
-
- 
-
-
-
+        <button id="signin"><a href="loginstudent.html">SIGN IN</a></button>
+            
+    </div> 
+    </nav>
 
  <!---- 1st div-->
 
@@ -354,9 +346,9 @@
       
       document.getElementById('hamburgerdiv').style.visibility="visible";
     //console.log("afshdsgd")
-     }) -->
+     })
 
-</script>
+</script> -->
 <script>
 $('.btn').click(function(){
     $(this).toggleClass("click");
@@ -372,7 +364,6 @@ $('.feat1-btn').click(function(){
 $('.feat2-btn').click(function(){
     $('nav ul .feat2-show').toggleClass("show2");
 });
-
 
 
 </script>
