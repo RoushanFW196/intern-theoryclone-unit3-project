@@ -5,11 +5,11 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-   #hamburgerdiv{
+   /* #hamburgerdiv{
        width: 300px;
        height:900px;
       
-   }
+   } */
  
 
 .btn{
@@ -35,8 +35,10 @@ i{
 .btn.click{
     left:260px; 
 }
+
 .btn span{
     color:black;
+    
     font-size: 20px;
     line-height: 45px;
 }
@@ -48,10 +50,12 @@ i{
     width:300px;
     height: 100%;
     left:-350px;
-    background: white;
+     background: white; 
+   top: 68px;
     transition: left 0.4s ease;
     padding: 30px;
     box-shadow: 0 3px 15px rgba(0,0,0,.4);
+    z-index:50;
 
 }
 
