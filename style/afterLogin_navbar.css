@@ -44,21 +44,7 @@
     height: 45px;
     margin-left: 5px;
 }
-#signin {
-    background-color: red;
-    padding: 10px;
-    float: right;
-    width: 100px;
-    border-radius: 5px;
-    margin: 15px;
-    border: 0;
-    color: white;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-#signin:hover {
-    background-color: rgb(94, 2, 2);
-}
+
 #user_icon img , #notify_icon img ,#cart_logo img {
     width: 25px;
     height: 25px;
