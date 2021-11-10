@@ -20,7 +20,7 @@ img{
   top: 0px;
   margin: 0px;
   z-index: 10;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 2px -1px rgb(0 0 0 / 20%);
 }
 
 #hamburger {
@@ -92,6 +92,19 @@ img{
   background-image: url("https://assets.interntheory.com/creative/Homepage-Banner.png");
 }
 #change-opacity{
+
+    height: 445px;
+    width: 100%;
+    background: rgb(68, 100, 120);
+    opacity: 0.6;
+    position: static;
+}
+#change-opacity b {
+    color: #fff;
+    padding: 0px 10px;
+    background: #DF1E2E;
+    font-weight: 800;
+
   height: 445px;
   width: 100%;
   background: rgb(68, 100, 120);
@@ -103,6 +116,7 @@ img{
   padding: 0px 10px;
   background: #DF1E2E;
   font-weight: 800;
+
 }
 #change-opacity h2{
   line-height: 1.33;
@@ -290,65 +304,82 @@ border-bottom: 2px solid blue;
 }
 /* 3rd div - internship */
 #workExp_container{
-  padding: 0px 10%;
   width: 100%;
-  background-color:#F7FCFE;
-}
-#workExp_container h2{
-  font-size: 30px;
+  margin:auto;
+  justify-content: center;
   text-align: center;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding-top: 80px;
-  padding-bottom: 20px;
-  color: rgba(0, 0, 0, 0.87);
-  line-height: 1.33;
-  letter-spacing: 0em;
-  margin-top: 40px;
-  display: block;
-  overflow-wrap: break-word;
+  background-color:#F7FCFE;
+  padding-bottom: 80px;
+}
+#workExp_container h5{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    color: rgba(0, 0, 0, 0.87);
+    line-height: 1.33;
+    letter-spacing: 0em;
+    margin-top: 40px;
+    display: block;
+    overflow-wrap: break-word;
 }
 #workExp_container b{
   color: red;
+
 }
 #internship{
+  margin: auto 150px;
+  padding:0;
   display: grid;
-  grid-template-columns: repeat(4, 25%);
-  gap: 0px;
-  padding-bottom: 60px;
+  grid-template-columns: repeat(4, 24.5%);
+  grid-gap: 10px;
 }
 #internship img {
-  height: 180px;
+  width: 100%;
+  height: 160px;
   border: 1px solid rgb(238, 238, 238);
   border-radius: 4px;
 }
 /* 4th div - course */
 #course_container{
-  padding: 0px 11%;
   width: 100%;
-  height: 400px;
+  margin:auto;
+  justify-content: center;
+  text-align: center;
+  height: 450px;
   background-color:#EEEEEE;
 }
-#course_container h2{
-  font-size: 30px;
+#course{
+  margin:auto 120px;
+  justify-content: center;
   text-align: center;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding-top: 80px;
-  padding-bottom: 20px;
-  color: rgba(0, 0, 0, 0.87);
-  line-height: 1.33;
-  letter-spacing: 0em;
-  display: block;
-  overflow-wrap: break-word;
+  height: 50%;
+  display:grid;
+  grid-gap: 20px;
+  grid-template-columns: 30% 30% 30%;
 }
+#course_container h5{
+  font-size: 35px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    color: rgba(0, 0, 0, 0.87);
+    line-height: 1.33;
+    letter-spacing: 0em;
+    display: block;
+    overflow-wrap: break-word;
+  }
 #course_container span{
   color: red;
 }
 #course div{
-  width: 330px;
-  height: 170px;
-  margin: 5px 10px;
+  width: 100%;
+  height: 80%;
 }
 #coursebox1{
   float: left;
@@ -392,12 +423,47 @@ border-bottom: 2px solid blue;
 }
 /* 6th div - testimonial */
 #testimonial{
-  background-color:#EEEEEE;
-  height: 280px;
-  width: 100%;
-  position: relative;
-  padding: 50px;
-}
+
+    background-color:#EEEEEE;
+    height: 280px;
+    width: 100%;
+    position: relative;
+    padding: 50px;
+  }
+  #testimonial_innerdiv{
+    display: flex;
+    width: 70%;
+    margin:auto;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+  #testimonial_innerdiv hr{
+    color: #DDDDDD;
+    width:0%;
+  }
+  #intern_img img{
+    border-radius: 50%;
+    padding: 10px 70px;
+  }
+  #intern_img h5 {
+    padding: 3px 60px;
+  }
+  #intern_img span{
+    padding: 3px 20px;
+  }
+  #intern_img{
+    width:30%;
+  }
+  #intern_text{
+  width: 70%;
+  padding-left: 20px;
+  }
+  #intern_text p{
+    font-style: italic;
+    color: #6B6666;
+  }
 #testimonial_innerdiv{
   display: flex;
   width: 70%;
@@ -432,6 +498,7 @@ padding-left: 20px;
   font-style: italic;
   color: #6B6666;
 }
+
 /* Last div -> footer */
 #footer{
   width: 100%;
