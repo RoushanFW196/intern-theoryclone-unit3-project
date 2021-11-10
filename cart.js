@@ -130,7 +130,26 @@ span.onclick = function () {
     modal.style.display = "none";
 }
 function validate() {
-    console.log("Yes")
+   
+
+    var cardnumber = document.getElementById("cardNumber").value;
+    var expiry = document.getElementById("exp").value;
+    var cardname = document.getElementById("cardName").value;
+    var Cvv = document.getElementById("cvv").value;
+
+   // console.log(cardnumber, expiry, cardname, Cvv);
+
+    if (cardnumber.length == 16 && expiry.length == 4 && cardname != "" && Cvv.length == 3) {
+        alert("payment Successful");
+
+        setTimeout(function () {
+            window.location.href = "index.html";
+        }, 2000);
+        // window.localStorage.clear();
+        localStorage.removeItem('coursecart')
+    } else {
+        alert("your card is details wrong")
+    }
 }
 
 var payable_money=document.getElementById("money");
