@@ -142,7 +142,7 @@ function validate() {
     var cardname = document.getElementById("cardName").value;
     var Cvv = document.getElementById("cvv").value;
 
-    console.log(cardnumber, expiry, cardname, Cvv);
+    // console.log(cardnumber, expiry, cardname, Cvv);
 
     if (cardnumber.length == 16 && expiry.length == 4 && cardname != "" && Cvv.length == 3) {
         alert("payment Successful");
