@@ -17,7 +17,9 @@
     transition: left 0.4s ease;
     display: flex;
     padding:3px;
-    gap:20px
+    gap:20px;
+    position:static;
+    
 }
 i{
     padding-right:40px;
@@ -36,12 +38,13 @@ i{
 }
 .sidebar{
     position: fixed;
-    width:350px;
+    width:300px;
     height: 100%;
     left:-350px;
     background: white;
     transition: left 0.4s ease;
     padding: 30px;
+    box-shadow: 0 3px 15px rgba(0,0,0,.4);
 
 }
 
@@ -84,10 +87,7 @@ nav ul li a{
 
 }
 nav ul li a:hover{
-   
     background: rgb(212, 210, 210);
-    border-left-color: cyan;
-
 }
 nav ul ul{
     position:static;
@@ -124,6 +124,6 @@ nav ul li a span{
 }
 nav ul li a span:hover{
     transform: translateY(-50%) rotate(-180deg);
-    color: cyan;
+  
 }
 
