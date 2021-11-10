@@ -86,7 +86,7 @@ button:hover {
     opacity: 0.6;
     position: static;
 }
-#change-opacity span {
+#change-opacity b {
     color: #fff;
     padding: 0px 10px;
     background: #DF1E2E;
@@ -307,7 +307,7 @@ button:hover {
     display: block;
     overflow-wrap: break-word;
 }
-#workExp_container span{
+#workExp_container b{
     color: red;
 }
 #internship{
@@ -406,15 +406,14 @@ button:hover {
 
 
 /* 6th div - testimonial */
-
 #testimonial{
     background-color:#EEEEEE;
     height: 280px;
     width: 100%;
     position: relative;
     padding: 50px;
-}
-#testimonial_innerdiv{
+  }
+  #testimonial_innerdiv{
     display: flex;
     width: 70%;
     margin:auto;
@@ -422,35 +421,32 @@ button:hover {
     background-color: #FFFFFF;
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
-}
-#testimonial_innerdiv hr{
+  }
+  #testimonial_innerdiv hr{
     color: #DDDDDD;
     width:0%;
-    
-}
-#intern_img img{
+  }
+  #intern_img img{
     border-radius: 50%;
     padding: 10px 70px;
-}
-#intern_img h5 {
+  }
+  #intern_img h5 {
     padding: 3px 60px;
-}
-#intern_img span{
+  }
+  #intern_img span{
     padding: 3px 20px;
-}
-#intern_img{
+  }
+  #intern_img{
     width:30%;
-    
-}
-#intern_text{
-width: 70%;
-padding-left: 20px;
-}
-#intern_text p{
+  }
+  #intern_text{
+  width: 70%;
+  padding-left: 20px;
+  }
+  #intern_text p{
     font-style: italic;
     color: #6B6666;
-}
-
+  }
 /* Last div -> footer */
 
 #footer{
