@@ -152,7 +152,8 @@ function validate() {
     span.onclick = function () {
         modal.style.display = "none";
     }
-    function validate() {
+}
+    function validat() {
 
 
         var cardnumber = document.getElementById("cardNumber").value;
