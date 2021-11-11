@@ -46,6 +46,7 @@
              
     
                 #contact_info input {
+                  outline: none;
                     width: 200%;
                     height:25px;
                     font-size: 16px;
