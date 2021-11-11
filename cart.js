@@ -13,7 +13,7 @@ function showproduct() {
 
         let delBtn = document.createElement("button");
         delBtn.textContent = "X";
-        delBtn.setAttribute("id","cutitem");
+        delBtn.setAttribute("id", "cutitem");
         delBtn.onclick = function () {
             deleteFromCart(products);
         }
@@ -141,56 +141,56 @@ span.onclick = function () {
 
 function validate() {
 
-// modal js
+    // modal js
 
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("close")[0];
-btn.onclick = function () {
-    modal.style.display = "block";
-}
-span.onclick = function () {
-    modal.style.display = "none";
-}
-function validate() {
-   
-
-    var cardnumber = document.getElementById("cardNumber").value;
-    var expiry = document.getElementById("exp").value;
-    var cardname = document.getElementById("cardName").value;
-    var Cvv = document.getElementById("cvv").value;
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+    function validate() {
 
 
-    // console.log(cardnumber, expiry, cardname, Cvv);
+        var cardnumber = document.getElementById("cardNumber").value;
+        var expiry = document.getElementById("exp").value;
+        var cardname = document.getElementById("cardName").value;
+        var Cvv = document.getElementById("cvv").value;
 
-   // console.log(cardnumber, expiry, cardname, Cvv);
+
+        // console.log(cardnumber, expiry, cardname, Cvv);
+
+        // console.log(cardnumber, expiry, cardname, Cvv);
 
 
-    if (cardnumber.length == 16 && expiry.length == 4 && cardname != "" && Cvv.length == 3) {
-        alert("payment Successful");
+        if (cardnumber.length == 16 && expiry.length == 4 && cardname != "" && Cvv.length == 3) {
+            alert("payment Successful");
 
-        setTimeout(function () {
+            setTimeout(function () {
 
-            window.location.href = "courses.html";
 
-            window.location.href = "index.html";
 
-        }, 2000);
-        // window.localStorage.clear();
-        localStorage.removeItem('coursecart')
-    } else {
-        alert("your card is details wrong")
+                window.location.href = "index.html";
+
+            }, 2000);
+            // window.localStorage.clear();
+            localStorage.removeItem('coursecart')
+        } else {
+            alert("your card is details wrong")
+        }
+
+
     }
 
 
-}
-
-
-// end card details modal js
+    // end card details modal js
 
 }
 
-var payable_money=document.getElementById("money");
- 
-payable_money.innerHTML="₹"+JSON.parse(localStorage.getItem("total"));
+var payable_money = document.getElementById("money");
+
+payable_money.innerHTML = "₹" + JSON.parse(localStorage.getItem("total"));
 
