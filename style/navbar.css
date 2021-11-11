@@ -221,3 +221,11 @@ nav ul li a span:hover{
   transform: translateY(-50%) rotate(-180deg);
   color: cyan;
 }
+
+
+
+@media(max-width:1024px){
+  #signin{
+    display: none;
+  }
+}
