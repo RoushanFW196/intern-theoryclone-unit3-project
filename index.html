@@ -32,8 +32,8 @@
                         </div>
                         <ul>
                             <li><a href="#"><i class="fas fa-home"></i><b>Home</b></a></li>
-                        <li><a href="#"><i class="fas fa-list"></i><b>Internship</b></a></li>
-                        <li><a href="#"><i class="fas fa-business-time"></i><b>Jobs</b></a></li>
+                        <li id="InternshipBtn"><a href="#"><i class="fas fa-list"></i><b>Internship</b></a></li>
+                        <li id="jobsBtn"><a href="#"><i class="fas fa-business-time"></i><b>Jobs</b></a></li>
                         <li><a href="#"><i class="fas fa-align-justify"></i> <b>Post Internship</b></a></li>
                         <li>
                             
@@ -42,7 +42,7 @@
                                 <span class="fas fa-caret-down first"></span>
                             </a>
                             <ul class="feat-show">
-                                <li><a href="#"><b>Online Courses</b></a></li>
+                                <li><a href="courses.html"><b>Online Courses</b></a></li>
                                 <li><a href="#"><b>Class room Training</b></a></li>
                             </ul>
                         </li>
@@ -193,14 +193,14 @@
     <div id="workExp_container">
         <h5>LET'S GET SOME <b>WORK EXPERIENCE</b></h5>
         <div id="internship">
-            <div><img src="https://assets.interntheory.com/creative/home-internships/Marketing-Icon.jpg"></div>
-            <div><img src="https://assets.interntheory.com/creative/home-internships/BD.jpg"></div>
-            <div><img src="https://assets.interntheory.com/creative/home-internships/Content-Writing.jpg"> </div>
-            <div><img src="https://assets.interntheory.com/creative/home-internships/Graphic.jpg"></div>
-            <div><img src="https://assets.interntheory.com/creative/home-internships/Finance.jpg"></div>
-            <div><img src="https://assets.interntheory.com/creative/home-internships/HR.jpg"></div>
-            <div><img src="https://assets.interntheory.com/creative/home-internships/Eng.jpg"></div>
-            <div id="All-Internships"><img src="https://assets.interntheory.com/creative/home-internships/All-Internships.jpg"></div>
+            <div id="internshipExp1"><img src="https://assets.interntheory.com/creative/home-internships/Marketing-Icon.jpg"></div>
+            <div id="internshipExp2"><img src="https://assets.interntheory.com/creative/home-internships/BD.jpg"></div>
+            <div id="internshipExp3"><img src="https://assets.interntheory.com/creative/home-internships/Content-Writing.jpg"> </div>
+            <div id="internshipExp4"><img src="https://assets.interntheory.com/creative/home-internships/Graphic.jpg"></div>
+            <div id="internshipExp5"><img src="https://assets.interntheory.com/creative/home-internships/Finance.jpg"></div>
+            <div id="internshipExp6"><img src="https://assets.interntheory.com/creative/home-internships/HR.jpg"></div>
+            <div id="internshipExp7"><img src="https://assets.interntheory.com/creative/home-internships/Eng.jpg"></div>
+            <div id="AllInternships"><img src="https://assets.interntheory.com/creative/home-internships/All-Internships.jpg"></div>
         </div>
     </div>
 
@@ -350,6 +350,31 @@
      })
 
 </script> -->
+
+<script type="module">
+    import {product,showData,hello} from './script/showData.js'
+
+let InternshipBtn=document.getElementById('InternshipBtn')
+let jobsBtn=document.getElementById('jobsBtn')
+InternshipBtn.addEventListener('click',()=>{hello('Internship','All Internships')})
+jobsBtn.addEventListener('click',()=>{hello('Job','Fresher Jobs')})
+
+window.internshipExp1.addEventListener('click',()=>{hello('Internship','Marketing Internships')})
+
+window.internshipExp2.addEventListener('click',()=>{hello('Internship','Business Development Internships')})
+window.internshipExp3.addEventListener('click',()=>{hello('Internship','Content Writing Internships')})
+window.internshipExp4.addEventListener('click',()=>{hello('Internship','Graphic Designing Internships')})
+
+window.internshipExp5.addEventListener('click',()=>{hello('Internship','Finance Internships')})
+window.internshipExp6.addEventListener('click',()=>{hello('Internship','Human Resource Internships')})
+window.internshipExp7.addEventListener('click',()=>{hello('Internship','Engineering Internships')})//pending
+window.AllInternships.addEventListener('click',()=>{hello('Internship','All Internships')})
+
+
+
+</script>
+
+
 <script>
 $('.btn').click(function(){
     $(this).toggleClass("click");
