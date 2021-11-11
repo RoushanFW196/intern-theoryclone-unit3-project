@@ -189,7 +189,7 @@ function validate() {
 
     // end card details modal js
 
-}
+
 
 var payable_money = document.getElementById("money");
 
