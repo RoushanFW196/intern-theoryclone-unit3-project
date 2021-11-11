@@ -6,15 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Courses</title>
-  <!-- <link rel="stylesheet" href="./style/style.css"> -->
+
     <link rel="stylesheet" href="courses.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="./style/temp.css">
 </head>
 
 <body>
     <!-- <div>
         navbar space
     </div> -->
-    <nav id="navbar"></nav>
+    <div id="nn123"></div>
 
     <div>
         <div id="heading">
@@ -35,36 +38,51 @@
             </div>
         </div>
     </div>
-   
-      <div id="footer"></div>
 
-    
+    <div id="footer"></div>
 
-    
+
+
+
 </body>
 
 </html>
 <script type="text/javascript" src="script/courses.js"></script>
 
 <script type="module">
+    import { product, showData, hello } from './script/showData.js'
+    import { n1234, footer123 } from './component/n123.js'
 
-    import navbar from './component/navbar.js'
-  let nav_div = document.getElementById('navbar');
-  nav_div.innerHTML = navbar();
 
-  </script>
+    document.getElementById('nn123').innerHTML = n1234()
+    document.getElementById('footer').innerHTML = footer123()
 
-  <script type="module">
-   import footer from './component/footer.js'
-let footer_div=document.getElementById('footer')
-   footer_div.innerHTML = footer();
+    let InternshipBtn = document.getElementById('InternshipBtn')
+    let jobsBtn = document.getElementById('jobsBtn')
+    InternshipBtn.addEventListener('click', () => { hello('Internship', 'All Internships') })
+    jobsBtn.addEventListener('click', () => { hello('Job', 'Fresher Jobs') })
 
+
+    $('.btn').click(function () {
+        $(this).toggleClass("click");
+        $('.sidebar').toggleClass("show");
+    });
+
+    $('.feat-btn').click(function () {
+        $('nav ul .feat-show').toggleClass("show");
+    });
+    $('.feat1-btn').click(function () {
+        $('nav ul .feat1-show').toggleClass("show1");
+    });
+    $('.feat2-btn').click(function () {
+        $('nav ul .feat2-show').toggleClass("show2");
+    });
 
 </script>
 
 
 <script>
-    var ab=document.getElementById('cart_logo');
+    var ab = document.getElementById('cart_logo');
 
     console.log(ab)
     // document.getElementById("cart_logo").addEventListener("click",()=>{
