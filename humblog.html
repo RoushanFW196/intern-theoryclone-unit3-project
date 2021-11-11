@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Responsive Drop-down Menu Bar</title>
+      <link rel="stylesheet" href="hamblog.css">
+      <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+       <div class="btn">
+         <span class="fa fa-bars"></span>
+         <img src="https://assets.interntheory.com/creative/logo.png"/>
+       </div>
+       
+         <nav class="sidebar">
+             <div class="a">
+                 <div class="b">
+                     <img src="https://assets.interntheory.com/creative/default-images/girlProfile.jpg">
+                 </div>
+             </div>
+         <ul>
+             <li><a href="#"><i class="fas fa-th-large"></i><b>Dashboard</b></a></li>
+            <li><a href="#"><i class="fas fa-user-circle"></i><b>Profile</b></a></li>
+            <li><a href="#"><i class="fas fa-list"></i><b>Internships</b></a></li>
+            <li><a href="#"><i class="fas fa-business-time"></i><b>Jobs</b></a></li>
+            <li> <a href="#" ><i class="fas fa-file"></i><b>Courses</b></a></li>
+            <li><a href="#"><i class="fas fa-dollar-sign"></i><b>Transactions</b></a></li>
+            <li><a href="#"><i class="fas fa-phone-alt"></i><b>Contact us</b></a></li>
+            <li><a href="#"><i class="fas fa-folder"></i><b>Start Your Business Today</b></a></li>
+            <div class="m"></div>
+            <li><a href="#" > <i class="fas fa-lock"></i><b>Change Password</b></a></li>
+            <li><a href="#" ><i class="fas fa-arrow-circle-right"></i><b>logout</b></a></li>
+        </ul>  
+</nav>
+
+        <script>
+            $('.btn').click(function(){
+                $(this).toggleClass("click");
+                $('.sidebar').toggleClass("show");
+            });
+
+            
+        </script>
+   </body>
+</html>

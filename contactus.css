@@ -1,0 +1,282 @@
+
+/* navbar css from here*/
+       #navbar{
+        width: 100%;
+        height: 70px;
+        background-color: white;
+        position: fixed;
+        top: 0px;
+        margin: 0px;
+        z-index: 10;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+      
+      #hamburger {
+        width: 35px;
+        height: 35px;
+        margin:15px;
+        padding: 9px;
+      }
+      #hamburger:hover {
+        background-color: rgb(185, 181, 181);
+        border-radius: 50%;
+      }
+      #navbar_intern_logo {
+        height: 45px;
+        margin-left: 5px;
+        padding-bottom: 15px;
+      }
+      #cart_logo img{
+        float: right;
+        width: 40px;
+        height: 40px;
+        margin-top: 13px;
+        margin-right: 10px;
+        padding: 8px;
+      }
+      #cart_logo:hover {
+        background-color: rgb(185, 181, 181);
+        border-radius: 50%;
+      }
+      #signin {
+        background-color: red;
+        padding: 10px;
+        float: right;
+        width: 100px;
+        border-radius: 5px;
+        margin: 15px;
+        border: 0;
+        color: white;
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        
+      }
+        #signin:hover {
+        background-color: rgb(94, 2, 2);
+      }
+    #signin a{
+        text-decoration: none;
+        color: white;
+    }
+              #contactus{
+                  width: 100%;
+                  height: 700px;
+                  display: flex;
+                  margin-top: 100px;
+                  margin-bottom:   100px;
+                  
+              }
+              #contactus div{
+                  width:45%;
+                  margin: 1%;
+                 
+              }
+              #leftcontactdiv{
+                  padding:10px;
+    
+              }
+              #leftcontactdiv h3{
+                   color:rgba(0,0,0,0.87);
+                   background-color:rgba(0,0,0,0);
+                   font-size:48px;
+                   line-height:50px;
+                   vertical-align: baseline;
+                   margin: 0;
+                   padding:0;
+                   font-weight: 400;
+    
+              }
+              #leftcontactdiv p{
+                color: #3c4858;
+                background-color:rgba(0,0,0,0);
+                font-family: Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height:24px;
+        vertical-align: baseline;
+        letter-spacing: 0.15px;
+        word-spacing:0;
+        margin: 0;
+        padding:10px;
+           font-weight: 400;
+           font-style: normal;
+    
+    
+              }
+             
+    
+                #contact_info input {
+                    width: 200%;
+                    height:25px;
+                    font-size: 16px;
+                    margin: 0;
+                    margin-top: 20px;
+                    padding: 6px 0px 7px 5px;
+                    font-weight: 400;
+                    font-style: normal;
+                    border: none;
+                    border-bottom: 2px solid black;
+                }
+          #message{
+              margin-top: 15px;
+              font-size: 16px;
+              width: 200%;
+          }
+         #submitmessage{
+        background-color:#DF1E2E;
+        padding:6px 16px;
+        font-size: 16px;
+        color: #ffffff;
+        border-radius: 5px;
+        margin-left: 50%;
+         }
+         #submitmessage:hover{
+            background-color:#b31c29;
+            
+         }
+         .ftilwp {
+             padding-left: 10%;
+             height:100px;
+             width:70%;
+              text-align:center;
+             
+             padding-top: 20px;
+            
+         }
+        
+         .ftilwp p{
+             font-size:14px;
+             line-height:21px;
+             font-weight:400;
+             margin: 0;
+             padding: 0;
+             color: rgb(60 ,72,88);
+    
+             text-align:center;
+    
+         }
+        #ftilwpicon{
+             padding-left: 5%;
+            padding: 5px;
+            margin:  auto;
+            height:50px;
+           
+        }
+      #ftilwpicon a img{
+          width:30px; height:30px;
+        
+         
+      }
+     
+      #rightcontactdiv img{
+          width:100%;
+          height:100%;
+      }
+    
+      /* footer css from here*/
+      #footer{
+        width:100%;
+        height:400px;
+        background-color:#446478;
+      
+    }
+    #contentbox{
+      width:80%;
+      height:70%;
+      margin:  auto;
+    padding-top:50px;
+    
+      display: flex;
+    }
+    
+    .icon{
+      width:70px;
+      height:200px;
+      display:flex;
+      flex-direction: column;
+    
+      margin-top: 40px;
+      padding: 10px;
+     
+    }
+    .icon img{
+     background-color:white;
+     margin-bottom: 5px;
+     display: flex;
+     flex-direction: column;
+     width:25px;
+     height:25px;
+     padding:5px;
+     color:black;
+    
+    }
+    #content{
+    width:85%;
+    height:80%;
+    
+    display: flex;
+    justify-content:space-between;
+    color:white;
+    
+    }
+    #content ul li p{
+    list-style-type:none;
+    font-size:16px;font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 5px;
+    font-weight: 400;
+    color: #ffffff;
+    font-style: normal;
+    line-height:21px;
+    
+    }
+    
+    #content ul li{
+        list-style-type: none;
+    }
+    
+    
+    .firstext{
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    
+    }
+    
+    
+    
+    #secondlast{
+    margin-left: 150px;
+    width:85%;
+    margin: auto;
+    color:white;
+    padding:8px;
+    border-bottom: 1px solid white;
+    font-size:16px;
+    vertical-align: baseline;
+    font-weight: 400;
+    }
+    #secondlast span{
+    margin-right: 35px;
+    text-align:centre;
+    font-size: 14px;
+    line-height:21px;
+    letter-spacing: 0.14994px;
+    word-spacing: 0px;
+    
+    }
+    
+    #last{
+    margin: 0;
+    padding: 0;
+    }
+    #last p{
+    margin-left: 500px;
+    text-align:centre;
+    color:white;
+    margin: 0;
+    padding: 0;
+    margin-left: 500px;
+    justify-content:centre;
+    
+    }
+    /* footer css end here*/
+    

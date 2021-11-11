@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After Login Navbar</title>
+    <link rel="stylesheet" href="./style/afterLogin_navbar.css">
+</head>
+<body>
+    <nav id="afterLogin_navbar">
+
+    </nav>
+</body>
+</html>
+
+<script type="module">
+
+    import afterLogin_navbar from './component/afterLogin_Navbar.js'
+    let nav_div = document.getElementById('afterLogin_navbar');
+    nav_div.innerHTML = afterLogin_navbar();
+
+</script>

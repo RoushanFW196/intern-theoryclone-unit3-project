@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./style/loginform.css">
+    <style>
+        #companybutton{
+            border-bottom: 2px solid rgb(9, 124, 226);
+        }
+    </style>
+</head>
+<body>
+
+    <nav id="navbar"></nav>
+    <div id="loginformstr">
+    <!-- code injected by javascript -->
+    </div>
+   
+    <div id="footer"></div>
+
+</body>
+</html>
+<script type="module">
+    import loginForm from './components/login.js'
+    import validation from './script/loginUser.js'
+    document.getElementById('loginformstr').innerHTML=loginForm("student","internships","loginStudent.html","registerCompany.html")
+    document.getElementById('gooleicon').style.display='none'
+    document.getElementById('iconImg').src='https://www.interntheory.com/assets/iconsLogos/linkedin.svg'
+    document.getElementById('span').textContent='SIGNIN WITH LINKDIN'
+    validation("companyDetail")
+    </script>
+
+
+<script type="module">
+
+    import navbar from './component/navbar.js'
+  let nav_div = document.getElementById('navbar');
+  nav_div.innerHTML = navbar();
+
+  </script>
+
+<script type="module">
+    import footer from './component/footer.js'
+ let footer_div=document.getElementById('footer');
+    footer_div.innerHTML = footer();
+ 
+ 
+ 
+ </script>
