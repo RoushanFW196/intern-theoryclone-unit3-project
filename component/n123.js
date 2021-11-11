@@ -47,8 +47,7 @@ function n1234(){
                         <span class="fas fa-caret-down"></span>
                     </a>
                     <ul class="feat2-show">
-                        <li><a hre
-                            f="loginStudent.html"><b>Student</b></a></li>
+                        <li><a href="loginStudent.html"><b>Student</b></a></li>
                         <li><a href="loginCompany.html"><b>Company</b></a></li>
                     </ul>
                 </li>
