@@ -29,7 +29,7 @@ function n1234(){
                         <li><a href="#"><b>Class room Training</b></a></li>
                     </ul>
                 </li>
-                <li><a href="#"><i class="fas fa-phone-alt"></i><b>Contact us</b></a></li>
+                <li><a href="contactus.html"><i class="fas fa-phone-alt"></i><b>Contact us</b></a></li>
                 <div class="m"></div>
                 <li>
                     <a href="#" class="feat1-btn"> <i class="fas fa-grip-lines"></i><b>Register</b>
@@ -37,8 +37,8 @@ function n1234(){
                     </a>
                     <ul class="feat1-show">
             
-                        <li><a href="#"><b>Student</b></a></li>
-                        <li><a href="#"><b>Company</b></a></li>
+                        <li><a href="registerStudent.html"><b>Student</b></a></li>
+                        <li><a href="registerCompany.html"><b>Company</b></a></li>
                     </ul>
                 </li>
                 
@@ -47,9 +47,8 @@ function n1234(){
                         <span class="fas fa-caret-down"></span>
                     </a>
                     <ul class="feat2-show">
-                        <li><a hre
-                            f="#"><b>Student</b></a></li>
-                        <li><a href="#"><b>Company</b></a></li>
+                        <li><a href="loginStudent.html"><b>Student</b></a></li>
+                        <li><a href="loginCompany.html"><b>Company</b></a></li>
                     </ul>
                 </li>
             </ul>  
