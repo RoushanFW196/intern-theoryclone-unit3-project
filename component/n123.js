@@ -2,7 +2,7 @@ function n1234(){
     return ` <nav id="navbar">
     <div id="left_div" >
         <div id="humburger" ><img class='btn' src="https://static.thenounproject.com/png/703781-200.png"  /></div>
-        <img id="navbar_intern_logo" src="https://assets.interntheory.com/creative/logo.png"/>
+        <a href="index.html"><img id="navbar_intern_logo" src="https://assets.interntheory.com/creative/logo.png"/></a>
     
         
             <div class="sidebar">
