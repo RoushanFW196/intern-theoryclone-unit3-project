@@ -197,6 +197,7 @@ if (localStorageData == null) {
 }
 
 else {
+
     document.getElementById('nn123').innerHTML = n12345();
     document.getElementById('footer').innerHTML = footer1235();
 
@@ -207,6 +208,8 @@ else {
         let mail = document.getElementById('mail');
         mail.innerText = localStorageData.email;
         
+
+
         let phno = document.getElementById('phno');
         phno.innerText = localStorageData.mobile;
 }
@@ -288,7 +291,7 @@ else {
         document.getElementById('nn123').append(div)
         setTimeout(() => {
             document.getElementById('popupMessage').style.display = 'none'
-            window.location.href = 'index.html'
+            window.location.href = 'profile.html'
         }, 1500);
     }
     

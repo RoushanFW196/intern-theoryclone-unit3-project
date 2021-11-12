@@ -278,7 +278,7 @@ border-bottom: 2px solid blue;
   margin:auto;
   justify-content: center;
   text-align: center;
-  height: 450px;
+  height: 400px;
   background-color:#EEEEEE;
 }
 #course{
@@ -356,88 +356,152 @@ border-bottom: 2px solid blue;
   padding: 5px 30px 0px 30px;
 }
 /* 6th div - testimonial */
-#testimonial{
+.carousel {
+  overflow: hidden;
+  max-width: 100%;
+  position: relative;
+  /* margin-left: 4rem; */
+}
 
-    background-color:#EEEEEE;
-    height: 200px;
-    position: relative;
-    padding: 30px;
-    margin-bottom: 30px;
-    padding-left:0px
+.carousel .carousel__item,
+.carousel .carousel__item--hidden {
+  display: none;
+  text-align: center;
+  align-items: center;
+}
+
+/* .carousel .carousel__item img {
+  width: 30%;
+  max-width: 100%;
+  border-radius: 50%;
+  height: 30%;
+} */
+
+
+.carousel .carousel__item--visible {
+  display: block;
+  animation: fadeVisibility 0.5s;
+}
+
+.carousel .carousel__actions {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  top: 6rem;
+  transform: translateY(-50%);
+}
+
+.carousel .carousel__actions button {
+  border-radius: 50px;
+  border: 0;
+  font-weight: bold;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.carousel .carousel__actions button#carousel__button--prev {
+  margin-left: 100px;
+  font-size:xx-large;
+  color: rgb(221, 220, 218);
+}
+
+.carousel .carousel__actions button#carousel__button--next {
+  margin-right: 100px;
+  font-size:xx-large;
+  color: rgb(221, 220, 218);
+}
+
+
+
+ #testimonial{
+  max-height: 606px;
+  background-color:#EEEEEE;
+  /* height: 200px; */
+  position: relative;
+  padding: 30px;
+  margin-bottom: 30px;
+  /* padding-left:0px */
+
+}
+#testimonial_innerdiv{
+  display: flex;
+  width: 70%;
+  margin:auto;
+  padding: 5px;
+  height: 100%;
+  background-color: #FFFFFF;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px; 
+}
+
+#testimonial_innerdiv hr{
+  margin-left: 30px;
+  color: #DDDDDD;
+  /* height: inherit;
+  width: 0%; */
   
-  }
-  #testimonial_innerdiv{
-    display: flex;
-    width: 70%;
-    margin:auto;
-    padding: 5px;
-    height: 100%;
-    background-color: #FFFFFF;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px; 
-  }
-  
-  #testimonial_innerdiv hr{
-    margin-left: 30px;
-    color: #DDDDDD;
-    height: inherit;
-    width: 0%;
-    
-  }
-  .e{
-    border-radius: 10%;
-    height: 10px;
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-right: 10px;
-  }
-  h5{
-    font-size: 15px;
-    padding-left:30px;
-    padding-top: 10px;
-  }
-  .span{
-    font-size: 10px;
-    padding:10px;
-    margin: 20px;
-  }
- 
-  #intern_text{
-  width: 75%;
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-right: 0px;
-  }
-  #intern_text p{
-    font-style: italic;
-    color: #6B6666;
-    width:100%
-  }
+}
+.e{
+  border-radius: 10%;
+  /* height: 10px; */
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+h5{
+  font-size: 15px;
+  padding-left:30px;
+  padding-top: 10px;
+}
+.span{
+  font-size: 11px;
+  font-weight: bold;
+  margin: 0px 8px;
+  color: blue;
+  font-weight: bold;
+  /* padding:10px; */
+  /* margin: 20px; */
+}
+
+#intern_text{
+width: 75%;
+padding-left: 20px;
+padding-top: 20px;
+padding-right: 0px;
+}
+#intern_text p{
+  font-style: italic;
+  color: #6B6666;
+  width:100%
+}
+
 
 /*#testimonial_innerdiv hr{
-  color: #DDDDDD;
-  width:0%;
+color: #DDDDDD;
+width:0%;
 }
 #intern_img img{
-  border-radius: 50%;
-  padding: 10px 30px;
+border-radius: 50%;
+padding: 10px 30px;
 }
 #intern_img h5 {
-  padding: 3px 20px;
+padding: 3px 20px;
 }
 #intern_img span{
-  padding: 3px 20px;
+padding: 3px 20px;
 }
 #intern_img{
-  width:40%;
+width:40%;
 }
 #intern_text{
 width: 70%;
 padding-left: 20px;
 }
 #intern_text p{
-  font-style: italic;
-  color: #6B6666;
+font-style: italic;
+color: #6B6666;
 }/*
 
 /* Last div -> footer */
@@ -561,11 +625,11 @@ padding-left: 20px;
     overflow-x: scroll;
   }
   #course div {
-    width: 70vw;
+    width: 60vw;
     height: 200px;
   }
   #course img{
-    width: 70vw ;
+    width: 100% ;
   }
 
   /* #course{
@@ -608,22 +672,28 @@ padding-left: 20px;
   }
   /* 6th div - testimonial */
   #testimonial{
-    height:430px;
+    height:300px;
   }
   #testimonial_innerdiv{
     display: flex;
     flex-direction: column;
   }
   #intern_img{
-    width:100%;
+    max-width:100%;
     margin-bottom: 20px;
     text-align: center;
     justify-content: center;
   }
+ 
   #testimonial_innerdiv{
     width:100%;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
   }
+  /* #internimgimg{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+  } */
   #intern_text{
     width: 100%;
     justify-content:center;
@@ -651,11 +721,23 @@ padding-left: 20px;
   }
   #course{
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 
 
 
+@media(max-width:578px){
+  #testimonial{
+    height:350px;
+  }
+}
 
+@media(max-width:400px){
+  #testimonial{
+    height:400px;
+  }
+}
 
 
