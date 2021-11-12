@@ -29,7 +29,7 @@
 
            </div>
              <div>
-                <button id="submitmessage" >SUBMIT</button>
+                <button id="submitmessage" onsubmit="func()" >SUBMIT</button>
 
              </div>
 
@@ -76,6 +76,10 @@
 </html>
 
 <script type="module">
+    function func(){
+        alert("successfully submitted");
+    }    
+
     import { product, showData, hello } from './script/showData.js'
     let localStorageData = JSON.parse(localStorage.getItem('studentDetail'))
 
