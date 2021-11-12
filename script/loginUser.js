@@ -8,12 +8,15 @@ function validation(x){
         let Epassword = document.getElementById('password').value;
 
         let local = JSON.parse(localStorage.getItem(x))
-        local.forEach(({ email, password }) => {
-            if (email == Eemail && password == Epassword) {
-                alert('login successfully')
-            }
+        if (local.email == Eemail && local.password == Epassword) {
+            alert('login successfully')
+        }
+        // local.forEach(({ email, password }) => {
+        //     if (email == Eemail && password == Epassword) {
+        //         alert('login successfully')
+        //     }
 
-        })
+        // })
 });
 }
 
