@@ -361,8 +361,9 @@ border-bottom: 2px solid blue;
     background-color:#EEEEEE;
     height: 200px;
     position: relative;
-    padding: 20px;
+    padding: 30px;
     margin-bottom: 30px;
+    padding-left:0px
   
   }
   #testimonial_innerdiv{

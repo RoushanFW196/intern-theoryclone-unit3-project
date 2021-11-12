@@ -7,12 +7,12 @@ function n1234(){
         
             <div class="sidebar">
                 
-                <div id="left_div">
-                    <div id="humburger" ><img class='btn' src="https://static.thenounproject.com/png/703781-200.png"  /></div>
-                
-                    <a href=""><div><img id="navbar_intern_logo"  src="https://assets.interntheory.com/creative/logo.png" /></div></a>
-                    
-                </div>
+            <div id="left_div">
+            <div id="humburger" ><img class='btn' src="https://static.thenounproject.com/png/703781-200.png"  /></div>
+        
+            <a href=""><div><img id="navbar_intern_logo"  src="https://assets.interntheory.com/creative/logo.png" /></div></a>
+            
+        </div>
                 <ul>
                     <li><a href="index.html"><i class="fas fa-home"></i><b>Home</b></a></li>
                 <li id="InternshipBtn"><a href="#"><i class="fas fa-list"></i><b>Internship</b></a></li>
