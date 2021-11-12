@@ -138,13 +138,13 @@
            lookingfor,
            affilate
        }
-       if(localStorage.getItem('studentDetail')==null){
-           localStorage.setItem("studentDetail",JSON.stringify([]))
-       }
-       let local=JSON.parse(localStorage.getItem('studentDetail'))
-       local.push(studentDetail)
+    //    if(localStorage.getItem('studentDetail')==null){
+    //        localStorage.setItem("studentDetail",JSON.stringify([]))
+    //    }
+    //    let local=JSON.parse(localStorage.getItem('studentDetail'))
+    //    local.push(studentDetail)
 
-       localStorage.setItem('studentDetail',JSON.stringify(local))
+       localStorage.setItem('studentDetail',JSON.stringify(studentDetail))
        window.location.href='loginStudent.html'
     //    console.log(studentDetail)
 

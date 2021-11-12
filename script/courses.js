@@ -110,7 +110,7 @@ course.forEach((item) => {
             <p class="p_price"><span style="display: inline; text-decoration: line-through; font-size:10px; color:gray;">₹${item.price1}</span>&nbsp;<span>₹&nbsp;${item.price}</span></p>
             <p class="p_emi">${item.EMI}</p>
             <button onclick="addToCart('${item.image}', '${item.name}', '${item.price1}', '${item.price}')" class="button">ADD TO CART</button>
-            <button class="button1">KNOW MORE</button>
+            <button id="knowmore" class="button1">KNOW MORE</button>
         </div>`;
 
 
@@ -134,3 +134,9 @@ addToCart = (image, name, price1, price) => {
 
     localStorage.setItem("coursecart", JSON.stringify(course_Cart))
 }
+
+
+
+  document.getElementById("knowmore").addEventListener("click",()=>{
+      window.location.href="coursedetails.html"
+  })

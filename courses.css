@@ -166,11 +166,13 @@ nav{
   margin: 0px;
   z-index: 10;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  justify-content:centre;
+  align-items:center;
 }
 
 #hamburger {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   margin:15px;
   padding: 9px;
 }
@@ -182,6 +184,7 @@ nav{
 #navbar_intern_logo {
   height: 45px;
   margin-left: 5px;
+  padding-bottom: 15px;
 }
 
 #cart_logo img {
@@ -208,8 +211,13 @@ nav{
   color: white;
   cursor: pointer;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  
 }
 
+#signin a{
+  text-decoration: none;
+  color: white;
+}
 #signin:hover {
   background-color: rgb(94, 2, 2);
 }
