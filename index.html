@@ -279,7 +279,7 @@
 
     let localStorageData = JSON.parse(localStorage.getItem('studentDetail'))
 
-    // console.log('yo');
+    console.log(localStorageData);
     import { n12345, footer1235 } from './component/after_nav.js'
     import { n1234, footer123 } from './component/n123.js'
 
@@ -294,6 +294,16 @@
 
         document.getElementById('nn123').innerHTML = n12345()
         document.getElementById('footer').innerHTML = footer1235()
+
+       
+        let name = document.getElementById('name');
+        name.innerText = localStorageData.first + " " +localStorageData.last;
+        // console.log(name)
+        let mail = document.getElementById('mail');
+        mail.innerText = localStorageData.email;
+        console.log(mail)
+        let phno = document.getElementById('phno');
+        phno.innerText = localStorageData.mobile;
     }
   
     //after login navbar import-------------->
