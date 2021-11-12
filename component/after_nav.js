@@ -1,5 +1,5 @@
 
-function afternav(){
+function n12345(){
 
     return ` <nav id="afterLogin_navbar">
     <div id="left_div" >
@@ -24,9 +24,11 @@ function afternav(){
             <ul>
                 <li><a href="#"><i class="fas fa-th-large"></i><b>Dashboard</b></a></li>
             <li><a href="#"><i class="fas fa-user-circle"></i><b>Profile</b></a></li>
-            <li><a href="#"><i class="fas fa-list"></i><b>Internships</b></a></li>
-            <li><a href="#"><i class="fas fa-business-time"></i><b>Jobs</b></a></li>
-            <li> <a href="#" ><i class="fas fa-file"></i><b>Courses</b></a></li>
+
+            <li id="InternshipBtn"><a href="#"><i class="fas fa-list"></i><b>Internship</b></a></li>
+                <li id="jobsBtn"><a href="#"><i class="fas fa-business-time"></i><b>Jobs</b></a></li>
+
+            <li> <a href="courses.html" ><i class="fas fa-file"></i><b>Courses</b></a></li>
             <li><a href="#"><i class="fas fa-dollar-sign"></i><b>Transactions</b></a></li>
             <li><a href="#"><i class="fas fa-phone-alt"></i><b>Contact us</b></a></li>
             <li><a href="#"><i class="fas fa-folder"></i><b>Start Your Business Today</b></a></li>
@@ -51,7 +53,15 @@ function afternav(){
 
 }
 
-function footer123(){
+
+
+
+
+
+
+
+
+function footer1235(){
     return `  <div id="content">
     <div id="upper_part">
         <div id="footer_image">
@@ -117,4 +127,4 @@ function footer123(){
 }
 
 
-export {afternav,footer123};
+export {n12345,footer1235};
