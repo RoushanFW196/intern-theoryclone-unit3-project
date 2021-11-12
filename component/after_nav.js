@@ -1,10 +1,10 @@
 
 function n12345(){
 
-    return ` <nav id="afterLogin_navbar">
+    return ` <nav id="navbar">
     <div id="left_div" >
         <div id="humburger" ><img class='btn' src="https://static.thenounproject.com/png/703781-200.png"  /></div>
-        <img id="navbar_intern_logo" src="https://assets.interntheory.com/creative/logo.png"/>
+        <a href="profile.html"><img id="navbar_intern_logo" src="https://assets.interntheory.com/creative/logo.png"/></a>
     
         
             <div class="sidebar">
@@ -23,14 +23,14 @@ function n12345(){
                 </div>
             <ul>
                 <li><a href="#"><i class="fas fa-th-large"></i><b>Dashboard</b></a></li>
-            <li><a href="#"><i class="fas fa-user-circle"></i><b>Profile</b></a></li>
+            <li><a href="profile.html"><i class="fas fa-user-circle"></i><b>Profile</b></a></li>
 
             <li id="InternshipBtn"><a href="#"><i class="fas fa-list"></i><b>Internship</b></a></li>
                 <li id="jobsBtn"><a href="#"><i class="fas fa-business-time"></i><b>Jobs</b></a></li>
 
             <li> <a href="courses.html" ><i class="fas fa-file"></i><b>Courses</b></a></li>
             <li><a href="#"><i class="fas fa-dollar-sign"></i><b>Transactions</b></a></li>
-            <li><a href="#"><i class="fas fa-phone-alt"></i><b>Contact us</b></a></li>
+            <li><a href="contactus.html"><i class="fas fa-phone-alt"></i><b>Contact us</b></a></li>
             <li><a href="#"><i class="fas fa-folder"></i><b>Start Your Business Today</b></a></li>
             <div class="m"></div>
             <li><a href="#" > <i class="fas fa-lock"></i><b>Change Password</b></a></li>
