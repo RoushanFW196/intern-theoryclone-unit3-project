@@ -741,7 +741,7 @@
        <label>Date of Birth*</label><br>
       <input type="date" placeholder="Date of Birth*"id="date"><br>
       <select id="lang"><br>
-        <option>Select Language</option>
+        
           <option value="Hindi">Hindi</option>
           <option value="English">English</option>
           <option value="German">German</option>
@@ -755,7 +755,7 @@
      <input type="text" placeholder="Achievements" id="achiev"><br>
 
        <select id="skill" placeholder="Skills*">
-           <option>Select one or more skills</option>
+          
            <option value="Digital Marketing">Digital Marketing</option>
            <option value="consulting">Consulting</option>
            <option value="Animation">Animation</option>
@@ -764,7 +764,7 @@
        </select><br>
 
   <select id="pref">
-      <option>Preferences</option>
+     
       <option value="Animation">Animation</option>
       <option value="Web design">Web design</option>
       <option value="Content writing">Content writing</option>
@@ -1026,62 +1026,82 @@
      appenddiv1();
 
 
-    //  var ab = document.getElementById("n").textContent;
-    //        if(ab==""){
-    //         console.log("zxc");
-    //        }
-    //console.log("zxc")
        function appenddiv2(){
-           var ab = document.getElementById("n").innerHTML;
-         
-            console.log("zxc");
-           
-          console.log(ab);
+        
 
         
-        if(document.getElementById("n").innerHTML==""){
-            document.getElementById("n").textContent="N/A";
-        }
-        if(document.getElementById("g").innerHTML==null){
-            document.getElementById("g").innerHTML="N/A";
-        }
-        if(document.getElementById("d").innerHTML==null){
-            document.getElementById("d").innerHTML="N/A";
-        }
-        if(document.getElementById("l").innerHTML==null){
-            document.getElementById("l").innerHTML="N/A";
-        }
-        if(document.getElementById("h").innerHTML==""){
-            document.getElementById("h").innerHTML="N/A";
-            console.log("hello")
-        }
- else{
+    //     if(document.getElementById("n").innerHTML==""){
+    //         document.getElementById("n").innerHTML="N/A";
+    //     }
+    //    else{
+        document.getElementById("n").innerHTML=user_info1.Name;
+      // }
+
+
+
+        // if(document.getElementById("g").innerHTML==""){
+        //     document.getElementById("g").innerHTML="N/A";
+        // }
+        //   else{
+            document.getElementById("g").innerHTML=user_info1.Gender;
+          //}
+
+
+
+        // if(document.getElementById("d").innerHTML==""){
+        //     document.getElementById("d").innerHTML="N/A";
+        // }
+        // else{
+            document.getElementById("d").innerHTML=user_info1.DOB;
+      //  }
+
+
+        // if(document.getElementById("l").innerHTML==""){
+        //     document.getElementById("l").innerHTML="N/A";
+        // }
+        // else{
+            document.getElementById("l").innerHTML=user_info1.Language;
+       // }
+
+//         if(document.getElementById("h").innerHTML==""){
+//             document.getElementById("h").innerHTML="N/A";
+            
+//         }
+//  else{
 
     document.getElementById("h").innerHTML=user_info1.Hobbies;
- }
+ //}
 
-       document.getElementById("n").innerHTML=user_info1.Name;
-       document.getElementById("g").innerHTML=user_info1.Gender;
-       document.getElementById("d").innerHTML=user_info1.DOB;
-       document.getElementById("l").innerHTML=user_info1.Language;
-     //  document.getElementById("h").innerHTML=user_info1.Hobbies;
-       if(document.getElementById("a").innerHTML==null){
-            document.getElementById("a").innerHTML="N/A";
-        }
-       document.getElementById("a").innerHTML=user_info1.Achievements;
-       if(document.getElementById("s").innerHTML==null){
-            document.getElementById("s").innerHTML="N/A";
-        }
-       document.getElementById("s").innerHTML=user_info1.Skills;
-       if(document.getElementById("p").innerHTML==null){
-            document.getElementById("p").innerHTML="N/A";
-        }
-       document.getElementById("p").innerHTML=user_info1.Preference;
-     //  document.getElementById("n").innerHTML=user_info1.
-     if(document.getElementById("ab").innerHTML==null){
-            document.getElementById("ab").innerHTML="N/A";
-        }
-       document.getElementById("ab").innerHTML=user_info1.About;
+     
+    //    if(document.getElementById("a").innerHTML==""){
+    //         document.getElementById("a").innerHTML="N/A";
+    //     }
+    //      else{
+            document.getElementById("a").innerHTML=user_info1.Achievements;
+        // }
+
+      
+    //    if(document.getElementById("s").innerHTML==""){
+    //         document.getElementById("s").innerHTML="N/A";
+    //     }
+    //     else{
+            document.getElementById("s").innerHTML=user_info1.Skills;
+       // }
+     
+    //    if(document.getElementById("p").innerHTML==""){
+    //         document.getElementById("p").innerHTML="N/A";
+    //     }
+    //     else{
+            document.getElementById("p").innerHTML=user_info1.Preference;
+        //}
+     
+    //  if(user_info1.About==""){
+    //         document.getElementById("ab").innerHTML="N/A";
+    //     }
+    //     else{
+            document.getElementById("ab").innerHTML=user_info1.About;
+      // }
+      
        }
 
 
@@ -1104,9 +1124,7 @@
 
         document.getElementById("mail").innerHTML=student_detail.email;
         document.getElementById("no").innerHTML=student_detail.mobile;
-       // document.getElementById("fbac").innerHTML="https://www.interntheory.com/assets/iconsLogos/facebook-circular-logo.svg"+"Link Your Facebook account"
-
-      //  document.getElementById("gac").innerHTML="https://www.interntheory.com/assets/iconsLogos/googlelogo.svg"+`${student_detail.email}`;
+      
         let gdiv= document.createElement("div");
 
   let gim =document.createElement("img");
@@ -1130,23 +1148,36 @@
 
   function appenddiv4(){
 
-    if(document.getElementById("ad").innerHTML==undefined){
+    if(document.getElementById("ad").innerHTML==""){
             document.getElementById("ad").innerHTML="N/A";
         }
-        if(document.getElementById("ct").innerHTML==null){
+        else{
+            document.getElementById("ad").innerHTML=user_info1.Address;
+        }
+
+
+        if(document.getElementById("ct").innerHTML==""){
             document.getElementById("ct").innerHTML="N/A";
         }
+        else{
+            
+        document.getElementById("ct").innerHTML=user_info1.City;
+        }
+
         if(document.getElementById("st").innerHTML==null){
             document.getElementById("st").innerHTML="N/A";
         }
+        else{
+            document.getElementById("st").innerHTML=user_info1.State;
+        }
+
         if(document.getElementById("pn").innerHTML==null){
             document.getElementById("pn").innerHTML="N/A";
         }
-
-        document.getElementById("ad").innerHTML=user_info1.Address;
-        document.getElementById("ct").innerHTML=user_info1.City;
-        document.getElementById("st").innerHTML=user_info1.State;
-        document.getElementById("pn").innerHTML=user_info1.Pincode;
+        else{
+            document.getElementById("pn").innerHTML=user_info1.Pincode;
+        }
+       
 
   }
 
