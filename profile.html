@@ -308,7 +308,7 @@
     line-height: 1.75;
     letter-spacing: 0.00938em;
     display: block;
-    padding-bottom: 20px;
+    padding-bottom: 7px;
     border-bottom: 1px solid black;
   }
 
@@ -413,7 +413,7 @@
    }
   #btndv2 span{
       color: rgb(8,124,221);
-     margin-left: 20px;
+     /* margin-left: 20px; */
       font-size: 13px;
       border: 1px solid rgba(8, 124, 221, 0.5);
       padding: 4px 8px;
@@ -1265,6 +1265,15 @@ if (localStorageData == null) {
 else {
     document.getElementById('nn123').innerHTML = n12345()
     document.getElementById('footer').innerHTML = footer1235()
+
+    let name = document.getElementById('name');
+        name.innerText = localStorageData.first + " " +localStorageData.last;
+        
+        let mail = document.getElementById('mail');
+        mail.innerText = localStorageData.email;
+        console.log(mail)
+        let phno = document.getElementById('phno');
+        phno.innerText = localStorageData.mobile;
 }
 
     let InternshipBtn = document.getElementById('InternshipBtn')
