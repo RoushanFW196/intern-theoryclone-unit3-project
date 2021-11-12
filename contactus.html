@@ -64,7 +64,7 @@
 
 
         <div id="rightcontactdiv">
-            <img src="https://lh3.googleusercontent.com/proxy/0-JV2BMXmqE2TGQXhTcUgKlCl8-M3bS9Zl5Tff3Ogjk8cb0XC1xM6GaJ6KrfNQd71fwnjZuUdW9zWgJCo6vaElmBCgx2q9uNcEBCNd41XIQCu35Uw1rEA_FjWsPmAzsec9Ht_XrblV4uMRiWeuxftriaW0W0bOXFTX3q" alt="">
+            <img src="https://cdn.filestackcontent.com/qfzkumr0RE27pdC8tqeH" alt="">
         </div>
            
     </div>
@@ -77,11 +77,21 @@
 
 <script type="module">
     import { product, showData, hello } from './script/showData.js'
-       import { n1234, footer123 } from './component/n123.js'
-   
-   
-       document.getElementById('nn123').innerHTML = n1234()
-       document.getElementById('footer').innerHTML = footer123()
+    let localStorageData = JSON.parse(localStorage.getItem('studentDetail'))
+
+    import { n12345, footer1235 } from './component/after_nav.js'
+    import { n1234, footer123 } from './component/n123.js'
+
+
+    if (localStorageData == null) {
+        document.getElementById('nn123').innerHTML = n1234()
+        document.getElementById('footer').innerHTML = footer123()
+    }
+
+    else {
+        document.getElementById('nn123').innerHTML = n12345()
+        document.getElementById('footer').innerHTML = footer1235()
+    }
    
        let InternshipBtn = document.getElementById('InternshipBtn')
        let jobsBtn = document.getElementById('jobsBtn')
