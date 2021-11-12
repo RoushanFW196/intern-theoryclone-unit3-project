@@ -65,8 +65,9 @@ nav {
 #user_icon img,
 #notify_icon img,
 #cart_logo img {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 }
 
 #humburger {
@@ -142,14 +143,56 @@ i {
     left: 0px;
 }
 
-.a {
-    padding: 10px;
+.a{
+    display: flex;
+    padding:10px;
     height: 70px;
     border: 0.5px solid rgb(221, 220, 220);
-    font-style: inherit;
+    font-style:inherit;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+  }
 
-}
+
+
+
+.per_info{
+     display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 0px;
+    width: 100%;
+  }
+  #name{
+    color: #3C4858;
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.01071em;
+    margin: 0;
+    display: block;
+    overflow-wrap: break-word;
+  }
+  #mail ,#phno{
+    margin: 0;
+      display: block;
+      overflow-wrap: break-word;
+      color: rgba(0, 0, 0, 0.87);
+      font-size: 0.75rem;
+      font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+      font-weight: 400;
+      line-height: 1.66;
+      letter-spacing: 0.03333em;
+  }
+
+
+  .b img{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+  }
+
 
 
 .sidebar .text {
@@ -181,10 +224,10 @@ nav ul li {
 
 }
 
+
 .b img {
     width: 50px;
     height: 50px;
-    margin-left: 100px;
     border-radius: 30px;
 }
 

@@ -54,7 +54,7 @@ function n12345(){
     <a href="cart.html"><div id="cart_logo" > <img src="https://iconape.com/wp-content/png_logo_vector/shopping-cart.png"  >
     </div> </a>
 
-    <a  href=""><div id="user_icon"><img src="https://www.sunsetlearning.com/wp-content/uploads/2019/09/User-Icon-Grey-300x300.png" alt="">
+    <a  href=""><div id="user_icon"><img src="https://assets.interntheory.com/creative/default-images/girlProfile.jpg" alt="">
     </div> </a>
         
 </div> 
