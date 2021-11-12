@@ -286,20 +286,7 @@
     jobsBtn.addEventListener('click', () => { hello('Job', 'Fresher Jobs') })
 
 
-    $('.btn').click(function () {
-        $(this).toggleClass("click");
-        $('.sidebar').toggleClass("show");
-    });
-
-    $('.feat-btn').click(function () {
-        $('nav ul .feat-show').toggleClass("show");
-    });
-    $('.feat1-btn').click(function () {
-        $('nav ul .feat1-show').toggleClass("show1");
-    });
-    $('.feat2-btn').click(function () {
-        $('nav ul .feat2-show').toggleClass("show2");
-    });
+   
    
     window.internshipExp1.addEventListener('click', () => { hello('Internship', 'Marketing Internships') })
     window.internshipExp2.addEventListener('click', () => { hello('Internship', 'Business Development Internships') })
@@ -357,4 +344,20 @@ function moveToPrevSlide() {
   updateSlidePosition();
 }
 
+</script>
+<script>
+     $('.btn').click(function () {
+        $(this).toggleClass("click");
+        $('.sidebar').toggleClass("show");
+    });
+
+    $('.feat-btn').click(function () {
+        $('nav ul .feat-show').toggleClass("show");
+    });
+    $('.feat1-btn').click(function () {
+        $('nav ul .feat1-show').toggleClass("show1");
+    });
+    $('.feat2-btn').click(function () {
+        $('nav ul .feat2-show').toggleClass("show2");
+    });
 </script>

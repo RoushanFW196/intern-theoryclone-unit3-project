@@ -67,7 +67,7 @@ nav #afterlogin_navbar{
 margin-bottom: 8px;
 margin-left: 10px;
 }
-.humburger.click{
+#humburger.click{
 left:260px; 
 }
 #humburger img{
@@ -98,8 +98,7 @@ left:260px;
 }
 i{
   padding-right:40px;
-  padding:20px
-
+  padding:20px;
 }
 .btn .click{
   left:260px; 
@@ -133,7 +132,9 @@ i{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
-
+a{
+  color:rgb(1, 1, 29) ;
+}
 
 .sidebar .text{
   color: white;
@@ -144,6 +145,7 @@ i{
   background: #1e1e1e;
   letter-spacing: 1px;
 }
+
 
 nav ul{
   background: white;
@@ -235,7 +237,7 @@ nav ul li a span:hover{
   overflow: hidden;
   max-width: 90%;
   position: relative;
-  margin-left: 50px;
+  margin-left: 90px;
 }
 
 .carousel .carousel__item,
