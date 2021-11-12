@@ -844,10 +844,11 @@
 
 
     <script>
+        var student_detail=JSON.parse(localStorage.getItem("studentDetail"));
   
         function updateprofile(){
            
-            var student_detail=JSON.parse(localStorage.getItem("studentDetail"));
+           // var student_detail=JSON.parse(localStorage.getItem("studentDetail"));
            // console.log(student_detail)
 
             var fname=document.getElementById("fname").value;
@@ -863,6 +864,7 @@
 
           var name= fname +" "+ lname;
          
+          console.log(name)
         //   let user_info={}
         //      user_info. Name= name,
         //     user_info.Gender=gender,
@@ -883,7 +885,11 @@
          student_detail.first=fname;
          student_detail.last=lname;
         // student_detail.Name=`${student_detail.first}`+" "+ `${student_detail.last}`;
+        // if(student_detail.Name==undefined){
+        //     student_detail.Name=name;
+        // }
          student_detail.Name=name;
+       console.log(student_detail)
          student_detail.Gender=gender;
          student_detail.Dob=dob;
          student_detail.Language=lang;
@@ -896,10 +902,10 @@
 
          localStorage.setItem("studentDetail",JSON.stringify(student_detail));
           
-     setTimeout(()=>{
-        alert("Your profile is updated")
-         window.location.href="profile.html";
-     },1000)
+    //  setTimeout(()=>{
+    //     alert("Your profile is updated")
+    //      window.location.href="profile.html";
+    //  },1000)
             
         
 
@@ -951,6 +957,7 @@
         localStorage.setItem("studentDetail",JSON.stringify(user_info));
      }
    
+
       var user_info1= JSON.parse(localStorage.getItem("studentDetail")) ;
 
  
@@ -974,7 +981,7 @@
        let btn = document.createElement("button");
        btn.textContent ="GO TO DASHBOARD"
        let p1=document.createElement("p");
-       p1.textContent =user_info1.Name;
+       p1.textContent =user_info1.first+ " "+user_info1.last;
        let dndiv=document.createElement("div");
        dndiv.setAttribute("id","dndiv")
       let p2=document.createElement("p");
@@ -1012,7 +1019,7 @@
     let txdv=document.createElement("div");
     txdv.setAttribute("id", "txdv");
     let p1=document.createElement("p");
-    p1.textContent =user_info1.Name;
+    p1.textContent =user_info1.first+" "+user_info1.last;
      
       let btndv=document.createElement("div");
         btndv.setAttribute("id","btndv")
@@ -1048,7 +1055,7 @@
             document.getElementById("n").innerHTML="N/A";
         }
        else{
-        document.getElementById("n").innerHTML=user_info1.Name;
+        document.getElementById("n").innerHTML=user_info1.first+" "+user_info1.last;
        }
 
 
