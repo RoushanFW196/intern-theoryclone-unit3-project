@@ -206,16 +206,14 @@ border-bottom: 2px solid blue;
 #cont_left span{
   color: red;
 }
-#cont_left hr{
-  margin: 10px 0px;
-  color:#DDDDDD;
-}
 #cont_left h2 {
   font-weight: 800;
   font-size: 25px;
   line-height: 37px;
   color: rgba(0, 0, 0, 0.87);
   margin: 0px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 5px;
 }
 #cont_left p {
   font-weight: 400;
@@ -227,7 +225,7 @@ border-bottom: 2px solid blue;
 .logobox {
   display: grid;
   gap: 8px;
-  grid-template-columns: repeat(4, 130px);
+  grid-template-columns: repeat(4, auto);
   height: 400px;
   font-family: 'Times New Roman'-400;
   font-weight: 400;
@@ -307,21 +305,12 @@ border-bottom: 2px solid blue;
 #course_container span{
   color: red;
 }
-#course div{
+
+#course img {
   width: 100%;
-  height: 80%;
-}
-#coursebox1{
-  float: left;
-  background: url(https://assets.interntheory.com/creative/home-courses/Homepage-stock.jpg) center center / cover;
-}
-#coursebox2{
-  float: left;
-  background: url(https://assets.interntheory.com/creative/home-courses/Homepage-digital.jpg)center center / cover;
-}
-#coursebox3{
-  float: left;
-  background: url(https://assets.interntheory.com/creative/home-courses/Homepage-web.jpg)center center / cover;
+  height: 160px;
+  border: 1px solid rgb(238, 238, 238);
+  border-radius: 4px;
 }
 /* 5th div - growth*/
 #growth_container{
@@ -342,75 +331,102 @@ border-bottom: 2px solid blue;
 #text_part span{
   color: #E31E2E;
 }
-#text_part hr{
-  margin: 10px 0px;
-  color:#DDDDDD;
-}
 #text_part {
   height: 300;
   padding-top: 100px;
   padding-right: 150px;
   margin-left: 250px;
 }
+#text_part h2{
+  border-bottom: 1px solid #ddd;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 37px;
+  color: rgba(0, 0, 0, 0.87);
+  margin: 5px 30px 5px 30px;
+}
+#text_part p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #3C4858;
+  margin: 0px;
+  padding: 5px 30px 0px 30px;
+}
 /* 6th div - testimonial */
 #testimonial{
 
     background-color:#EEEEEE;
-    height: 280px;
+    height: 200px;
     position: relative;
-    padding: 50px;
+    padding: 20px;
+    margin-bottom: 30px;
+  
   }
   #testimonial_innerdiv{
     display: flex;
     width: 70%;
     margin:auto;
-    padding: 30px;
+    padding: 5px;
+    height: 100%;
     background-color: #FFFFFF;
     border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px;
+    border-bottom-left-radius: 30px; 
   }
+  
   #testimonial_innerdiv hr{
+    margin-left: 30px;
     color: #DDDDDD;
-    width:0%;
+    height: inherit;
+    width: 0%;
+    
   }
-  #intern_img img{
-    border-radius: 50%;
-    padding: 10px 70px;
+  .e{
+    border-radius: 10%;
+    height: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
   }
-  #intern_img h5 {
-    padding: 3px 60px;
+  h5{
+    font-size: 15px;
+    padding-left:30px;
+    padding-top: 10px;
   }
-  #intern_img span{
-    padding: 3px 20px;
+  .span{
+    font-size: 10px;
+    padding:10px;
+    margin: 20px;
   }
-  #intern_img{
-    width:30%;
-  }
+ 
   #intern_text{
-  width: 70%;
+  width: 75%;
   padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 0px;
   }
   #intern_text p{
     font-style: italic;
     color: #6B6666;
+    width:100%
   }
 
-#testimonial_innerdiv hr{
+/*#testimonial_innerdiv hr{
   color: #DDDDDD;
   width:0%;
 }
 #intern_img img{
   border-radius: 50%;
-  padding: 10px 70px;
+  padding: 10px 30px;
 }
 #intern_img h5 {
-  padding: 3px 60px;
+  padding: 3px 20px;
 }
 #intern_img span{
   padding: 3px 20px;
 }
 #intern_img{
-  width:30%;
+  width:40%;
 }
 #intern_text{
 width: 70%;
@@ -419,7 +435,7 @@ padding-left: 20px;
 #intern_text p{
   font-style: italic;
   color: #6B6666;
-}
+}/*
 
 /* Last div -> footer */
 #footer{
@@ -480,7 +496,7 @@ padding-left: 20px;
 
 
 
-@media(max-width:1024px){
+@media(max-width:958px){
 
   #inner_div{
     display: none;
@@ -500,25 +516,27 @@ padding-left: 20px;
   #sec_container {
     display: flex;
     flex-direction: column;
+    height: 650px;
   }
   #cont_left{
     padding: 0px;
   }
-  #cont_left h1{
-   text-align: left;
+  #cont_left h2{
+   text-align: center;
    font-size: 18px;
    font-weight:400px;
-   padding:10px 0px 3px 0px;
-   margin: 0px;
   }
+
   #cont_left p{
     text-align: left;
     font-size: 12px;
-    padding:0px 0px 3px 0px;
+    padding:0px 30px 3px 30px;
    }
-  .logobox {
-   margin:auto;
-   /* overflow-x: scroll; */
+   .logobox {
+    display: grid;
+    gap: 3px;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-evenly;
   }
   /* 3rd div - internship */
 
@@ -528,12 +546,29 @@ padding-left: 20px;
     display: flex;
     overflow-x: scroll;
   }
+  #internship img {
+    width: 80vw;
+    height:15rem;
+  }
   /* 4th div - course */
   #course{
-    display: flex;
     margin:0px;
+    padding:0px;
+    display: flex;
     overflow-x: scroll;
   }
+  #course div {
+    width: 70vw;
+    height: 200px;
+  }
+
+  /* #course{
+    margin:auto 120px;
+    justify-content: center;
+    text-align: center;
+    height: 50%;
+    display:block;
+  } */
   /* 5th div - growth*/
   #growth_container{
     display: flex;
@@ -541,11 +576,13 @@ padding-left: 20px;
     height: 500px;
   }
   #imagetree {
-    height: 70px;
+    height: 100px;
+    justify-content: center;
+    text-align: center;
   }
   #imagetree img{
-    margin-left: 80px;
-    padding-bottom: 130px; 
+    margin-left: 0px;
+    padding-bottom: 130px;
   }
   #text_part {
     height: 300;
@@ -553,13 +590,15 @@ padding-left: 20px;
     padding:0px;
     padding-left: 10px;
   }
-  #text_part h2 {
+  #text_part h2{
     text-align: center;
-    font-size:20px
+   font-size: 18px;
+   font-weight:400px;
   }
-  #text_part hr{
-    margin: 10px 3px;
-    color:#DDDDDD;
+  #text_part p {
+    text-align: left;
+    font-size: 12px;
+    padding:0px 30px 3px 30px;
   }
   /* 6th div - testimonial */
   #testimonial{
@@ -588,7 +627,7 @@ padding-left: 20px;
   #detail{
     display: none;
   }
- 
+
 }
 
 @media(max-width:1048px){
