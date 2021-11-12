@@ -22,7 +22,7 @@
     <div id="nn123"></div>
 
     <!-- after login nav bar using import export fuctionality -->
-    <div id="afternav1234"></div>
+    <!-- <div id="afternav1234"></div> -->
 
     <!---- 1st div-->
 
@@ -268,7 +268,7 @@
     import {n1234,footer123} from './component/n123.js'
 
 //after login navbar import-------------->
-   // import {afternav,footer123} from './component/after_nav.js'
+//    import {afternav,footer123} from './component/after_nav.js'
 
 
      document.getElementById('nn123').innerHTML = n1234()
@@ -297,7 +297,24 @@
     window.internshipExp6.addEventListener('click', () => { hello('Internship', 'Human Resource Internships') })
     window.internshipExp7.addEventListener('click', () => { hello('Internship', 'Engineering Internships') })//pending
     window.AllInternships.addEventListener('click', () => { hello('Internship', 'All Internships') })
+
+    $('.btn').click(function () {
+        $(this).toggleClass("click");
+        $('.sidebar').toggleClass("show");
+    });
+
+    $('.feat-btn').click(function () {
+        $('nav ul .feat-show').toggleClass("show");
+    });
+    $('.feat1-btn').click(function () {
+        $('nav ul .feat1-show').toggleClass("show1");
+    });
+    $('.feat2-btn').click(function () {
+        $('nav ul .feat2-show').toggleClass("show2");
+    });
 </script>
+
+
 <script>
 //slide part
     let slidePosition = 0;
@@ -344,20 +361,6 @@ function moveToPrevSlide() {
   updateSlidePosition();
 }
 
-</script>
-<script>
-     $('.btn').click(function () {
-        $(this).toggleClass("click");
-        $('.sidebar').toggleClass("show");
-    });
 
-    $('.feat-btn').click(function () {
-        $('nav ul .feat-show').toggleClass("show");
-    });
-    $('.feat1-btn').click(function () {
-        $('nav ul .feat1-show').toggleClass("show1");
-    });
-    $('.feat2-btn').click(function () {
-        $('nav ul .feat2-show').toggleClass("show2");
-    });
+
 </script>
