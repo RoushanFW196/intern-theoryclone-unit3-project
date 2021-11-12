@@ -210,7 +210,7 @@ padding-left: 40px;
     let slidePosition = 0;
 const slides = document.getElementsByClassName('carousel__item');
 const totalSlides = slides.length;
-
+//console.log(slides)
 document.
   getElementById('carousel__button--next')
   .addEventListener("click", function() {
@@ -251,6 +251,25 @@ function moveToPrevSlide() {
   updateSlidePosition();
 }
 
+
+function startslideshow(){
+    
+    let count=0;
+   let interval = setInterval(function(){
+        container.innerHTML=null;
+        if(count===slides.length){
+            count=0;
+        }
+     let p=document.createElement("p");
+    p.innextext=slides[count];
+    container.append(p);
+    count=count+1;
+    },3000);
+
+   
+
+}
+startslideshow();
 
 
     
