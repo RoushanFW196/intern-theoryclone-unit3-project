@@ -9,6 +9,9 @@
     <title>Document</title>
     
     <script src="https://kit.fontawesome.com/6716631a00.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="./style/temp.css">
        <style>
 
 
@@ -48,10 +51,12 @@
      height: 500px;
      overflow: scroll;
       padding: 20px 30px;
-     box-shadow: 5px;
+     
      font-size:15px;
      z-index: 50;
-    background-color:antiquewhite;
+    background-color:#fff;
+    box-shadow:0px 11px 15px -7px rgb(0 0 0 / 20%), 0px 24px 38px 3px rgb(0 0 0 / 14%), 0px 9px 46px 8px rgb(0 0 0 / 12%);
+
      visibility:hidden; 
     position: absolute;
     top: 100px;
@@ -126,13 +131,14 @@
       overflow: hidden;
       visibility: hidden;
       padding: 20px 30px;
-     box-shadow: 5px;
+    box-shadow:   0px 11px 15px -7px rgb(0 0 0 / 20%), 0px 24px 38px 3px rgb(0 0 0 / 14%), 0px 9px 46px 8px rgb(0 0 0 / 12%);
+
      position:absolute;
      top: 700px;
      left:30%;
      font-size:15px;
      z-index: 50;
-   background-color:antiquewhite;
+   background-color:#fff;
 
   }
     #update_address h1{
@@ -203,10 +209,11 @@
    top: 1200px;
    left:30%;
       padding: 20px 30px;
-     box-shadow: 5px;
+     box-shadow: 0px 11px 15px -7px rgb(0 0 0 / 20%), 0px 24px 38px 3px rgb(0 0 0 / 14%), 0px 9px 46px 8px rgb(0 0 0 / 12%);
+
      font-size:15px;
      z-index: 50;
-   background-color:antiquewhite;
+   background-color:#fff;
      visibility:hidden; 
   }
 
@@ -290,7 +297,7 @@
        font-size:13px;
        padding:4px 8px;
        margin-bottom:8px;
-       box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 3px 1px -2px rgb(0 0 0 / 12%);
+       box-shadow: 5px;
        box-sizing: border-box;
        border-radius:5px;
 
@@ -433,7 +440,7 @@
         top:10px;
         right:30px;
         background-color:#087CDD;
-        padding: 10px;
+        padding: 5px;
         color: white;
         border-radius: 50%;
     }
@@ -448,7 +455,7 @@
   }
     .dtl{
         width:90%;
-        margin:10px auto;
+        margin:10px ;
         display: flex;
       
         font-size:16px;
@@ -503,7 +510,7 @@
            position: relative;
            top:10px;right:20px;
            background-color:#087CDD;
-           padding: 10px;
+           padding: 5px;
            color: white;
            border-radius: 50%;
        }
@@ -532,7 +539,7 @@
                float: right;
                color: white;
                background-color:#087CDD;
-               padding: 10px;
+               padding: 5px;
                border-radius: 50%;
            }
     
@@ -578,6 +585,7 @@
 
 </head>
 <body>
+     <div id="nn123"></div> 
       <div id="box">
         <div id="leftpicbox"></div>
       
@@ -836,8 +844,7 @@
         <a href="profile.html">Cancel</a>
     </div>
 </div> 
-     
-
+      <div id="footer"></div> 
 
 
     <script>
@@ -1025,15 +1032,15 @@
     //        }
     //console.log("zxc")
        function appenddiv2(){
-        //    var ab = document.getElementById("n").textContent;
-        //    if(ab==""){
-        //     console.log("zxc");
-        //    }
-          // console.log(ab);
+           var ab = document.getElementById("n").innerHTML;
+         
+            console.log("zxc");
+           
+          console.log(ab);
 
         
-        if(document.getElementById("n").innerHTML==null){
-            document.getElementById("n").textContent=N/A;
+        if(document.getElementById("n").innerHTML==""){
+            document.getElementById("n").textContent="N/A";
         }
         if(document.getElementById("g").innerHTML==null){
             document.getElementById("g").innerHTML="N/A";
@@ -1044,15 +1051,20 @@
         if(document.getElementById("l").innerHTML==null){
             document.getElementById("l").innerHTML="N/A";
         }
-        if(document.getElementById("h").innerHTML==null){
+        if(document.getElementById("h").innerHTML==""){
             document.getElementById("h").innerHTML="N/A";
+            console.log("hello")
         }
+ else{
+
+    document.getElementById("h").innerHTML=user_info1.Hobbies;
+ }
 
        document.getElementById("n").innerHTML=user_info1.Name;
        document.getElementById("g").innerHTML=user_info1.Gender;
        document.getElementById("d").innerHTML=user_info1.DOB;
        document.getElementById("l").innerHTML=user_info1.Language;
-       document.getElementById("h").innerHTML=user_info1.Hobbies;
+     //  document.getElementById("h").innerHTML=user_info1.Hobbies;
        if(document.getElementById("a").innerHTML==null){
             document.getElementById("a").innerHTML="N/A";
         }
@@ -1194,3 +1206,34 @@
 
 </body>
 </html>
+
+<script type='module'>
+    
+    import { product, showData, hello } from './script/showData.js'
+    import { n1234, footer123 } from './component/n123.js'
+
+
+    document.getElementById('nn123').innerHTML = n1234()
+    document.getElementById('footer').innerHTML = footer123()
+
+    let InternshipBtn = document.getElementById('InternshipBtn')
+    let jobsBtn = document.getElementById('jobsBtn')
+    InternshipBtn.addEventListener('click', () => { hello('Internship', 'All Internships') })
+    jobsBtn.addEventListener('click', () => { hello('Job', 'Fresher Jobs') })
+
+
+    $('.btn').click(function () {
+        $(this).toggleClass("click");
+        $('.sidebar').toggleClass("show");
+    });
+
+    $('.feat-btn').click(function () {
+        $('nav ul .feat-show').toggleClass("show");
+    });
+    $('.feat1-btn').click(function () {
+        $('nav ul .feat1-show').toggleClass("show1");
+    });
+    $('.feat2-btn').click(function () {
+        $('nav ul .feat2-show').toggleClass("show2");
+    });
+</script>
