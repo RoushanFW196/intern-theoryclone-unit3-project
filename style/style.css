@@ -508,7 +508,7 @@ padding-left: 20px;
   }
   #cont_left h2{
    text-align: center;
-   font-size: 18px;
+   font-size: 0.875rem;
    font-weight:400px;
   }
 
@@ -582,7 +582,7 @@ padding-left: 20px;
   }
   #text_part p {
     text-align: left;
-    font-size: 12px;
+    font-size: 0.875rem;
     padding:0px 30px 3px 30px;
   }
   /* 6th div - testimonial */
@@ -595,8 +595,9 @@ padding-left: 20px;
   }
   #intern_img{
     width:100%;
-    padding-left: 70px;
     margin-bottom: 20px;
+    text-align: center;
+    justify-content: center;
   }
   #testimonial_innerdiv{
     width:100%;
@@ -604,6 +605,7 @@ padding-left: 20px;
   }
   #intern_text{
     width: 100%;
+    justify-content:center;
   }
   /* footer */
   #upper_part{
