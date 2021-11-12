@@ -21,11 +21,13 @@
             margin: 0.6rem 0;
             padding: 0.6rem 0;
         }
-        #detailContainer>:nth-child(1),#detailContainer>:nth-child(2) {
+
+        #detailContainer>:nth-child(1),
+        #detailContainer>:nth-child(2) {
             border-bottom: 2px dashed rgb(224, 224, 224);
-           
+
         }
-     
+
         #partCont1 {
             display: grid;
             grid-template-columns: 20% 60%;
@@ -92,13 +94,30 @@
             padding: 0.7rem 1rem;
             border: none;
         }
+
+        #popupMessage {
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+           
+            z-index: 20;
+            box-shadow: 0px 2px 2px -1px rgb(0 0 0 / 20%);
+            left: 47vw;
+          
+            width: 40rem;
+            height: 3rem;
+            text-align: center;
+            border-radius: 4px;
+            color: #fff;
+            background-color: #ffa000;
+        }
     </style>
 </head>
 
 <body>
 
     <div id="nn123"></div>
-    
+
     <div id="internAndJobContainer1" class="internAndJobContainer">
         <div id="addvertisment">
             <img src="https://assets.interntheory.com/creative/Internship_left_course_add_02.png" alt="addvertisment">
@@ -155,7 +174,7 @@
     </div>
 
     <div id="footer">
-      
+
 
     </div>
 
@@ -164,9 +183,9 @@
 </html>
 
 <script type="module">
- 
+
     import { product, showData, hello } from './script/showData.js'
-    import {n1234,footer123} from './component/n123.js'
+    import { n1234, footer123 } from './component/n123.js'
 
 
     document.getElementById('nn123').innerHTML = n1234()
@@ -193,7 +212,7 @@
         $('nav ul .feat2-show').toggleClass("show2");
     });
 
-  
+
 
     let detail = JSON.parse(localStorage.getItem('jobdetails'))
     console.log(detail)
@@ -235,9 +254,22 @@
     window.pc6.innerHTML = detail.company_description;
     window.pc7.innerHTML = detail.location;
 
-    window.applybtn1.onclick=()=>{
-        hello('Internship','All Internships')
+    window.applybtn1.onclick = () => {
+        hello('Internship', 'All Internships')
     }
 
 
+
+    window.applybtn2.onclick = () => {
+        // console.log('uo')
+        let div = document.createElement('div')
+        div.innerText = 'Your application has been submitted. Please complete your profile to stand a better chance to get shortlisted.';
+        div.id = 'popupMessage'
+        document.getElementById('nn123').append(div)
+        setTimeout(() => {
+            document.getElementById('popupMessage').style.display = 'none'
+            window.location.href = 'index.html'
+        }, 1500);
+    }
+    
 </script>
