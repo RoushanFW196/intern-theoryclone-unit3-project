@@ -51,7 +51,7 @@ function n12345(){
     <a href=""><div  id="notify_icon"><img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/notification-1614268-1368970.png" alt="">
     </div></a>
 
-    <a href="cart.html"><div id="cart_logo" > <img src="https://iconape.com/wp-content/png_logo_vector/shopping-cart.png"  >
+    <a href="cart.html"><div id="cart_logo" > <img src="https://cdn.icon-icons.com/icons2/1369/PNG/512/-shopping-cart_90604.png"  >
     </div> </a>
 
     <a  href=""><div id="user_icon"><img id="profile_img2">
