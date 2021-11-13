@@ -22,7 +22,7 @@ function n12345(){
         
                 <div class="a">
                     <div class="b">
-                        <img src="https://assets.interntheory.com/creative/default-images/girlProfile.jpg">
+                        <img id="profile_img1" >
                     </div>
                     <div class="per_info">
                     <h1 id="name"></h1>
@@ -54,7 +54,7 @@ function n12345(){
     <a href="cart.html"><div id="cart_logo" > <img src="https://iconape.com/wp-content/png_logo_vector/shopping-cart.png"  >
     </div> </a>
 
-    <a  href=""><div id="user_icon"><img src="https://assets.interntheory.com/creative/default-images/girlProfile.jpg" alt="">
+    <a  href=""><div id="user_icon"><img id="profile_img2">
     </div> </a>
         
 </div> 

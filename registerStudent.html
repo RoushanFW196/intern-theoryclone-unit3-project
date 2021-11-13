@@ -196,6 +196,18 @@ else {
 
         let phno = document.getElementById('phno');
         phno.innerText = localStorageData.mobile;
+
+        let profile_img1 = document.getElementById('profile_img1');
+        let profile_img2 = document.getElementById('profile_img2');
+       
+        if(localStorageData.Gender === "Male"){
+            profile_img1.src ="https://assets.interntheory.com/creative/default-images/guyProfile.jpg";
+            profile_img2.src ="https://assets.interntheory.com/creative/default-images/guyProfile.jpg";
+         }
+        else{
+            profile_img1.src ="https://assets.interntheory.com/creative/default-images/guyProfile.jpg";
+            profile_img2.src = "https://assets.interntheory.com/creative/default-images/girlProfile.jpg";
+        }
 }
 
     let InternshipBtn = document.getElementById('InternshipBtn')

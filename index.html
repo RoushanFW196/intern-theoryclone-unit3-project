@@ -279,7 +279,7 @@
     let localStorageData = JSON.parse(localStorage.getItem('studentDetail'))
 
 
-    console.log(localStorageData);
+    //console.log(localStorageData);
 
 
     import { n12345, footer1235 } from './component/after_nav.js'
@@ -298,12 +298,25 @@
        
         let name = document.getElementById('name');
         name.innerText = localStorageData.first + " " +localStorageData.last;
-        
+
         let mail = document.getElementById('mail');
         mail.innerText = localStorageData.email;
         
         let phno = document.getElementById('phno');
         phno.innerText = localStorageData.mobile;
+
+        let profile_img1 = document.getElementById('profile_img1');
+        let profile_img2 = document.getElementById('profile_img2');
+       
+        if(localStorageData.Gender === "Male"){
+            profile_img1.src ="https://assets.interntheory.com/creative/default-images/guyProfile.jpg";
+            profile_img2.src ="https://assets.interntheory.com/creative/default-images/guyProfile.jpg";
+         }
+        else{
+            profile_img1.src ="https://assets.interntheory.com/creative/default-images/guyProfile.jpg";
+            profile_img2.src = "https://assets.interntheory.com/creative/default-images/girlProfile.jpg";
+        }
+       
     }
   
     //after login navbar import-------------->
