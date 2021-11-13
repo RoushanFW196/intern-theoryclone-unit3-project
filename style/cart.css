@@ -252,6 +252,8 @@ input {
   background-color: white;
   border-radius: 5px;
   padding: 6px;
+  float: right;
+  
 }
 #remember {
   padding: 15px;
