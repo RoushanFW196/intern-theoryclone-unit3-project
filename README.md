@@ -35,5 +35,8 @@ this is the landing page of the website:
 ![snap1](https://user-images.githubusercontent.com/91534605/141649437-f79799b7-9534-425e-8ae1-6b69fc3bd92c.png)
 ![snap14](https://user-images.githubusercontent.com/91534605/141649450-09b8ba54-d90b-4711-80b2-89e55a13b8da.png)
 
+![snap15](https://user-images.githubusercontent.com/91534605/141649501-7e68598a-52e4-4120-bdcb-202c5d5f6b7b.png)
+![snap16](https://user-images.githubusercontent.com/91534605/141649517-285d786e-d544-4a40-a3b2-60e38f475393.png)
 
+![snap17](https://user-images.githubusercontent.com/91534605/141649524-8079da44-0905-47f6-be87-c42cd24bf0f2.png)
 
