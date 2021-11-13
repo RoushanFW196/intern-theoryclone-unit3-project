@@ -190,8 +190,9 @@
 import { n12345, footer1235 } from './component/after_nav.js'
 import { n1234, footer123 } from './component/n123.js'
 
-
+let flag=0
 if (localStorageData == null) {
+    flag=0
     document.getElementById('nn123').innerHTML = n1234();
     document.getElementById('footer').innerHTML = footer123();
 }
@@ -201,7 +202,7 @@ else {
     document.getElementById('nn123').innerHTML = n12345();
     document.getElementById('footer').innerHTML = footer1235();
 
-    
+    flag=1;
         let name = document.getElementById('name');
         name.innerText = localStorageData.first + " " +localStorageData.last;
  
@@ -212,6 +213,19 @@ else {
 
         let phno = document.getElementById('phno');
         phno.innerText = localStorageData.mobile;
+
+       
+        let profile_img1 = document.getElementById('profile_img1');
+        let profile_img2 = document.getElementById('profile_img2');
+       
+        if(localStorageData.Gender === "Male"){
+            profile_img1.src ="https://assets.interntheory.com/creative/default-images/guyProfile.jpg";
+            profile_img2.src ="https://assets.interntheory.com/creative/default-images/guyProfile.jpg";
+         }
+        else{
+            profile_img1.src ="https://assets.interntheory.com/creative/default-images/girlProfile.jpg";
+            profile_img2.src = "https://assets.interntheory.com/creative/default-images/girlProfile.jpg";
+        }
 }
 
     let InternshipBtn = document.getElementById('InternshipBtn')
@@ -285,6 +299,7 @@ else {
 
     window.applybtn2.onclick = () => {
         // console.log('uo')
+      if(flag==1){
         let div = document.createElement('div')
         div.innerText = 'Your application has been submitted. Please complete your profile to stand a better chance to get shortlisted.';
         div.id = 'popupMessage'
@@ -293,6 +308,10 @@ else {
             document.getElementById('popupMessage').style.display = 'none'
             window.location.href = 'profile.html'
         }, 1500);
+      }
+      else{
+          window.location.href='loginStudent.html'
+      }
     }
     
 </script>
