@@ -1,4 +1,4 @@
-*{
+#nn123{
   margin: 0;
   padding: 0;
   user-select: none;
@@ -24,20 +24,11 @@ nav{
   display: flex;
   justify-content: space-between;
 }
-nav #afterlogin_navbar{
-  width: 100%;
-  height: 70px;
-  background-color: white;
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  top: 0px;
-  margin: 0px;
-  z-index: 10;
-  box-shadow: 0px 2px 2px -1px rgb(0 0 0 / 20%);
-}
 #right_div a{
   margin-right:10px;
+}
+#right_div{
+  margin-right: 25px;
 }
 #right_div,#left_div{
   display: flex;
@@ -59,15 +50,16 @@ nav #afterlogin_navbar{
 }
 
 #user_icon img , #notify_icon img ,#cart_logo img {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
+  border-radius:50%;
 }
 #humburger{
-  margin-top: 5px;
+  /* margin-top: 5px; */
 margin-bottom: 8px;
 margin-left: 10px;
 }
-.humburger.click{
+#humburger.click{
 left:260px; 
 }
 #humburger img{
@@ -78,7 +70,7 @@ left:260px;
 }
 #signin {
   background-color: red;
-  padding: 8px 10px;
+  padding: 10px 0px;
   margin:4px 20px 15px 0px;
   width: 100px;
   border-radius: 5px;
@@ -86,10 +78,16 @@ left:260px;
   color: white;
   cursor: pointer;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
 }
   #signin:hover {
   background-color: rgb(94, 2, 2);
 } 
+
+#signin>a{
+  text-decoration:none;
+  color:white;
+}
 .btn{
 
   transition: left 0.4s ease;
@@ -98,8 +96,7 @@ left:260px;
 }
 i{
   padding-right:40px;
-  padding:20px
-
+  padding:20px;
 }
 .btn .click{
   left:260px; 
@@ -126,6 +123,7 @@ i{
   left:0px;
 }
 .a{
+  display: flex;
   padding:10px;
   height: 70px;
   border: 0.5px solid rgb(221, 220, 220);
@@ -133,7 +131,38 @@ i{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
-
+.per_info{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-top: 0px;
+  width: 100%;
+}
+#name{
+  color: #3C4858;
+  font-size: 0.875rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.01071em;
+  margin: 0;
+  display: block;
+  overflow-wrap: break-word;
+}
+#mail ,#phno{
+  margin: 0;
+    display: block;
+    overflow-wrap: break-word;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 0.75rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.66;
+    letter-spacing: 0.03333em;
+}
+/* a{
+  color:rgb(1, 1, 29) ;
+} */
 
 .sidebar .text{
   color: white;
@@ -144,6 +173,7 @@ i{
   background: #1e1e1e;
   letter-spacing: 1px;
 }
+
 
 nav ul{
   background: white;
@@ -164,14 +194,13 @@ nav ul li{
 .b img{
   width: 50px;
   height: 50px;
-  margin-left: 100px;
   border-radius: 30px;
 }
 nav ul li a{
   color:rgb(19, 18, 18);
   text-decoration: none;
   font-size: 15px;
-  padding-left: 40px;
+  height: 3rem;
   font-weight: 500;
   display: block;
   width: 100%;
@@ -221,3 +250,29 @@ nav ul li a span:hover{
   transform: translateY(-50%) rotate(-180deg);
   color: cyan;
 }
+
+
+
+@media(max-width:1024px){
+  #signin{
+    display: none;
+  }
+}
+
+
+@keyframes fadeVisibility {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: opacity linear;
+  }
+}
+
+
+
+  #navbar{
+    width: 100vw;
+  }
+

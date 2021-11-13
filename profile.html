@@ -1,15 +1,18 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Profile</title>
     
     <script src="https://kit.fontawesome.com/6716631a00.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="./style/temp.css">
        <style>
-
   #box{
       width:90%;
       height: 1500px;
@@ -22,6 +25,9 @@
      margin-bottom: 100px;
   }
    
+  input{
+      outline: none;
+  }
  
    #leftpicbox{
        width:30%;
@@ -44,10 +50,12 @@
      height: 500px;
      overflow: scroll;
       padding: 20px 30px;
-     box-shadow: 5px;
+     
      font-size:15px;
      z-index: 50;
-    background-color:antiquewhite;
+    background-color:#fff;
+    box-shadow:0px 11px 15px -7px rgb(0 0 0 / 20%), 0px 24px 38px 3px rgb(0 0 0 / 14%), 0px 9px 46px 8px rgb(0 0 0 / 12%);
+
      visibility:hidden; 
     position: absolute;
     top: 100px;
@@ -122,13 +130,14 @@
       overflow: hidden;
       visibility: hidden;
       padding: 20px 30px;
-     box-shadow: 5px;
+    box-shadow:   0px 11px 15px -7px rgb(0 0 0 / 20%), 0px 24px 38px 3px rgb(0 0 0 / 14%), 0px 9px 46px 8px rgb(0 0 0 / 12%);
+
      position:absolute;
      top: 700px;
      left:30%;
      font-size:15px;
      z-index: 50;
-   background-color:antiquewhite;
+   background-color:#fff;
 
   }
     #update_address h1{
@@ -199,10 +208,11 @@
    top: 1200px;
    left:30%;
       padding: 20px 30px;
-     box-shadow: 5px;
+     box-shadow: 0px 11px 15px -7px rgb(0 0 0 / 20%), 0px 24px 38px 3px rgb(0 0 0 / 14%), 0px 9px 46px 8px rgb(0 0 0 / 12%);
+
      font-size:15px;
      z-index: 50;
-   background-color:antiquewhite;
+   background-color:#fff;
      visibility:hidden; 
   }
 
@@ -286,7 +296,7 @@
        font-size:13px;
        padding:4px 8px;
        margin-bottom:8px;
-       box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 3px 1px -2px rgb(0 0 0 / 12%);
+       box-shadow: 5px;
        box-sizing: border-box;
        border-radius:5px;
 
@@ -301,7 +311,7 @@
     line-height: 1.75;
     letter-spacing: 0.00938em;
     display: block;
-    padding-bottom: 20px;
+    padding-bottom: 7px;
     border-bottom: 1px solid black;
   }
 
@@ -406,7 +416,7 @@
    }
   #btndv2 span{
       color: rgb(8,124,221);
-     margin-left: 20px;
+     margin-left: -1px;
       font-size: 13px;
       border: 1px solid rgba(8, 124, 221, 0.5);
       padding: 4px 8px;
@@ -429,7 +439,7 @@
         top:10px;
         right:30px;
         background-color:#087CDD;
-        padding: 10px;
+        padding: 5px;
         color: white;
         border-radius: 50%;
     }
@@ -444,7 +454,7 @@
   }
     .dtl{
         width:90%;
-        margin:10px auto;
+        margin:10px ;
         display: flex;
       
         font-size:16px;
@@ -499,7 +509,7 @@
            position: relative;
            top:10px;right:20px;
            background-color:#087CDD;
-           padding: 10px;
+           padding: 5px;
            color: white;
            border-radius: 50%;
        }
@@ -528,7 +538,7 @@
                float: right;
                color: white;
                background-color:#087CDD;
-               padding: 10px;
+               padding: 5px;
                border-radius: 50%;
            }
     
@@ -574,6 +584,7 @@
 
 </head>
 <body>
+     <div id="nn123"></div> 
       <div id="box">
         <div id="leftpicbox"></div>
       
@@ -729,7 +740,7 @@
        <label>Date of Birth*</label><br>
       <input type="date" placeholder="Date of Birth*"id="date"><br>
       <select id="lang"><br>
-        <option>Select Language</option>
+        
           <option value="Hindi">Hindi</option>
           <option value="English">English</option>
           <option value="German">German</option>
@@ -743,7 +754,7 @@
      <input type="text" placeholder="Achievements" id="achiev"><br>
 
        <select id="skill" placeholder="Skills*">
-           <option>Select one or more skills</option>
+          
            <option value="Digital Marketing">Digital Marketing</option>
            <option value="consulting">Consulting</option>
            <option value="Animation">Animation</option>
@@ -752,7 +763,7 @@
        </select><br>
 
   <select id="pref">
-      <option>Preferences</option>
+     
       <option value="Animation">Animation</option>
       <option value="Web design">Web design</option>
       <option value="Content writing">Content writing</option>
@@ -832,14 +843,17 @@
         <a href="profile.html">Cancel</a>
     </div>
 </div> 
-     
-
+      <div id="footer"></div> 
 
 
     <script>
+        var student_detail=JSON.parse(localStorage.getItem("studentDetail"));
   
         function updateprofile(){
            
+           // var student_detail=JSON.parse(localStorage.getItem("studentDetail"));
+           // console.log(student_detail)
+
             var fname=document.getElementById("fname").value;
             var lname=document.getElementById("lname").value;
              var gender=document.getElementById("gender").value;
@@ -853,43 +867,65 @@
 
           var name= fname +" "+ lname;
          
-          let user_info={}
-             user_info. Name= name,
-            user_info.Gender=gender,
-            user_info. DOB=dob,
-        user_info.Language=lang,
-            user_info.Hobbies=hobby,
-            user_info.Achievements=achvmnt,
-            user_info.  Skills=skill,
-            user_info.Preference=pref,
-            user_info.About=about,
+        //   console.log(name)
+        //   let user_info={}
+        //      user_info. Name= name,
+        //     user_info.Gender=gender,
+        //     user_info. DOB=dob,
+        // user_info.Language=lang,
+        //     user_info.Hobbies=hobby,
+        //     user_info.Achievements=achvmnt,
+        //     user_info.  Skills=skill,
+        //     user_info.Preference=pref,
+        //     user_info.About=about,
    
           
 
-          localStorage.setItem("user_profile",JSON.stringify(user_info));
+         // localStorage.setItem("user_profile",JSON.stringify(user_info));
           
-         
-     setTimeout(()=>{
-        alert("Your profile is updated")
-         window.location.href="profile.html";
-     },1000)
+        // var student_detail=JSON.parse(localStorage.getItem("studentDetail"))
+       
+         student_detail.first=fname;
+         student_detail.last=lname;
+        // student_detail.Name=`${student_detail.first}`+" "+ `${student_detail.last}`;
+        // if(student_detail.Name==undefined){
+        //     student_detail.Name=name;
+        // }
+         student_detail.Name=name;
+    //    console.log(student_detail)
+         student_detail.Gender=gender;
+         student_detail.Dob=dob;
+         student_detail.Language=lang;
+         student_detail.Hobbies=hobby;
+         student_detail.Achievements=achvmnt;
+         student_detail.Skills=skill;
+         student_detail.Preference=pref;
+         student_detail.About=about;
+
+
+         localStorage.setItem("studentDetail",JSON.stringify(student_detail));
+          
+      setTimeout(()=>{
+         alert("Your profile is updated")
+          window.location.href="profile.html";
+      },1000)
             
         
 
         }
 
-
        
 
         function Addaddress(){
-            let user_info= JSON.parse(localStorage.getItem("user_profile")) ;
+            let user_info= JSON.parse(localStorage.getItem("studentDetail")) ;
+          //  console.log(user_info) ;
             var adrs=document.getElementById("address").value ;
             var state=document.getElementById("state").value ;
             var city= document.getElementById("city").value ;
             var pincode=document.getElementById("pincode").value ;
 
              user_info.Address=adrs,
-             user_info.City=city,
+             user_info.city=city,
              user_info.Pincode=pincode,
              user_info.State=state
 
@@ -899,13 +935,13 @@
          window.location.href="profile.html";
      },1000)
             
-             localStorage.setItem("user_profile",JSON.stringify(user_info));
+             localStorage.setItem("studentDetail",JSON.stringify(user_info));
         }
 
 
      
      function addEducation(){
-        let user_info= JSON.parse(localStorage.getItem("user_profile")) ;
+        let user_info= JSON.parse(localStorage.getItem("studentDetail")) ;
          
         var edu=document.getElementById("edu").value ;
         var insname=document.getElementById("insname").value ;
@@ -921,19 +957,18 @@
      setTimeout(()=>{
          window.location.href="profile.html";
      },2000)
-        localStorage.setItem("user_profile",JSON.stringify(user_info));
+        localStorage.setItem("studentDetail",JSON.stringify(user_info));
      }
    
-     var user_info1= JSON.parse(localStorage.getItem("user_profile")) ;
+
+      var user_info1= JSON.parse(localStorage.getItem("studentDetail")) ;
 
  
 
 
-    console.log(user_info1)
+        //  console.log( "final data from lclstrg,",user_info1)
    
-    var student_detail=JSON.parse(localStorage.getItem("studentDetail"))
-
-     console.log(student_detail)
+   
 
      function appenditeminleftdiv(){
      let updiv = document.createElement("div");
@@ -948,15 +983,16 @@
 
        let btn = document.createElement("button");
        btn.textContent ="GO TO DASHBOARD"
+        btn.onclick =gotodashboard;
        let p1=document.createElement("p");
-       p1.textContent =user_info1.Name;
+       p1.textContent =user_info1.first+ " "+user_info1.last;
        let dndiv=document.createElement("div");
        dndiv.setAttribute("id","dndiv")
       let p2=document.createElement("p");
-       p2.textContent ="Email:"+" "+student_detail.email;
+       p2.textContent ="Email:"+" "+user_info1.email;
 
        let p3=document.createElement("p");
-       p3.textContent ="Mobile:"+" "+student_detail.mobile
+       p3.textContent ="Mobile:"+" "+user_info1.mobile;
 
        dndiv.append(p2,p3)
   updiv.append(image,btn,p1)
@@ -967,7 +1003,18 @@
 
     }
 
-    appenditeminleftdiv();
+   appenditeminleftdiv();
+
+
+
+    function gotodashboard(){
+        window.location.href="courses.html";
+    }
+
+
+
+
+
 
      function appenddiv1(){
 
@@ -987,7 +1034,7 @@
     let txdv=document.createElement("div");
     txdv.setAttribute("id", "txdv");
     let p1=document.createElement("p");
-    p1.textContent =user_info1.Name;
+    p1.textContent =user_info1.first+" "+user_info1.last;
      
       let btndv=document.createElement("div");
         btndv.setAttribute("id","btndv")
@@ -1012,60 +1059,86 @@
 
      }
    
-     appenddiv1();
+    appenddiv1();
 
 
-    //  var ab = document.getElementById("n").textContent;
-    //        if(ab==""){
-    //         console.log("zxc");
-    //        }
-    //console.log("zxc")
        function appenddiv2(){
-        //    var ab = document.getElementById("n").textContent;
-        //    if(ab==""){
-        //     console.log("zxc");
-        //    }
-          // console.log(ab);
+        
 
         
-        if(document.getElementById("n").innerHTML==null){
-            document.getElementById("n").textContent=N/A;
+        if(user_info1.Name==""){
+            document.getElementById("n").innerHTML="N/A";
         }
-        if(document.getElementById("g").innerHTML==null){
+       else{
+        document.getElementById("n").innerHTML=user_info1.first+" "+user_info1.last;
+       }
+
+
+
+        if(user_info1.Gender==""){
             document.getElementById("g").innerHTML="N/A";
         }
-        if(document.getElementById("d").innerHTML==null){
+          else{
+            document.getElementById("g").innerHTML=user_info1.Gender;
+          }
+
+
+
+        if(user_info1.Dob==""){
             document.getElementById("d").innerHTML="N/A";
         }
-        if(document.getElementById("l").innerHTML==null){
-            document.getElementById("l").innerHTML="N/A";
-        }
-        if(document.getElementById("h").innerHTML==null){
-            document.getElementById("h").innerHTML="N/A";
+        else{
+            document.getElementById("d").innerHTML=user_info1.Dob;
         }
 
-       document.getElementById("n").innerHTML=user_info1.Name;
-       document.getElementById("g").innerHTML=user_info1.Gender;
-       document.getElementById("d").innerHTML=user_info1.DOB;
-       document.getElementById("l").innerHTML=user_info1.Language;
-       document.getElementById("h").innerHTML=user_info1.Hobbies;
-       if(document.getElementById("a").innerHTML==null){
+
+        if(user_info1.Language==""){
+            document.getElementById("l").innerHTML="N/A";
+        }
+        else{
+            document.getElementById("l").innerHTML=user_info1.Language;
+        }
+
+
+        if(user_info1.Hobbies==""){
+            document.getElementById("h").innerHTML="N/A";
+            
+        }
+ else{
+
+    document.getElementById("h").innerHTML=user_info1.Hobbies;
+   }
+
+     
+       if(user_info1.Achievements==""){
             document.getElementById("a").innerHTML="N/A";
         }
-       document.getElementById("a").innerHTML=user_info1.Achievements;
-       if(document.getElementById("s").innerHTML==null){
+         else{
+            document.getElementById("a").innerHTML=user_info1.Achievements;
+         }
+
+      
+       if(user_info1.Skills==""){
             document.getElementById("s").innerHTML="N/A";
         }
-       document.getElementById("s").innerHTML=user_info1.Skills;
-       if(document.getElementById("p").innerHTML==null){
+        else{
+            document.getElementById("s").innerHTML=user_info1.Skills;
+        }
+     
+       if(user_info1.Preference==""){
             document.getElementById("p").innerHTML="N/A";
         }
-       document.getElementById("p").innerHTML=user_info1.Preference;
-     //  document.getElementById("n").innerHTML=user_info1.
-     if(document.getElementById("ab").innerHTML==null){
+        else{
+            document.getElementById("p").innerHTML=user_info1.Preference;
+        }
+     
+     if(user_info1.About==""){
             document.getElementById("ab").innerHTML="N/A";
         }
-       document.getElementById("ab").innerHTML=user_info1.About;
+        else{
+            document.getElementById("ab").innerHTML=user_info1.About;
+       }
+      
        }
 
 
@@ -1073,30 +1146,17 @@
 
        function appenddiv3(){
 
-        if(document.getElementById("mail").innerHTML==null){
-            document.getElementById("mail").innerHTML="N/A";
-        }
-        if(document.getElementById("no").innerHTML==null){
-            document.getElementById("no").innerHTML="N/A";
-        }
-        if(document.getElementById("fbac").innerHTML==null){
-            document.getElementById("fbac").innerHTML="N/A";
-        }
-        if(document.getElementById("gac").innerHTML==null){
-            document.getElementById("gac").innerHTML="N/A";
-        }
+     
 
-        document.getElementById("mail").innerHTML=student_detail.email;
-        document.getElementById("no").innerHTML=student_detail.mobile;
-       // document.getElementById("fbac").innerHTML="https://www.interntheory.com/assets/iconsLogos/facebook-circular-logo.svg"+"Link Your Facebook account"
-
-      //  document.getElementById("gac").innerHTML="https://www.interntheory.com/assets/iconsLogos/googlelogo.svg"+`${student_detail.email}`;
+        document.getElementById("mail").innerHTML=user_info1.email;
+        document.getElementById("no").innerHTML=user_info1.mobile;
+      
         let gdiv= document.createElement("div");
 
   let gim =document.createElement("img");
   gim.src="data:image/png;base64,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"
   let gp=document.createElement("p");
-  gp.textContent=`${student_detail.email}`;
+  gp.textContent=`${user_info1.email}`;
    gdiv.append(gim,gp)
    document.getElementById("gac").append(gdiv)
   
@@ -1110,33 +1170,46 @@
 
        }
 
-  appenddiv3();
+    appenddiv3();
 
   function appenddiv4(){
 
-    if(document.getElementById("ad").innerHTML==undefined){
+    if(user_info1.Address==""){
             document.getElementById("ad").innerHTML="N/A";
         }
-        if(document.getElementById("ct").innerHTML==null){
-            document.getElementById("ct").innerHTML="N/A";
-        }
-        if(document.getElementById("st").innerHTML==null){
-            document.getElementById("st").innerHTML="N/A";
-        }
-        if(document.getElementById("pn").innerHTML==null){
-            document.getElementById("pn").innerHTML="N/A";
+        else{
+            document.getElementById("ad").innerHTML=user_info1.Address;
         }
 
-        document.getElementById("ad").innerHTML=user_info1.Address;
-        document.getElementById("ct").innerHTML=user_info1.City;
-        document.getElementById("st").innerHTML=user_info1.State;
-        document.getElementById("pn").innerHTML=user_info1.Pincode;
+
+        if(user_info1.city==""){
+            document.getElementById("ct").innerHTML="N/A";
+        }
+        else{
+            
+        document.getElementById("ct").innerHTML=user_info1.city;
+        }
+
+        if(user_info1.State==null){
+            document.getElementById("st").innerHTML="N/A";
+        }
+        else{
+            document.getElementById("st").innerHTML=user_info1.State;
+        }
+
+        if(user_info1.Pincode==null){
+            document.getElementById("pn").innerHTML="N/A";
+        }
+        else{
+            document.getElementById("pn").innerHTML=user_info1.Pincode;
+        }
+       
 
   }
 
 
 
- appenddiv4();
+   appenddiv4();
    function appenddiv5(){
 
     let p1=document.createElement("p");
@@ -1190,3 +1263,66 @@
 
 </body>
 </html>
+
+<script type='module'>
+      import { product, showData, hello, afterLogout } from './script/showData.js'
+    let localStorageData = JSON.parse(localStorage.getItem('studentDetail'))
+
+import { n12345, footer1235 } from './component/after_nav.js'
+import { n1234, footer123 } from './component/n123.js'
+
+
+if (localStorageData == null) {
+    document.getElementById('nn123').innerHTML = n1234();
+    document.getElementById('footer').innerHTML = footer123();
+}
+
+else {
+
+   
+        document.getElementById('nn123').innerHTML = n12345();
+        document.getElementById('footer').innerHTML = footer1235();
+
+        let name = document.getElementById('name');
+        name.innerText = localStorageData.first + " " +localStorageData.last;
+
+        let mail = document.getElementById('mail');
+        mail.innerText = localStorageData.email;
+
+        let phno = document.getElementById('phno');
+        phno.innerText = localStorageData.mobile;
+
+        let profile_img1 = document.getElementById('profile_img1');
+        let profile_img2 = document.getElementById('profile_img2');
+        afterLogout();
+        if(localStorageData.Gender === "Male"){
+            profile_img1.src ="https://assets.interntheory.com/creative/default-images/guyProfile.jpg";
+            profile_img2.src ="https://assets.interntheory.com/creative/default-images/guyProfile.jpg";
+         }
+        else{
+            profile_img1.src ="https://assets.interntheory.com/creative/default-images/girlProfile.jpg";
+            profile_img2.src = "https://assets.interntheory.com/creative/default-images/girlProfile.jpg";
+        }
+}
+
+    let InternshipBtn = document.getElementById('InternshipBtn')
+    let jobsBtn = document.getElementById('jobsBtn')
+    InternshipBtn.addEventListener('click', () => { hello('Internship', 'All Internships') })
+    jobsBtn.addEventListener('click', () => { hello('Job', 'Fresher Jobs') })
+
+
+    $('.btn').click(function () {
+        $(this).toggleClass("click");
+        $('.sidebar').toggleClass("show");
+    });
+
+    $('.feat-btn').click(function () {
+        $('nav ul .feat-show').toggleClass("show");
+    });
+    $('.feat1-btn').click(function () {
+        $('nav ul .feat1-show').toggleClass("show1");
+    });
+    $('.feat2-btn').click(function () {
+        $('nav ul .feat2-show').toggleClass("show2");
+    });
+</script>

@@ -6,12 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us|Intern Theory</title>
-      <link rel="stylesheet" href="contactus.css">
+      <link rel="stylesheet" href="./style/contactus.css">
+      <link rel="stylesheet" href="./style/temp.css">
+      <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
 </head>
 <body>
     
-    <div id="navbar"></div>
+    <div id="nn123"></div>
 
     <div id="contactus">
 
@@ -26,7 +29,7 @@
 
            </div>
              <div>
-                <button id="submitmessage" >SUBMIT</button>
+                <button id="submitmessage" onsubmit="func()" >SUBMIT</button>
 
              </div>
 
@@ -61,29 +64,84 @@
 
 
         <div id="rightcontactdiv">
-            <img src="https://lh3.googleusercontent.com/proxy/0-JV2BMXmqE2TGQXhTcUgKlCl8-M3bS9Zl5Tff3Ogjk8cb0XC1xM6GaJ6KrfNQd71fwnjZuUdW9zWgJCo6vaElmBCgx2q9uNcEBCNd41XIQCu35Uw1rEA_FjWsPmAzsec9Ht_XrblV4uMRiWeuxftriaW0W0bOXFTX3q" alt="">
+            <img src="https://cdn.filestackcontent.com/qfzkumr0RE27pdC8tqeH" alt="">
         </div>
            
     </div>
 
 
      <div id="footer"></div>
-  
-
-     <script type="module">
-
-        import navbar from './component/navbar.js'
-      let nav_div = document.getElementById('navbar');
-      nav_div.innerHTML = navbar();
-    
-      </script>
-    
-      <script type="module">
-       import footer from './component/footer.js'
-    let footer_div=document.getElementById('footer');
-       footer_div.innerHTML = footer();
-   </script>    
-
 
 </body>
 </html>
+
+<script type="module">
+    function func(){
+        alert("successfully submitted");
+    }    
+
+    import { product, showData, hello,afterLogout } from './script/showData.js'
+    let localStorageData = JSON.parse(localStorage.getItem('studentDetail'))
+
+    import { n12345, footer1235 } from './component/after_nav.js'
+    import { n1234, footer123 } from './component/n123.js'
+
+
+    if (localStorageData == null) {
+        document.getElementById('nn123').innerHTML = n1234();
+        document.getElementById('footer').innerHTML = footer123();
+    }
+
+    else {
+
+        document.getElementById('nn123').innerHTML = n12345();
+        document.getElementById('footer').innerHTML = footer1235();
+
+        afterLogout()
+        let name = document.getElementById('name');
+        name.innerText = localStorageData.first + " " +localStorageData.last;
+ 
+        let mail = document.getElementById('mail');
+        mail.innerText = localStorageData.email;
+
+        let phno = document.getElementById('phno');
+        phno.innerText = localStorageData.mobile;
+
+    
+        let profile_img1 = document.getElementById('profile_img1');
+        let profile_img2 = document.getElementById('profile_img2');
+       
+        if(localStorageData.Gender === "Male"){
+            profile_img1.src ="https://assets.interntheory.com/creative/default-images/guyProfile.jpg";
+            profile_img2.src ="https://assets.interntheory.com/creative/default-images/guyProfile.jpg";
+         }
+        else{
+            profile_img1.src ="https://assets.interntheory.com/creative/default-images/girlProfile.jpg";
+            profile_img2.src = "https://assets.interntheory.com/creative/default-images/girlProfile.jpg";
+        }
+    }
+   
+       let InternshipBtn = document.getElementById('InternshipBtn')
+       let jobsBtn = document.getElementById('jobsBtn')
+       InternshipBtn.addEventListener('click', () => { hello('Internship', 'All Internships') })
+       jobsBtn.addEventListener('click', () => { hello('Job', 'Fresher Jobs') })
+   
+   
+       $('.btn').click(function () {
+           $(this).toggleClass("click");
+           $('.sidebar').toggleClass("show");
+       });
+   
+       $('.feat-btn').click(function () {
+           $('nav ul .feat-show').toggleClass("show");
+       });
+       $('.feat1-btn').click(function () {
+           $('nav ul .feat1-show').toggleClass("show1");
+       });
+       $('.feat2-btn').click(function () {
+           $('nav ul .feat2-show').toggleClass("show2");
+       });
+   
+     
+   
+   </script>

@@ -7,17 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cart</title>
     <link rel="stylesheet" href="./style/cart.css">
-
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="./style/temp.css">
 </head>
 
 <body>
     <!-- <div>
         navbar space
     </div> -->
-    <nav id="navbar"></nav>
-
-
-
+    <div id="nn123"></div>
 
 
     <div class="cont">
@@ -58,10 +57,11 @@
                             <div class="content">
 
                                 <div id="head">
-                                    <div id="logo">
+                                     <div id="logo">
                                         <img src="https://cdn.razorpay.com/logos/8BOCiNqJJB6Zfs_medium.jpg" />
-                                    </div>
+                                    </div> 
                                     <div id="heading">
+                                       
                                         <!-- <button onclick="location.href='cart.html'" id="cancel">X</button> -->
                                         <h2>Intern Theory</h2>
                                         <p>Purchase Description</p>
@@ -112,38 +112,75 @@
 </body>
 
 </html>
-<script src="cart.js"></script>
-
-<!-- <script type="module">
-
-import navbar from './component/navbar.js'
-    let nav_div = document.getElementById('navbar');
-    nav_div.innerHTML = navbar();
-  </script>
-
-   <script type="module">
-    import footer from './component/footer.js'
-let footer_div=document.getElementById('footer')
-    footer_div.innerHTML = footer();
+<script src="/script/cart.js"></script>
 
 
-</script>
-
- -->
 
 
 <script type="module">
+ import { product, showData, hello,afterLogout } from './script/showData.js'
+ let localStorageData = JSON.parse(localStorage.getItem('studentDetail'))
 
-    import navbar from './component/navbar.js'
-    let nav_div = document.getElementById('navbar');
-    nav_div.innerHTML = navbar();
+import { n12345, footer1235 } from './component/after_nav.js'
+import { n1234, footer123 } from './component/n123.js'
 
-</script>
 
-<script type="module">
-    import footer from './component/footer.js'
-    let footer_div = document.getElementById('footer')
-    footer_div.innerHTML = footer();
+if (localStorageData == null) {
+    document.getElementById('nn123').innerHTML = n1234()
+    document.getElementById('footer').innerHTML = footer123()
+}
 
+else {
+    document.getElementById('nn123').innerHTML = n12345()
+    document.getElementById('footer').innerHTML = footer1235()
+
+    afterLogout()
+    
+        let name = document.getElementById('name');
+        name.innerText = localStorageData.first + " " +localStorageData.last;
+ 
+        let mail = document.getElementById('mail');
+        mail.innerText = localStorageData.email;
+        
+
+        let phno = document.getElementById('phno');
+        phno.innerText = localStorageData.mobile;
+
+       
+        let profile_img1 = document.getElementById('profile_img1');
+        let profile_img2 = document.getElementById('profile_img2');
+       
+        if(localStorageData.Gender === "Male"){
+            profile_img1.src ="https://assets.interntheory.com/creative/default-images/guyProfile.jpg";
+            profile_img2.src ="https://assets.interntheory.com/creative/default-images/guyProfile.jpg";
+         }
+        else{
+            profile_img1.src ="https://assets.interntheory.com/creative/default-images/girlProfile.jpg";
+            profile_img2.src = "https://assets.interntheory.com/creative/default-images/girlProfile.jpg";
+        }
+}
+
+    let InternshipBtn = document.getElementById('InternshipBtn')
+    let jobsBtn = document.getElementById('jobsBtn')
+    InternshipBtn.addEventListener('click', () => { hello('Internship', 'All Internships') })
+    jobsBtn.addEventListener('click', () => { hello('Job', 'Fresher Jobs') })
+
+
+    $('.btn').click(function () {
+        $(this).toggleClass("click");
+        $('.sidebar').toggleClass("show");
+    });
+
+    $('.feat-btn').click(function () {
+        $('nav ul .feat-show').toggleClass("show");
+    });
+    $('.feat1-btn').click(function () {
+        $('nav ul .feat1-show').toggleClass("show1");
+    });
+    $('.feat2-btn').click(function () {
+        $('nav ul .feat2-show').toggleClass("show2");
+    });
+
+  
 
 </script>
