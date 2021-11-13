@@ -123,7 +123,7 @@
 </html>
 
 <script type="module">
-    import { product, showData, hello } from './script/showData.js'
+    import { product, showData, hello , afterLogout} from './script/showData.js'
     let localStorageData = JSON.parse(localStorage.getItem('studentDetail'))
 
 import { n12345, footer1235 } from './component/after_nav.js'
@@ -140,6 +140,7 @@ else {
     document.getElementById('nn123').innerHTML = n12345();
     document.getElementById('footer').innerHTML = footer1235();
 
+    afterLogout();
     
         let name = document.getElementById('name');
         name.innerText = localStorageData.first + " " +localStorageData.last;
@@ -295,7 +296,7 @@ else {
 
     let dis = document.getElementById('dis')
     let filterData = JSON.parse(localStorage.getItem('filterData'))
-    console.log(filterData)
+    // console.log(filterData)
     let heading11 = JSON.parse(localStorage.getItem('heading'))
 
 
@@ -307,7 +308,7 @@ else {
                
                 return el.Category.includes(filterInput)
             })
-            console.log(filtersearch)
+            // console.log(filtersearch)
             filtersearch.unshift(filterData[0])
             showData(filtersearch, dis, heading11)
         } else {
@@ -368,7 +369,7 @@ else {
         modelsChecked = document.querySelectorAll('.filter input.city:checked')
         typeChecked = document.querySelectorAll('.filter input.wtype:checked')
         preferenceChecked = document.querySelectorAll('.filter input.preference:checked')
-        console.log(preferenceChecked)
+        // console.log(preferenceChecked)
 
         let list1 = []
         let list2 = []
@@ -381,9 +382,9 @@ else {
         filterofCity(modelsChecked, filterData)
         filteroftype(typeChecked, filterData)
         filterofpreference(preferenceChecked, filterData)
-        console.log(list1)
-        console.log(list2)
-        console.log(list3)
+        // console.log(list1)
+        // console.log(list2)
+        // console.log(list3)
 
         if (modelsChecked.length == 0 && typeChecked.length == 0 && preferenceChecked.length == 0) {
             showData(filterData, dis, heading11)
@@ -460,9 +461,9 @@ else {
         function filterofpreference(x, y) {
             for (let i = 0; i < x.length; i++) {
                 let pk = x[i].getAttribute("rel")
-                console.log(pk)
+                // console.log(pk)
                 for (let j = 0; j < y.length; j++) {
-                    console.log(y[j].Category);
+                    // console.log(y[j].Category);
                     if (y[j].Category.includes(pk)) {
                         list3.push(y[j])
                     }

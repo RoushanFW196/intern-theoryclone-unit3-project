@@ -867,7 +867,7 @@
 
           var name= fname +" "+ lname;
          
-          console.log(name)
+        //   console.log(name)
         //   let user_info={}
         //      user_info. Name= name,
         //     user_info.Gender=gender,
@@ -892,7 +892,7 @@
         //     student_detail.Name=name;
         // }
          student_detail.Name=name;
-       console.log(student_detail)
+    //    console.log(student_detail)
          student_detail.Gender=gender;
          student_detail.Dob=dob;
          student_detail.Language=lang;
@@ -905,10 +905,10 @@
 
          localStorage.setItem("studentDetail",JSON.stringify(student_detail));
           
-    //  setTimeout(()=>{
-    //     alert("Your profile is updated")
-    //      window.location.href="profile.html";
-    //  },1000)
+      setTimeout(()=>{
+         alert("Your profile is updated")
+          window.location.href="profile.html";
+      },1000)
             
         
 
@@ -966,7 +966,7 @@
  
 
 
-         console.log( "final data from lclstrg,",user_info1)
+        //  console.log( "final data from lclstrg,",user_info1)
    
    
 
@@ -983,7 +983,7 @@
 
        let btn = document.createElement("button");
        btn.textContent ="GO TO DASHBOARD"
-        btn.onclick =gotodashboard();
+        btn.onclick =gotodashboard;
        let p1=document.createElement("p");
        p1.textContent =user_info1.first+ " "+user_info1.last;
        let dndiv=document.createElement("div");
@@ -1008,7 +1008,7 @@
 
 
     function gotodashboard(){
-        Window.location.href="courses.html";
+        window.location.href="courses.html";
     }
 
 
@@ -1265,7 +1265,7 @@
 </html>
 
 <script type='module'>
-      import { product, showData, hello } from './script/showData.js'
+      import { product, showData, hello, afterLogout } from './script/showData.js'
     let localStorageData = JSON.parse(localStorage.getItem('studentDetail'))
 
 import { n12345, footer1235 } from './component/after_nav.js'
@@ -1279,6 +1279,7 @@ if (localStorageData == null) {
 
 else {
 
+    afterLogout();
         document.getElementById('nn123').innerHTML = n12345();
         document.getElementById('footer').innerHTML = footer1235();
 

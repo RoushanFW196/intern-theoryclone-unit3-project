@@ -274,7 +274,7 @@
 
 
 <script type="module">
-    import { product, showData, hello } from './script/showData.js'
+    import { product, showData, hello,afterLogout } from './script/showData.js'
 
     let localStorageData = JSON.parse(localStorage.getItem('studentDetail'))
 
@@ -307,7 +307,10 @@
 
         let profile_img1 = document.getElementById('profile_img1');
         let profile_img2 = document.getElementById('profile_img2');
-       
+
+
+
+        afterLogout();
         if(localStorageData.Gender === "Male"){
             profile_img1.src ="https://assets.interntheory.com/creative/default-images/guyProfile.jpg";
             profile_img2.src ="https://assets.interntheory.com/creative/default-images/guyProfile.jpg";
@@ -317,6 +320,11 @@
             profile_img2.src = "https://assets.interntheory.com/creative/default-images/girlProfile.jpg";
         }
        
+
+        
+      
+
+
     }
   
     //after login navbar import-------------->

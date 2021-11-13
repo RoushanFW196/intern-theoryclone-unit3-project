@@ -91,4 +91,16 @@ async function hello(xx,heading11){
       localStorage.setItem('heading',JSON.stringify(heading11))
       window.location.href='internship&jobs.html'
    }
-export { product, showData,hello}
+
+
+   function afterLogout(){
+        
+    document.getElementById("logoutbtn").addEventListener("click",()=>{
+        console.log("wert")
+        localStorage.removeItem("studentDetail");
+        window.location.reload();
+        window.location.href="loginStudent.html"
+
+    })
+   }
+export { product, showData,hello,afterLogout}
