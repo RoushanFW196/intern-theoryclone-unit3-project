@@ -3,14 +3,13 @@ Clone_Intern Theory
 
 This is our Second Project at Masai School,
 
-Project Description
+Project Description:
 
 We are from the ft-web12 batch of Masai School, our task is to make a clone of the Intern Theory website.
 
 ntern theory website provides an opportunity to get an internship with a handsome stipend. it also provides some courses by pursuing you can improve your skills and maybe you will land on a high paying job.
 
-Technologies Used
-
+Technologies Used:
 Html
 Css
 Advance JAVASCRIPT
@@ -19,14 +18,15 @@ LOCALSTORAGE.
 
 
 
-Pages Included
-
+Pages Included:
 Landing page.
-Login / Signup.
-Product details page.
-Category page.
-Product cart page.
-Payment page.
+Internship and Jobs
+Details.
+Login and Rgistration for Company and Users.
+Profile Page.
+Course and Course Details Page.
+Cart Page.
+Contact Us Page.
 
 
 some snapshots of our cloned website are blow:
