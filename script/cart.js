@@ -119,7 +119,7 @@ function validate() {
             var Cvv = document.getElementById("cvv").value;
             // console.log(cardnumber, expiry, cardname, Cvv);
             // console.log(cardnumber, expiry, cardname, Cvv);
-            if (cardnumber.length == 16 && expiry.length == 4 && cardname != "" && Cvv.length == 3) {
+            if (cardnumber.length == 16 && expiry.length == 5 && cardname != "" && Cvv.length == 3) {
                 alert("payment Successful");
                 window.location.href = "profile.html";
                 // setTimeout(function () {
@@ -141,7 +141,7 @@ function validat() {
     var Cvv = document.getElementById("cvv").value;
     // console.log(cardnumber, expiry, cardname, Cvv);
     // console.log(cardnumber, expiry, cardname, Cvv);
-    if (cardnumber.length == 16 && expiry.length == 4 && cardname != "" && Cvv.length == 3) {
+    if (cardnumber.length == 16 && expiry.length == 5 && cardname != "" && Cvv.length == 3) {
         alert("payment Successful");
         setTimeout(function () {
             window.location.href = "profile.html";
