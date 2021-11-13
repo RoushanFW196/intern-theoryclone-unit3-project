@@ -905,10 +905,10 @@
 
          localStorage.setItem("studentDetail",JSON.stringify(student_detail));
           
-    //  setTimeout(()=>{
-    //     alert("Your profile is updated")
-    //      window.location.href="profile.html";
-    //  },1000)
+      setTimeout(()=>{
+         alert("Your profile is updated")
+          window.location.href="profile.html";
+      },1000)
             
         
 
@@ -983,7 +983,7 @@
 
        let btn = document.createElement("button");
        btn.textContent ="GO TO DASHBOARD"
-        btn.onclick =gotodashboard();
+        btn.onclick =gotodashboard;
        let p1=document.createElement("p");
        p1.textContent =user_info1.first+ " "+user_info1.last;
        let dndiv=document.createElement("div");
@@ -1008,7 +1008,7 @@
 
 
     function gotodashboard(){
-        Window.location.href="courses.html";
+        window.location.href="courses.html";
     }
 
 
