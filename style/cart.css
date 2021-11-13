@@ -172,13 +172,15 @@ span {
   background-color: #FEFEFE;
   margin: auto;
   border: 1px solid #888;
-  width: 22%;
+  width: 26rem;
+  height: 48rem;
 }
 .close {
   color: #AAAAAA;
   float: right;
   font-size: 28px;
   font-weight: bold;
+  margin-right: 1rem;
 }
 .close:hover,
 .close:focus {
@@ -238,8 +240,9 @@ input {
   background-color: hsl(0, 56%, 49%);
   text-align: center;
   color: white;
-  padding: 15px;
-  margin-top: 20px;
+  padding: .4rem;
+  cursor: pointer;
+  /* margin-top: 20px; */
 }
 #logo {
   background-color: white;
@@ -271,7 +274,9 @@ h4 {
 }
 
 
-
+input{
+  outline: none;
+}
 
 
 
