@@ -1,3 +1,5 @@
+![snap1](https://user-images.githubusercontent.com/91534605/141649437-f79799b7-9534-425e-8ae1-6b69fc3bd92c.png)
+![snap14](https://user-images.githubusercontent.com/91534605/141649450-09b8ba54-d90b-4711-80b2-89e55a13b8da.png)
 Clone_Intern Theory 
 
 This is our Second Project at Masai School,
