@@ -43,7 +43,7 @@ function n12345(){
             <li><a href="#"><i class="fas fa-folder"></i><b>Start Your Business Today</b></a></li>
             <div class="m"></div>
             <li><a href="#" > <i class="fas fa-lock"></i><b>Change Password</b></a></li>
-            <li><a href="loginStudent.html" ><i class="fas fa-arrow-circle-right"></i><b>logout</b></a></li>
+            <li id="logoutbtn"><a href="#" ><i class="fas fa-arrow-circle-right"></i><b>logout</b></a></li>
         </ul>  
     </div>
 </div>

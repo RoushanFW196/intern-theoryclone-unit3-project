@@ -1265,7 +1265,7 @@
 </html>
 
 <script type='module'>
-      import { product, showData, hello } from './script/showData.js'
+      import { product, showData, hello, afterLogout } from './script/showData.js'
     let localStorageData = JSON.parse(localStorage.getItem('studentDetail'))
 
 import { n12345, footer1235 } from './component/after_nav.js'
@@ -1279,6 +1279,7 @@ if (localStorageData == null) {
 
 else {
 
+    afterLogout();
         document.getElementById('nn123').innerHTML = n12345();
         document.getElementById('footer').innerHTML = footer1235();
 
