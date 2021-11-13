@@ -121,9 +121,10 @@ function validate() {
             // console.log(cardnumber, expiry, cardname, Cvv);
             if (cardnumber.length == 16 && expiry.length == 4 && cardname != "" && Cvv.length == 3) {
                 alert("payment Successful");
-                setTimeout(function () {
-                    window.location.href = "index.html";
-                }, 2000);
+                window.location.href = "profile.html";
+                // setTimeout(function () {
+                   
+                // }, 2000);
                 // window.localStorage.clear();
                 localStorage.removeItem('coursecart')
             } else {
@@ -143,8 +144,8 @@ function validat() {
     if (cardnumber.length == 16 && expiry.length == 4 && cardname != "" && Cvv.length == 3) {
         alert("payment Successful");
         setTimeout(function () {
-            window.location.href = "index.html";
-        }, 2000);
+            window.location.href = "profile.html";
+        }, 1500);
         // window.localStorage.clear();
         localStorage.removeItem('coursecart')
     } else {
